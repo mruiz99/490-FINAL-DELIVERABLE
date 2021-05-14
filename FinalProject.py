@@ -825,6 +825,11 @@ class MOCOMarchMay20:
             pass
     
     def route_analysis(self):
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOMarchMay20/RoutePerfAnalysis")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO/MOCOMarchMay20/RoutePerfAnalysis")
+        elif folderExists == True:
+            pass
         allmarmay=self.marmay.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         allmarmay['total']=allmarmay['early']+allmarmay['on_time']+allmarmay['late']
         allmarmay['early %']=round(allmarmay['early']/allmarmay['total'],2)
@@ -847,11 +852,11 @@ class MOCOMarchMay20:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "MOCOMarchMay20", "MOCO")
+            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "MOCOMarchMay20", "MOCO", "RoutePerfAnalysis")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
-            x.to_csv("Deliverables/MOCO/MOCOMarchMay20/Route"+num+".csv", index=False, encoding='utf-8')
+            x.to_csv("Deliverables/MOCO/MOCOMarchMay20/RoutePerfAnalysis/Route"+num+".csv", index=False, encoding='utf-8')
 
 class MOCOAugustJanuary20:
     def __init__(self):
@@ -865,6 +870,11 @@ class MOCOAugustJanuary20:
             pass
     
     def route_analysis(self):
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOAugustJanuary20/RoutePerfAnalysis")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO/MOCOAugustJanuary20/RoutePerfAnalysis")
+        elif folderExists == True:
+            pass
         allsepjan=self.sepjan.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         allsepjan['total']=allsepjan['early']+allsepjan['on_time']+allsepjan['late']
         allsepjan['early %']=round(allsepjan['early']/allsepjan['total'],2)
@@ -887,11 +897,11 @@ class MOCOAugustJanuary20:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allsepjan['early %'].iloc[num],allsepjan['on_time %'].iloc[num],allsepjan['late %'].iloc[num]], num, route, "MOCOAugustJanuary20", "MOCO")
+            makepies(('early','on_time','late'),[allsepjan['early %'].iloc[num],allsepjan['on_time %'].iloc[num],allsepjan['late %'].iloc[num]], num, route, "MOCOAugustJanuary20", "MOCO", "RoutePerfAnalysis")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
-            x.to_csv("Deliverables/MOCO/MOCOAugustJanuary20/Route"+num+".csv", index=False, encoding='utf-8')
+            x.to_csv("Deliverables/MOCO/MOCOAugustJanuary20/RoutePerfAnalysis/Route"+num+".csv", index=False, encoding='utf-8')
     
     
     
