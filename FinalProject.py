@@ -59,28 +59,6 @@ class PGJanuaryFebuary19:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGJanuaryFebuary19/Route"+num+".csv", index=False, encoding='utf-8')
             
-    def third_del():
-        monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","OCT","NOV","DEC","JAN'21"]
-        routes=round(self.janfeb.groupby('route')[['boardings','alightings']].agg('sum').reset_index(),2)
-        routesordered=routes.nlargest(len(routes),'boardings').reset_index()
-        routesordered=routesordered.drop(labels='index',axis=1)
-        routesordered.to_csv("2020janfeb_bestroutes.csv",encoding="utf-8")
-        bymonth=round(janfeb.groupby('month')[['boardings','alightings']].agg('sum').reset_index(),2)
-        bymonth.iloc[0,'month']=monthlist[0]
-        bymonth.iloc[1,'month']=monthlist[1]
-        bymonth.to_csv("2020janfeb_boardings.csv",encoding="utf-8")
-        
-        df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[0:2]})
-
-        fig, axes = plt.subplots(2, figsize=(20,15))
-        plt.subplots_adjust(hspace = 0.5)
-        sns.barplot(ax=axes[0],data=routesordered, x='route',y="boardings")
-        axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
-        axes[0].set_title("Best Performing Enhanced Routes 2020")
-        sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
-        axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
-        axes[1].set_title("Total Boardings for Enhanced Routes 2020")
-        plt.savefig("2020janfeb_bestroutes.png")
        
 class PGMarchMay19:
     def __init__(self):
@@ -181,6 +159,7 @@ class PGJanuaryFebuary20:
         for title in [self.jan, self.feb]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.janfeb=pd.concat([self.jan,self.feb])
+        self.janfeb3 = pd.read_csv("2020janfeb3.csv")
         folderExists = os.path.exists("Deliverables/PG/PGJanuaryFebuary20")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGJanuaryFebuary20")
@@ -216,7 +195,30 @@ class PGJanuaryFebuary20:
             makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "PGJanuaryFebuary20")
         for num in numlist:
             x = segments[segments["route"]==num]
-            x.to_csv("Deliverables/PG/PGJanuaryFebuary20/Route"+num+".csv", index=False, encoding='utf-8')   
+            x.to_csv("Deliverables/PG/PGJanuaryFebuary20/Route"+num+".csv", index=False, encoding='utf-8')
+
+    def third_del(self):
+        monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","OCT","NOV","DEC","JAN'21"]
+        routes=round(self.janfeb3.groupby('route')[['boardings','alightings']].agg('sum').reset_index(),2)
+        routesordered=routes.nlargest(len(routes),'boardings').reset_index()
+        routesordered=routesordered.drop(labels='index',axis=1)
+        routesordered.to_csv("2020janfeb_bestroutes.csv",encoding="utf-8")
+        bymonth=round(self.janfeb3.groupby('month')[['boardings','alightings']].agg('sum').reset_index(),2)
+        bymonth.iloc[0,'month']=monthlist[0]
+        bymonth.iloc[1,'month']=monthlist[1]
+        bymonth.to_csv("2020janfeb_boardings.csv",encoding="utf-8")
+        
+        df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[0:2]})
+
+        fig, axes = plt.subplots(2, figsize=(20,15))
+        plt.subplots_adjust(hspace = 0.5)
+        sns.barplot(ax=axes[0],data=routesordered, x='route',y="boardings")
+        axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
+        axes[0].set_title("Best Performing Enhanced Routes 2020")
+        sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
+        axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
+        axes[1].set_title("Total Boardings for Enhanced Routes 2020")
+        plt.savefig("2020janfeb_bestroutes.png")   
     
 class PGMarchMay20:
     def __init__(self):
