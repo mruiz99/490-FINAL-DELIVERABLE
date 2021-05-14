@@ -22,9 +22,13 @@ class PGJanuaryFebuary19:
         for title in [self.jan, self.feb]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.janfeb=pd.concat([self.jan,self.feb])
-        os.mkdir("Deliverables/PGJanuaryFebuary19")
+        folderExists = os.path.exists("Deliverables/PGJanuaryFebuary19")
+        if folderExists == False:
+            os.makedirs("Deliverables/PGJanuaryFebuary19")
+        elif folderExists == True:
+            pass
     
-    def second_deliv(self):
+    def route_analysis(self):
         alljanfeb=self.janfeb.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         alljanfeb['total']=alljanfeb['early']+alljanfeb['on_time']+alljanfeb['late']
         alljanfeb['early %']=round(alljanfeb['early']/alljanfeb['total'],2)
@@ -62,7 +66,11 @@ class PGJanuaryFebuary20:
         for title in [self.jan, self.feb]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.janfeb=pd.concat([self.jan,self.feb])
-        os.mkdir("Deliverables/PGJanuaryFebuary20")
+        folderExists = os.path.exists("Deliverables/PGJanuaryFebuary20")
+        if folderExists == False:
+            os.makedirs("Deliverables/PGJanuaryFebuary20")
+        elif folderExists == True:
+            pass
     
     def route_analysis(self):
         alljanfeb=self.janfeb.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
@@ -104,7 +112,12 @@ class PGMarchMay19:
         for title in [self.mar, self.apr, self.may]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.marmay=pd.concat([self.mar,self.apr,self.may])
-        os.mkdir("Deliverables/PGMarchMay19")
+        folderExists = os.path.exists("Deliverables/PGMarchMay19")
+        if folderExists == False:
+            os.makedirs("Deliverables/PGMarchMay19")
+        elif folderExists == True:
+            pass
+        
     
     def route_analysis(self):
         allmarmay=self.marmay.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
@@ -144,7 +157,13 @@ class PGMarchMay20:
         for title in [self.mar, self.apr, self.may]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.marmay=pd.concat([self.mar,self.apr,self.may])
-        os.mkdir("Deliverables/PGMarchMay20")
+        self.marmay=pd.concat([self.mar,self.apr,self.may])
+        folderExists = os.path.exists("Deliverables/PGMarchMay20")
+        if folderExists == False:
+            os.makedirs("Deliverables/PGMarchMay20")
+        elif folderExists == True:
+            pass
+        
         
     def route_analysis(self):
         allmarmay=self.marmay.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
@@ -185,6 +204,11 @@ class PGAugustJanuary19:
         for title in [self.aug, self.sep, self.dec, self.jan20]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.augjan=pd.concat([self.aug,self.sep,self.dec,self.jan20])
+        folderExists = os.path.exists("Deliverables/PGAugustJanuary19")
+        if folderExists == False:
+            os.makedirs("Deliverables/PGAugustJanuary19")
+        elif folderExists == True:
+            pass
         os.mkdir("Deliverables/PGAugustJanuary19")
 
     
@@ -227,7 +251,13 @@ class PGAugustJanuary20:
         for title in [self.aug, self.sep, self.dec, self.jan20]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.augjan=pd.concat([self.aug,self.sep,self.dec,self.jan20])
-        os.mkdir("Deliverables/PGAugustJanuary20")
+        folderExists = os.path.exists("Deliverables/PGAugustJanuary20")
+        if folderExists == False:
+            os.makedirs("Deliverables/PGAugustJanuary20")
+        elif folderExists == True:
+            pass
+        
+        
     def route_analysis(self):
         allaugjan=self.augjan.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         allaugjan['total']=allaugjan['early']+allaugjan['on_time']+allaugjan['late']
@@ -263,8 +293,12 @@ class MOCOJanuaryFebuary19:
         self.janfeb = pd.read_csv("2019JANFEBSEG.csv")
         for title in [self.janfeb]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
-        os.mkdir("Deliverables/MOCOJanuaryFebuary19")
-    
+        folderExists = os.path.exists("Deliverables/MOCOJanuaryFebuary19")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCOJanuaryFebuary19")
+        elif folderExists == True:
+            pass
+            
     def route_analysis(self):
         alljanfeb=self.janfeb.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         alljanfeb['total']=alljanfeb['early']+alljanfeb['on_time']+alljanfeb['late']

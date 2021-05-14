@@ -1,0 +1,10 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+22,Brightseat Rd at Evarts St,34,734,8,776,0.04,0.95,0.01
+22,PG Sports Complex,207,1330,93,1630,0.13,0.82,0.06
+22,Valley Trail Ln at Catesby Ct,300,1388,41,1729,0.17,0.8,0.02
+22,Fieldstone Way,348,1276,43,1667,0.21,0.77,0.03
+22,Morgan Blvd Metro Station,162,892,173,1227,0.13,0.73,0.14
+22,Centre Pointe Office Park,433,1144,86,1663,0.26,0.69,0.05
+22,Chatsfield Way at Reading Ter,536,1168,28,1732,0.31,0.67,0.02
+22,Lansdowne Village Apts,550,1030,83,1663,0.33,0.62,0.05
+22,Brightseat Rd at Maple Ridge Apts,267,484,38,789,0.34,0.61,0.05
