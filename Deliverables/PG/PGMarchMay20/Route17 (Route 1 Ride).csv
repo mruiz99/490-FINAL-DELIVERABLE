@@ -1,0 +1,12 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+17 (Route 1 Ride),Rhode Island (US RTE 1) at Mount Rainer Terminal,49,227,65,341,0.14,0.67,0.19
+17 (Route 1 Ride),Ikea at Bus Bay 3,32,260,341,633,0.05,0.41,0.54
+17 (Route 1 Ride),Baltimore Ave at East-West Hwy,323,297,151,771,0.42,0.39,0.2
+17 (Route 1 Ride),Baltimore Ave at Lakeland Rd,264,164,24,452,0.58,0.36,0.05
+17 (Route 1 Ride),College Park Metro Station - Bus Bay T8,305,154,15,474,0.64,0.32,0.03
+17 (Route 1 Ride),Campus Drive (EB) at Baltimore Ave,37,47,63,147,0.25,0.32,0.43
+17 (Route 1 Ride),Baltimore Ave at Campus Dr,66,45,66,177,0.37,0.25,0.37
+17 (Route 1 Ride),Rhode Island Ave at County Service Building - NB,223,75,66,364,0.61,0.21,0.18
+17 (Route 1 Ride),Rhode Island Ave at County Service Building - SB,270,65,64,399,0.68,0.16,0.16
+17 (Route 1 Ride),College Park Metro Station at Bus Bay B,131,31,48,210,0.62,0.15,0.23
+17 (Route 1 Ride),Mt Rainier Terminal - Arrival,145,30,135,310,0.47,0.1,0.44

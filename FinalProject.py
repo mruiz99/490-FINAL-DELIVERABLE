@@ -14,7 +14,6 @@ elif folderExists == True:
     pass
     
     
-#SECOND DELIVERABLE
 class PGJanuaryFebuary19:
     def __init__(self):
         self.jan = pd.read_csv("2019NEWJAN_scheduled-ad.csv")
@@ -58,8 +57,7 @@ class PGJanuaryFebuary19:
         for num in numlist:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGJanuaryFebuary19/Route"+num+".csv", index=False, encoding='utf-8')
-            
-       
+              
 class PGMarchMay19:
     def __init__(self):
         self.mar=pd.read_csv("2019NEWMAY_scheduled-ad.csv")
@@ -202,11 +200,11 @@ class PGJanuaryFebuary20:
         routes=round(self.janfeb3.groupby('route')[['boardings','alightings']].agg('sum').reset_index(),2)
         routesordered=routes.nlargest(len(routes),'boardings').reset_index()
         routesordered=routesordered.drop(labels='index',axis=1)
-        routesordered.to_csv("2020janfeb_bestroutes.csv",encoding="utf-8")
+        routesordered.to_csv("Deliverables/PG/PGJanuaryFebuary20/2020janfeb_bestroutes.csv",encoding="utf-8")
         bymonth=round(self.janfeb3.groupby('month')[['boardings','alightings']].agg('sum').reset_index(),2)
-        bymonth.iloc[0,'month']=monthlist[0]
-        bymonth.iloc[1,'month']=monthlist[1]
-        bymonth.to_csv("2020janfeb_boardings.csv",encoding="utf-8")
+        bymonth.loc[0,'month']=monthlist[0]
+        bymonth.loc[1,'month']=monthlist[1]
+        bymonth.to_csv("Deliverables/PG/PGJanuaryFebuary20/2020janfeb_boardings.csv",encoding="utf-8")
         
         df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[0:2]})
 
@@ -218,7 +216,7 @@ class PGJanuaryFebuary20:
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
         axes[1].set_title("Total Boardings for Enhanced Routes 2020")
-        plt.savefig("2020janfeb_bestroutes.png")   
+        plt.savefig("Deliverables/PG/PGJanuaryFebuary20/2020janfeb_bestroutes.png")   
     
 class PGMarchMay20:
     def __init__(self):
@@ -474,7 +472,90 @@ class MOCOJanuaryFebuary20:
         for num in numlist:
             x = segments[segments["route"]==int(num)]
             x.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary20/Route"+num+".csv", index=False, encoding='utf-8')
-           
+
+class MOCOMarchMay20:
+    def __init__(self):
+        self.marmay = pd.read_csv("2020MARMAYSEG.csv")
+        for title in [self.marmay]:
+            title.columns=["indices", "stops", "route", "early", "on_time", "late"]
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOMarchMay20")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO/MOCOMarchMay20")
+        elif folderExists == True:
+            pass
+    
+    def route_analysis(self):
+        allmarmay=self.marmay.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
+        allmarmay['total']=allmarmay['early']+allmarmay['on_time']+allmarmay['late']
+        allmarmay['early %']=round(allmarmay['early']/allmarmay['total'],2)
+        allmarmay['on_time %']=round(allmarmay['on_time']/allmarmay['total'],2)
+        allmarmay['late %']=round(allmarmay['late']/allmarmay['total'],2)
+        
+        allmarmay=allmarmay.iloc[0:]
+        
+        allmarmay.sort_values(by='late %')
+       
+        x=range(0, len(allmarmay))
+        routelist = ["Route46", "Route55", "Route100"]
+        numlist = ["46", "55", "100"]
+        
+        segments=self.marmay.groupby(['route', "stops"])[['early','on_time','late']].agg('sum').reset_index()
+        segments['total']=segments['early']+segments['on_time']+segments['late']
+        segments['early %']=round(segments['early']/segments['total'],2)
+        segments['on_time %']=round(segments['on_time']/segments['total'],2)
+        segments['late %']=round(segments['late']/segments['total'],2)
+        segments=segments.nlargest(len(segments), 'on_time %')
+        
+        for num,route in zip(x,routelist):
+            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "MOCOMarchMay20", "MOCO")
+        
+        for num in numlist:
+            x = segments[segments["route"]==int(num)]
+            x.to_csv("Deliverables/MOCO/MOCOMarchMay20/Route"+num+".csv", index=False, encoding='utf-8')
+
+class MOCOSeptemberJanuary20:
+    def __init__(self):
+        self.sepjan = pd.read_csv("2020OCTJANSEG.csv")
+        for title in [self.sepjan]:
+            title.columns=["indices", "stops", "route", "early", "on_time", "late"]
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOOctoberJanuary20")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO/MOCOOctoberJanuary20")
+        elif folderExists == True:
+            pass
+    
+    def route_analysis(self):
+        allsepjan=self.sepjan.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
+        allsepjan['total']=allsepjan['early']+allsepjan['on_time']+allsepjan['late']
+        allsepjan['early %']=round(allsepjan['early']/allsepjan['total'],2)
+        allsepjan['on_time %']=round(allsepjan['on_time']/allsepjan['total'],2)
+        allsepjan['late %']=round(allsepjan['late']/allsepjan['total'],2)
+        
+        allsepjan=allsepjan.iloc[0:]
+        
+        allsepjan.sort_values(by='late %')
+       
+        x=range(0, len(allsepjan))
+        routelist = ["Route46", "Route55", "Route100"]
+        numlist = ["46", "55", "100"]
+        
+        segments=self.sepjan.groupby(['route', "stops"])[['early','on_time','late']].agg('sum').reset_index()
+        segments['total']=segments['early']+segments['on_time']+segments['late']
+        segments['early %']=round(segments['early']/segments['total'],2)
+        segments['on_time %']=round(segments['on_time']/segments['total'],2)
+        segments['late %']=round(segments['late']/segments['total'],2)
+        segments=segments.nlargest(len(segments), 'on_time %')
+        
+        for num,route in zip(x,routelist):
+            makepies(('early','on_time','late'),[allsepjan['early %'].iloc[num],allsepjan['on_time %'].iloc[num],allsepjan['late %'].iloc[num]], num, route, "MOCOOctoberJanuary20", "MOCO")
+        
+        for num in numlist:
+            x = segments[segments["route"]==int(num)]
+            x.to_csv("Deliverables/MOCO/MOCOOctoberJanuary20/Route"+num+".csv", index=False, encoding='utf-8')
+    
+    
+    
+    
 def makepies(number,filling, count, name, folder, county):
         labels = number
         sizes = filling
@@ -489,13 +570,49 @@ def makepies(number,filling, count, name, folder, county):
         x = plt.savefig("Deliverables/"+county+"/"+folder+"/"+name+".png")
         return x 
 
-    
 def main():
     county = input("Welcome, please choose a county (Moco or PG):  ")
-    if county.upper() == "MOCO":
-        folderExists = os.path.exists("Deliverables/MOCO/")
+    if county.upper() == "PG":
+        folderExists = os.path.exists("Deliverables/PG")
         if folderExists == False:
-            os.makedirs("Deliverables/MOCO/")
+            os.makedirs("Deliverables/PG")
+        elif folderExists == True:
+            pass
+        year = int(input("What year would you like to take a look at? (2019 or 2020)\n"))
+        if year == 2019:
+            timeframe = int(input("Great. What timeframe are you interested in? \n"
+                            "(1)January to Febuary \n"
+                            "(2)March to May \n"
+                            "(3)August to January\n"))
+            if timeframe == 1:
+                pg = PGJanuaryFebuary19()
+                pg.route_analysis()
+            elif timeframe==2:
+                pg = PGMarchMay19()
+                pg.route_analysis()
+            elif timeframe==3:
+                pg = PGAugustJanuary19()
+                pg.route_analysis()
+        elif year == 2020:
+            timeframe = int(input("Great. What timeframe are you interested in? \n"
+                            "(1)January to Febuary \n"
+                            "(2)March to May \n"
+                            "(3)August to January\n"))
+            if timeframe == 1:
+                pg = PGJanuaryFebuary20()
+                pg.route_analysis()
+                pg.third_del()
+            elif timeframe==2:
+                pg = PGMarchMay20()
+                pg.route_analysis()
+            elif timeframe==3:
+                pg = PGAugustJanuary20()
+                pg.route_analysis()
+    
+    elif county.upper() == "MOCO":
+        folderExists = os.path.exists("Deliverables/MOCO")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO")
         elif folderExists == True:
             pass
         year = int(input("What year would you like to take a look at? (2019 or 2020)\n"))
@@ -528,41 +645,7 @@ def main():
                 pg = MOCOSeptemberJanuary20()
                 pg.route_analysis()
         
-    elif county.upper() == "PG":
-        folderExists = os.path.exists("Deliverables/PG")
-        if folderExists == False:
-            os.makedirs("Deliverables/PG")
-        elif folderExists == True:
-            pass
-        year = int(input("What year would you like to take a look at? (2019 or 2020)\n"))
-        if year == 2019:
-            timeframe = int(input("Great. What timeframe are you interested in? \n"
-                            "(1)January to Febuary \n"
-                            "(2)March to May \n"
-                            "(3)August to January\n"))
-            if timeframe == 1:
-                pg = PGJanuaryFebuary19()
-                pg.route_analysis()
-            elif timeframe==2:
-                pg = PGMarchMay19()
-                pg.route_analysis()
-            elif timeframe==3:
-                pg = PGAugustJanuary19()
-                pg.route_analysis()
-        elif year == 2020:
-            timeframe = int(input("Great. What timeframe are you interested in? \n"
-                            "(1)January to Febuary \n"
-                            "(2)March to May \n"
-                            "(3)August to January\n"))
-            if timeframe == 1:
-                pg = PGJanuaryFebuary20()
-                pg.route_analysis()
-            elif timeframe==2:
-                pg = PGMarchMay20()
-                pg.route_analysis()
-            elif timeframe==3:
-                pg = PGAugustJanuary20()
-                pg.route_analysis()
+    
         
 
 
