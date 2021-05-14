@@ -1,0 +1,17 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+51 Loop A,Village Dr West at Bishopmill Dr,6,284,16,306,0.02,0.93,0.05
+51 Loop A,Halloway South at Village Dr West,6,331,43,380,0.02,0.87,0.11
+51 Loop A,Old Crain Hwy at Villiage Drive West,15,321,36,372,0.04,0.86,0.1
+51 Loop A,3807 Old Crain Hwy,26,315,33,374,0.07,0.84,0.09
+51 Loop A,Old Marlboro Pike at Peerless Ave,29,314,42,385,0.08,0.82,0.11
+51 Loop A,Village Dr West at McConnell Dr,82,238,33,353,0.23,0.67,0.09
+51 Loop A,Village Dr West at Halloway North,105,215,29,349,0.3,0.62,0.08
+51 Loop A,Village Dr West at Clairfield Ln,27,79,23,129,0.21,0.61,0.18
+51 Loop A,Marlboro Pike & Crain Hwy,277,435,72,784,0.35,0.55,0.09
+51 Loop A,Gov. Oden Bowie Dr at Rear C.A.B.,167,581,560,1308,0.13,0.44,0.43
+51 Loop A,Governor Oden Bowie Dr at Elm St,147,545,612,1304,0.11,0.42,0.47
+51 Loop A,Equestrian Center Lot 4,247,517,494,1258,0.2,0.41,0.39
+51 Loop A,Old Marlboro Pike  at Peerless Ave,235,154,28,417,0.56,0.37,0.07
+51 Loop A,Equestrian Center Lot 3,623,683,1096,2402,0.26,0.28,0.46
+51 Loop A,Judge's Dr at Pratt St,413,144,65,622,0.66,0.23,0.1
+51 Loop A,Courthouse,408,222,660,1290,0.32,0.17,0.51

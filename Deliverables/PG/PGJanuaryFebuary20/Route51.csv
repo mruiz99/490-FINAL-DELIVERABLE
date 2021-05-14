@@ -1,0 +1,6 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+51,Courthouse,485,604,695,1784,0.27,0.34,0.39
+51,Equestrian Center Lot 1,424,503,719,1646,0.26,0.31,0.44
+51,Gov. Oden Bowie Dr at Rear C.A.B.,604,532,656,1792,0.34,0.3,0.37
+51,Chrysler Dr at US RT 301,625,506,658,1789,0.35,0.28,0.37
+51,Equestrian Center Lot 1 (Arrival),598,448,599,1645,0.36,0.27,0.36

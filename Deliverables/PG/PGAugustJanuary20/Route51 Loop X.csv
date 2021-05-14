@@ -1,0 +1,8 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+51 Loop X,Governor Oden Bowie Dr at Elm St,259,503,31,793,0.33,0.63,0.04
+51 Loop X,Courthouse,245,495,53,793,0.31,0.62,0.07
+51 Loop X,Judge's Dr at Pratt St,289,475,38,802,0.36,0.59,0.05
+51 Loop X,Equestrian Center Lot 1,200,300,9,509,0.39,0.59,0.02
+51 Loop X,Gov. Oden Bowie Dr at Rear C.A.B.,352,410,30,792,0.44,0.52,0.04
+51 Loop X,Equestrian Center Lot 3,143,178,32,353,0.41,0.5,0.09
+51 Loop X,Equestrian Center Lot 1 (Hidden Arrival),74,131,292,497,0.15,0.26,0.59
