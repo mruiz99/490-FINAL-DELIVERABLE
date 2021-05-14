@@ -404,13 +404,13 @@ class PGMarchMay20:
         routes=round(self.marmay3.groupby('route')[['boardings','alightings']].agg('sum').reset_index(),2)
         routesordered=routes.nlargest(len(routes),'boardings').reset_index()
         routesordered=routesordered.drop(labels='index',axis=1)
-        routesordered.to_csv("2020marmay_bestroutes.csv",encoding="utf-8")
+        routesordered.to_csv("Deliverables/PG/PGMarchMay20/2020marmay_bestroutes.csv",encoding="utf-8")
 
         bymonth=round(self.marmay3.groupby('month')[['boardings','alightings']].agg('sum').reset_index(),2)
         bymonth.loc[0,'month']=monthlist[2]
         bymonth.loc[1,'month']=monthlist[3]
         bymonth.loc[2,'month']=monthlist[4]
-        bymonth.to_csv("2020marmay_boardings.csv",encoding="utf-8")
+        bymonth.to_csv("Deliverables/PG/PGMarchMay20/2020marmay_boardings.csv",encoding="utf-8")
 
         df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[2:5]})
 
@@ -422,7 +422,7 @@ class PGMarchMay20:
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
         axes[1].set_title("Total Boardings for Enhanced Routes 2020")
-        plt.savefig("2020marmay_bestroutes.png")
+        plt.savefig("Deliverables/PG/PGMarchMay20/2020marmay_bestroutes.png")
          
 class PGAugustJanuary20:
     def __init__(self):
@@ -544,7 +544,7 @@ class PGAugustJanuary20:
         routes=round(self.augjan3.groupby('route')[['boardings','alightings']].agg('sum').reset_index(),2)
         routesordered=routes.nlargest(len(routes),'boardings').reset_index()
         routesordered=routesordered.drop(labels='index',axis=1)
-        routesordered.to_csv("2020augjan_bestroutes.csv",encoding="utf-8")
+        routesordered.to_csv("Deliverables/PG/PGAugustJanuary20/2020augjan_bestroutes.csv",encoding="utf-8")
 
         bymonth=round(self.augjan3.groupby('month')[['boardings','alightings']].agg('sum').reset_index(),2)
         bymonth.loc[0,'month']=monthlist[5]
@@ -553,7 +553,7 @@ class PGAugustJanuary20:
         bymonth.loc[3,'month']=monthlist[8]
         bymonth.loc[4,'month']=monthlist[9]
         bymonth.loc[5,'month']=monthlist[10]
-        bymonth.to_csv("2020augjan_boardings.csv",encoding="utf-8")
+        bymonth.to_csv("Deliverables/PG/PGAugustJanuary20/2020augjan_boardings.csv",encoding="utf-8")
             
         df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[5:]})
 
@@ -565,24 +565,91 @@ class PGAugustJanuary20:
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
         axes[1].set_title("Total Boardings for Enhanced Routes 2020")
-        plt.savefig("2020augjan_bestroutes.png")
+        plt.savefig("Deliverables/PG/PGAugustJanuary20/2020augjan_bestroutes.png")
 
 
 
 class MOCOJanuaryFebuary19:
     def __init__(self):
-        self.janfeb = pd.read_csv("2019JANFEBSEG.csv")
-        for title in [self.janfeb]:
+        self.janfeb1=pd.read_csv("2019MOCOJANFEB.csv")
+        self.janfeb2 = pd.read_csv("2019JANFEBSEG.csv")
+        for title in [self.janfeb2]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
         folderExists = os.path.exists("Deliverables/MOCO/MOCOJanuaryFebuary19")
         if folderExists == False:
             os.makedirs("Deliverables/MOCO/MOCOJanuaryFebuary19")
         elif folderExists == True:
             pass
-        
     
+    def first_deliverable(self):
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends")
+        elif folderExists == True:
+            pass
+        # POPULAR ROUTES/SEGMENTS JAN-FEB
+        monthlist = ["JANUARY", "FEBRUARY"]
+        routes=round(self.janfeb1.groupby('route_id')[['boardings','alightings']].agg('sum').reset_index(),2)
+        routesordered=routes.nlargest(len(routes),'boardings').reset_index()
+        routesordered=routesordered.drop(labels='index',axis=1)
+        routesordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/AllRoutesBoarding.csv") # to_csv to make record
+        topfive = routesordered.iloc[0:]
+
+        bymonth=round(self.janfeb1.groupby('month')[['boardings','alightings']].agg('sum').reset_index(),2)
+        bymonth.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/BoardingbyMonth.csv") # to_csv to make record
+
+        df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[0:2]})
+
+        fig1, axes = plt.subplots(2, figsize=(20,10))
+        sns.barplot(ax=axes[0],data=topfive, x='route_id',y="boardings")
+        axes[0].set_ylim(0,topfive['boardings'].max()+(topfive['boardings'].max()*0.35))
+        sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
+        axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/AllRoutesBoarding.png")
+        
+        #STATIONS
+        stops=round(self.janfeb1.groupby('stops')[['boardings','alightings']].agg('sum').reset_index(),2)
+        dataa = stops.nlargest(len(stops),'boardings')
+        fig2, axes1 = plt.subplots(1, figsize=(20,10))
+
+        sns.barplot(data=dataa[0:10], x="boardings", y="stops")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/TopStopsBoarding.png")
+        a=stops.nlargest(len(stops),'boardings') # to_csv to make record
+        b=stops.nlargest(len(stops),'alightings') # to_csv to make record
+        a.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/StopsBoarding.csv")
+        b.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/StopsAlighting.csv")
+        
+        #TOD
+        todroutes=round(self.janfeb1.groupby(['hour','route_id'])[['boardings','alightings']].agg('sum').reset_index(),2)
+        todroutes=todroutes.nlargest(len(todroutes),'boardings')
+        todroutes # to_csv to make record
+
+        fig3, axes2 = plt.subplots(2, figsize=(20,15))
+        axes2[0]=sns.barplot(ax=axes2[0],data=todroutes, x='hour',y="boardings",ci=None)
+        axes2[1]=sns.barplot(ax=axes2[1],data=todroutes, x='route_id',y='boardings',ci=None)
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/BoardingbyHour.png")
+        c=todroutes.nlargest(len(todroutes),'boardings') # to_csv to make record
+        d=todroutes.nlargest(len(todroutes),'alightings') # to_csv to make record
+        c.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/TODRoutesBoardings.csv")
+        d.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/TODRoutesAlighting.csv")
+        
+        # BOARDING LOCATIONS
+        boardings=round(self.janfeb1.groupby('stops')['boardings'].agg('sum').reset_index(),2)
+        boardingsordered=boardings.nlargest(len(boardings),'boardings')
+        boardingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/BoardingLocations.csv") # to_csv to make record
+        
+        # ALIGHTING LOCATIONS
+        alightings=round(self.janfeb1.groupby('stops')['alightings'].agg('sum').reset_index(),2)
+        alightingsordered=alightings.nlargest(len(alightings),'alightings')
+        alightingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/AlightingLocations.csv") # to_csv to make record
+        
     def route_analysis(self):
-        alljanfeb=self.janfeb.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOJanuaryFebuary19/RoutePerfAnalysis")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO/MOCOJanuaryFebuary19/RoutePerfAnalysis")
+        elif folderExists == True:
+            pass
+        alljanfeb=self.janfeb2.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         alljanfeb['total']=alljanfeb['early']+alljanfeb['on_time']+alljanfeb['late']
         alljanfeb['early %']=round(alljanfeb['early']/alljanfeb['total'],2)
         alljanfeb['on_time %']=round(alljanfeb['on_time']/alljanfeb['total'],2)
@@ -596,7 +663,7 @@ class MOCOJanuaryFebuary19:
         routelist = ["Route46", "Route55", "Route100"]
         numlist = ["46", "55", "100"]
         
-        segments=self.janfeb.groupby(['route', "stops"])[['early','on_time','late']].agg('sum').reset_index()
+        segments=self.janfeb2.groupby(['route', "stops"])[['early','on_time','late']].agg('sum').reset_index()
         segments['total']=segments['early']+segments['on_time']+segments['late']
         segments['early %']=round(segments['early']/segments['total'],2)
         segments['on_time %']=round(segments['on_time']/segments['total'],2)
@@ -604,11 +671,11 @@ class MOCOJanuaryFebuary19:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "MOCOJanuaryFebuary19", "MOCO")
+            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "MOCOJanuaryFebuary19", "MOCO", "RoutePerfAnalysis")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
-            x.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/Route"+num+".csv", index=False, encoding='utf-8')
+            x.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/RoutePerfAnalysis/Route"+num+".csv", index=False, encoding='utf-8')
 
 class MOCOMarchMay19:
     def __init__(self):
@@ -622,6 +689,11 @@ class MOCOMarchMay19:
             pass
     
     def route_analysis(self):
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOMarchMay19/RoutePerfAnalysis")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO/MOCOMarchMay19/RoutePerfAnalysis")
+        elif folderExists == True:
+            pass
         allmarmay=self.marmay.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         allmarmay['total']=allmarmay['early']+allmarmay['on_time']+allmarmay['late']
         allmarmay['early %']=round(allmarmay['early']/allmarmay['total'],2)
@@ -644,24 +716,29 @@ class MOCOMarchMay19:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "MOCOMarchMay19", "MOCO")
+            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "MOCOMarchMay19", "MOCO", "RoutePerfAnalysis")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
-            x.to_csv("Deliverables/MOCO/MOCOMarchMay19/Route"+num+".csv", index=False, encoding='utf-8')
+            x.to_csv("Deliverables/MOCO/MOCOMarchMay19/RoutePerfAnalysis/Route"+num+".csv", index=False, encoding='utf-8')
 
-class MOCOSeptemberJanuary19:
+class MOCOAugustJanuary19:
     def __init__(self):
         self.sepjan = pd.read_csv("2019SEPJANSEG.csv")
         for title in [self.sepjan]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
-        folderExists = os.path.exists("Deliverables/MOCO/MOCOSeptJanuary19")
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOAugustJanuary19")
         if folderExists == False:
-            os.makedirs("Deliverables/MOCO/MOCOSeptJanuary19")
+            os.makedirs("Deliverables/MOCO/MOCOAugustJanuary19")
         elif folderExists == True:
             pass
     
     def route_analysis(self):
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOAugustJanuary19/RoutePerfAnalysis")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO/MOCOAugustJanuary19/RoutePerfAnalysis")
+        elif folderExists == True:
+            pass
         allsepjan=self.sepjan.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         allsepjan['total']=allsepjan['early']+allsepjan['on_time']+allsepjan['late']
         allsepjan['early %']=round(allsepjan['early']/allsepjan['total'],2)
@@ -684,11 +761,11 @@ class MOCOSeptemberJanuary19:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allsepjan['early %'].iloc[num],allsepjan['on_time %'].iloc[num],allsepjan['late %'].iloc[num]], num, route, "MOCOSeptJanuary19", "MOCO")
+            makepies(('early','on_time','late'),[allsepjan['early %'].iloc[num],allsepjan['on_time %'].iloc[num],allsepjan['late %'].iloc[num]], num, route, "MOCOAugustJanuary19", "MOCO", "RoutePerfAnalysis")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
-            x.to_csv("Deliverables/MOCO/MOCOSeptJanuary19/Route"+num+".csv", index=False, encoding='utf-8')
+            x.to_csv("Deliverables/MOCO/MOCOAugustJanuary19//RoutePerfAnalysis/Route"+num+".csv", index=False, encoding='utf-8')
 
 
 class MOCOJanuaryFebuary20:
@@ -703,6 +780,11 @@ class MOCOJanuaryFebuary20:
             pass
     
     def route_analysis(self):
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOJanuaryFebuary20/RoutePerfAnalysis")
+        if folderExists == False:
+            os.makedirs("Deliverables/MOCO/MOCOJanuaryFebuary20/RoutePerfAnalysis")
+        elif folderExists == True:
+            pass
         alljanfeb=self.janfeb.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         alljanfeb['total']=alljanfeb['early']+alljanfeb['on_time']+alljanfeb['late']
         alljanfeb['early %']=round(alljanfeb['early']/alljanfeb['total'],2)
@@ -725,11 +807,11 @@ class MOCOJanuaryFebuary20:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "MOCOJanuaryFebuary20", "MOCO")
+            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "MOCOJanuaryFebuary20", "MOCO", "RoutePerfAnalysis")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
-            x.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary20/Route"+num+".csv", index=False, encoding='utf-8')
+            x.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary20/RoutePerfAnalysis/Route"+num+".csv", index=False, encoding='utf-8')
 
 class MOCOMarchMay20:
     def __init__(self):
@@ -771,14 +853,14 @@ class MOCOMarchMay20:
             x = segments[segments["route"]==int(num)]
             x.to_csv("Deliverables/MOCO/MOCOMarchMay20/Route"+num+".csv", index=False, encoding='utf-8')
 
-class MOCOSeptemberJanuary20:
+class MOCOAugustJanuary20:
     def __init__(self):
         self.sepjan = pd.read_csv("2020OCTJANSEG.csv")
         for title in [self.sepjan]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
-        folderExists = os.path.exists("Deliverables/MOCO/MOCOOctoberJanuary20")
+        folderExists = os.path.exists("Deliverables/MOCO/MOCOAugustJanuary20")
         if folderExists == False:
-            os.makedirs("Deliverables/MOCO/MOCOOctoberJanuary20")
+            os.makedirs("Deliverables/MOCO/MOCOAugustJanuary20")
         elif folderExists == True:
             pass
     
@@ -805,16 +887,16 @@ class MOCOSeptemberJanuary20:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allsepjan['early %'].iloc[num],allsepjan['on_time %'].iloc[num],allsepjan['late %'].iloc[num]], num, route, "MOCOOctoberJanuary20", "MOCO")
+            makepies(('early','on_time','late'),[allsepjan['early %'].iloc[num],allsepjan['on_time %'].iloc[num],allsepjan['late %'].iloc[num]], num, route, "MOCOAugustJanuary20", "MOCO")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
-            x.to_csv("Deliverables/MOCO/MOCOOctoberJanuary20/Route"+num+".csv", index=False, encoding='utf-8')
+            x.to_csv("Deliverables/MOCO/MOCOAugustJanuary20/Route"+num+".csv", index=False, encoding='utf-8')
     
     
     
     
-def makepies(number,filling, count, name, folder, county):
+def makepies(number,filling, count, name, folder, county, deliverable):
         labels = number
         sizes = filling
         explode = (0, 0, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
@@ -825,12 +907,14 @@ def makepies(number,filling, count, name, folder, county):
         ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
         plt.title(name)
         
-        x = plt.savefig("Deliverables/"+county+"/"+folder+"/"+name+".png")
+        x = plt.savefig("Deliverables/"+county+"/"+folder+"/"+deliverable+"/"+name+".png")
         return x 
 
 def main():
-    county = input("Welcome, please choose a county (Moco or PG):  ")
-    if county.upper() == "PG":
+    county = int(input("Welcome, please choose a county: \n"
+                   "(1)Prince George's County \n"
+                   "(2)Montgomery County\n"))
+    if county == 1:
         folderExists = os.path.exists("Deliverables/PG")
         if folderExists == False:
             os.makedirs("Deliverables/PG")
@@ -863,11 +947,13 @@ def main():
             elif timeframe==2:
                 pg = PGMarchMay20()
                 pg.route_analysis()
+                pg.third_del()
             elif timeframe==3:
                 pg = PGAugustJanuary20()
                 pg.route_analysis()
+                pg.third_del()
     
-    elif county.upper() == "MOCO":
+    elif county == 2:
         folderExists = os.path.exists("Deliverables/MOCO")
         if folderExists == False:
             os.makedirs("Deliverables/MOCO")
@@ -878,15 +964,16 @@ def main():
             timeframe = int(input("Great. What timeframe are you interested in? \n"
                             "(1)January to Febuary \n"
                             "(2)March to May \n"
-                            "(3)September to January\n"))
+                            "(3)August to January\n"))
             if timeframe == 1:
                 moco = MOCOJanuaryFebuary19()
+                moco.first_deliverable()
                 moco.route_analysis()
             elif timeframe==2:
                 moco = MOCOMarchMay19()
                 moco.route_analysis()
             elif timeframe==3:
-                moco = MOCOSeptemberJanuary19()
+                moco = MOCOAugustJanuary19()
                 moco.route_analysis()
         elif year == 2020:
             timeframe = int(input("Great. What timeframe are you interested in? \n"
@@ -900,11 +987,10 @@ def main():
                 pg = MOCOMarchMay20()
                 pg.route_analysis()
             elif timeframe==3:
-                pg = MOCOSeptemberJanuary20()
+                pg = MOCOAugustJanuary20()
                 pg.route_analysis()
         
     
-        
 
 
 main()
