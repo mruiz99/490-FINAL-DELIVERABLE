@@ -1,7 +1,0 @@
-route,stops,early,on_time,late,total,early %,on_time %,late %
-11,Hanover Pkwy at Greenway Center Dr,162,957,38,1157,0.14,0.83,0.03
-11,Cherrywood Ln at Greenbelt Federal Courthouse,360,1799,147,2306,0.16,0.78,0.06
-11,Crescent Rd at Gardenway,645,1587,77,2309,0.28,0.69,0.03
-11,Mandan Rd at Hanover Pkwy,397,734,29,1160,0.34,0.63,0.02
-11,Greenbelt Metro Station (Arrival),366,1212,371,1949,0.19,0.62,0.19
-11,Greenbelt Metro Station Bus Bay A,689,531,13,1233,0.56,0.43,0.01
