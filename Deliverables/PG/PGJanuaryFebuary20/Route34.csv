@@ -1,0 +1,5 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+34,Suitland Metrorail Station Bay D,308,1699,130,2137,0.14,0.8,0.06
+34,4258 Whitehall Square Apts,443,1510,311,2264,0.2,0.67,0.14
+34,3930 Capitol Crossing Apts,579,1330,331,2240,0.26,0.59,0.15
+34,Suitland Metro - Arrival,407,1127,534,2068,0.2,0.54,0.26

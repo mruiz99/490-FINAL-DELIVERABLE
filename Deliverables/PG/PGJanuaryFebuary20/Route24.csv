@@ -1,0 +1,11 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+24,Capitol Heights Station Bay B,75,765,62,902,0.08,0.85,0.07
+24,Council Dr at Kipling Pkwy,165,700,75,940,0.18,0.74,0.08
+24,Brooks Drive at Marlboro Pike,189,620,56,865,0.22,0.72,0.06
+24,Morgan Blvd Metro Station,353,1008,249,1610,0.22,0.63,0.15
+24,District Heights Municipal Bldg,508,1023,121,1652,0.31,0.62,0.07
+24,Old Forestville Rd at Forestville Rd,589,1101,130,1820,0.32,0.6,0.07
+24,Brooks Dr at Marlboro Pike,339,533,69,941,0.36,0.57,0.07
+24,Denise Dr at Rollins Ave,646,942,93,1681,0.38,0.56,0.06
+24,Kipling Pkwy at Council Dr,334,478,67,879,0.38,0.54,0.08
+24,Capitol Heights - Arrival,241,300,359,900,0.27,0.33,0.4

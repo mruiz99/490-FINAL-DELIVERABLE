@@ -192,7 +192,7 @@ class PGJanuaryFebuary20:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "PGJanuaryFebuary20"), "PG"
+            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "PGJanuaryFebuary20", "PG")
         for num in numlist:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGJanuaryFebuary20/Route"+num+".csv", index=False, encoding='utf-8')

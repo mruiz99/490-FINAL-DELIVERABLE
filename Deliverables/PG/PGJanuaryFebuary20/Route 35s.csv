@@ -1,0 +1,6 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+ 35s,11711 Livingston Rd at Fort Washington Medical Center,19,46,10,75,0.25,0.61,0.13
+ 35s,STARS ENTRANCE GAYLORD HOTEL,17,41,12,70,0.24,0.59,0.17
+ 35s,Oxon Hill Fringe Lot,4,30,18,52,0.08,0.58,0.35
+ 35s,10800 Indian Head Highway at Fort Washington Manor,27,35,6,68,0.4,0.51,0.09
+ 35s,Oxon Hill Rd OXON HILL FRINGE at Oxon Rd (arrival) (Arrival),8,16,31,55,0.15,0.29,0.56

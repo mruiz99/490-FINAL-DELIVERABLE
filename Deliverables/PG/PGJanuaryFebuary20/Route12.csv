@@ -1,0 +1,8 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+12,Sargent Rd at Rollingcrest Commons,146,638,69,853,0.17,0.75,0.08
+12,Hamilton St at 36th Ave,157,558,165,880,0.18,0.63,0.19
+12,West Hyattsville Station,484,1281,350,2115,0.23,0.61,0.17
+12,28th Pl at Russell Ave,127,505,244,876,0.14,0.58,0.28
+12,Rhode Island Ave at 34th Street,282,425,111,818,0.34,0.52,0.14
+12,West Hyattsville Station (Arrival),98,187,113,398,0.25,0.47,0.28
+12,Gwendolyn Britt Center,358,418,118,894,0.4,0.47,0.13
