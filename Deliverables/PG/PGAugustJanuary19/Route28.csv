@@ -1,0 +1,10 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+28,Arena Dr at Captial Center Blvd,22,1113,81,1216,0.02,0.92,0.07
+28,Jericho Residences,14,986,182,1182,0.01,0.83,0.15
+28,9400 Peppercorn Pl,155,1407,174,1736,0.09,0.81,0.1
+28,RUBY LOCKHART BLVD AT CAMPUS WAY NORTH,280,1852,198,2330,0.12,0.79,0.08
+28,Campus Way North at Grey Gables Ct,407,1784,190,2381,0.17,0.75,0.08
+28,Jericho Residences (Southbound),161,892,155,1208,0.13,0.74,0.13
+28,1400 Merchantile Ln,465,1750,209,2424,0.19,0.72,0.09
+28,Largo Town Center Station at Bus Bay E,1072,3128,845,5045,0.21,0.62,0.17
+28,Arena Dr at Shoppers Way (Largo),676,532,50,1258,0.54,0.42,0.04

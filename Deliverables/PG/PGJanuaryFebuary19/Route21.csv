@@ -1,0 +1,12 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+21,New Carrollton Station,238,601,93,932,0.26,0.64,0.1
+21,Campus Way South at College Station Dr (PGCC),330,1136,349,1815,0.18,0.63,0.19
+21,Largo Town Center Station,256,1127,430,1813,0.14,0.62,0.24
+21,Largo Rd at Black Swan Dr,186,512,125,823,0.23,0.62,0.15
+21,Largo Rd at Hancock Dr,233,570,167,970,0.24,0.59,0.17
+21,9400 Peppercorn Pl,402,1042,345,1789,0.22,0.58,0.19
+21,Brightseat Rd at Maple Ridge Apts,410,1008,356,1774,0.23,0.57,0.2
+21,County Courthouse,459,1052,414,1925,0.24,0.55,0.22
+21,Elm St at Gov Oden Bowie Dr,448,380,83,911,0.49,0.42,0.09
+21,New Carrollton Station - Arrival,360,370,153,883,0.41,0.42,0.17
+21,Equestrian Center Lot 1,6,1,0,7,0.86,0.14,0.0

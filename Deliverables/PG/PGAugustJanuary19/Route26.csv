@@ -1,0 +1,6 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+26,Motor Vehicle Administration,530,1438,230,2198,0.24,0.65,0.1
+26,Campus Way South at College Station Dr (PGCC),565,1577,483,2625,0.22,0.6,0.18
+26,Hampton Park Boulevard at Steeplechase,649,1490,488,2627,0.25,0.57,0.19
+26,Largo Town Center Station,415,1420,797,2632,0.16,0.54,0.3
+26,Morgan Blvd Metro Station,194,1279,1003,2476,0.08,0.52,0.41

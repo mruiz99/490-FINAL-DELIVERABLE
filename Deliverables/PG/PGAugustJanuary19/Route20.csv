@@ -1,0 +1,12 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+20,County Administration Building,47,1415,178,1640,0.03,0.86,0.11
+20,Old Marlboro Pike at John Rogers Blvd,497,2311,879,3687,0.13,0.63,0.24
+20,Courthouse,419,2297,959,3675,0.11,0.63,0.26
+20,Melwood Training Center,531,1876,642,3049,0.17,0.62,0.21
+20,Old Marlboro Pike at Roblee Dr,568,2290,882,3740,0.15,0.61,0.24
+20,Marlboro Pike at Melwood Mall,656,2250,818,3724,0.18,0.6,0.22
+20,Donnell Dr at Marlboro Pike,319,1052,500,1871,0.17,0.56,0.27
+20,Addison Rd Metrorail Station,767,876,90,1733,0.44,0.51,0.05
+20,Donnell Drive at Target Store,797,967,115,1879,0.42,0.51,0.06
+20,CAB - Arrival,298,663,592,1553,0.19,0.43,0.38
+20,Addison Rd Metrorail - Arrival,836,607,486,1929,0.43,0.31,0.25

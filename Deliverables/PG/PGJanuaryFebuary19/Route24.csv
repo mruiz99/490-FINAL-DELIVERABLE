@@ -1,0 +1,13 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+24,Capitol Heights Station Bay B,46,890,81,1017,0.05,0.88,0.08
+24,Silver Hill Rd at Penn Station,188,739,71,998,0.19,0.74,0.07
+24,Denise Dr at Dutton Way,457,1373,142,1972,0.23,0.7,0.07
+24,Council Dr at Kipling Pkwy,274,710,72,1056,0.26,0.67,0.07
+24,Old Forestville Rd at Forestville Rd,600,1317,154,2071,0.29,0.64,0.07
+24,Silver Hill Rd at Pennsylvania Ave,297,679,83,1059,0.28,0.64,0.08
+24,Morgan Blvd Metro Station,553,1156,138,1847,0.3,0.63,0.07
+24,District Heights Municipal Bldg,593,1174,124,1891,0.31,0.62,0.07
+24,Kipling Pkwy at Council Dr,325,610,64,999,0.33,0.61,0.06
+24,Walker Mill Road at Marlboro Pike,438,507,34,979,0.45,0.52,0.03
+24,Brooks Dr at Marlboro Pike,470,527,66,1063,0.44,0.5,0.06
+24,Capitol Heights - Arrival,715,315,53,1083,0.66,0.29,0.05

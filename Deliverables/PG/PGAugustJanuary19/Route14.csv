@@ -1,0 +1,11 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+14,Belcrest Rd at PG Plaza Entrance,166,553,696,1415,0.12,0.39,0.49
+14,PG Plaza Station Bus Bay H,423,458,287,1168,0.36,0.39,0.25
+14,Auburn Ave at Riverdale Rd,555,1087,1125,2767,0.2,0.39,0.41
+14,River Rd at Rivertech Ct,508,658,641,1807,0.28,0.36,0.35
+14,Riverdale Rd at 57th Ave,643,947,1167,2757,0.23,0.34,0.42
+14,College Park Station - Arrival,161,194,239,594,0.27,0.33,0.4
+14,Riverdale Rd at Taylor Rd,640,460,289,1389,0.46,0.33,0.21
+14,Taylor Rd at Riverdale Rd,22,427,932,1381,0.02,0.31,0.67
+14,College Park Station,480,289,186,955,0.5,0.3,0.19
+14,Prince George's Plaza - Arrival,117,288,721,1126,0.1,0.26,0.64

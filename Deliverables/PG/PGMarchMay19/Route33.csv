@@ -1,0 +1,10 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+33,Old Branch Ave at Allentown Way,166,706,249,1121,0.15,0.63,0.22
+33,Owens Rd at Southern Ave,259,1390,641,2290,0.11,0.61,0.28
+33,Padgett's Corner,544,1302,439,2285,0.24,0.57,0.19
+33,Southern Ave Station Bay E,375,641,131,1147,0.33,0.56,0.11
+33,Fisher Rd at Clow Ct,583,1231,494,2308,0.25,0.53,0.21
+33,Southern Ave Station Bay E - Arrival,242,578,325,1145,0.21,0.5,0.28
+33,Temple Hill Rd at St Barnabas Rd,560,1149,608,2317,0.24,0.5,0.26
+33,Owens Rd at Wheeler Rd,500,1120,690,2310,0.22,0.48,0.3
+33,Old Branch Ave at Allentown Way - Arrival,307,440,396,1143,0.27,0.38,0.35

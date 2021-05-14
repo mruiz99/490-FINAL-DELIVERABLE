@@ -54,7 +54,7 @@ class PGJanuaryFebuary19:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "PGJanuaryFebuary19")
+            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "PGJanuaryFebuary19", "PG")
         for num in numlist:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGJanuaryFebuary19/Route"+num+".csv", index=False, encoding='utf-8')
@@ -99,7 +99,7 @@ class PGMarchMay19:
         segments['late %']=round(segments['late']/segments['total'],2)
         segments=segments.nlargest(len(segments), 'on_time %')
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "PGMarchMay19")
+            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "PGMarchMay19", "PG")
         for num in numlist:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGMarchMay19/Route"+num+".csv", index=False, encoding='utf-8')
@@ -145,7 +145,7 @@ class PGAugustJanuary19:
         segments['late %']=round(segments['late']/segments['total'],2)
         segments=segments.nlargest(len(segments), 'on_time %')
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allaugjan['early %'].iloc[num],allaugjan['on_time %'].iloc[num],allaugjan['late %'].iloc[num]], num, route, "PGAugustJanuary19")
+            makepies(('early','on_time','late'),[allaugjan['early %'].iloc[num],allaugjan['on_time %'].iloc[num],allaugjan['late %'].iloc[num]], num, route, "PGAugustJanuary19", "PG")
         for num in numlist:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGAugustJanuary19/Route"+num+".csv", index=False, encoding='utf-8')
@@ -190,7 +190,7 @@ class PGJanuaryFebuary20:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "PGJanuaryFebuary20")
+            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "PGJanuaryFebuary20"), "PG"
         for num in numlist:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGJanuaryFebuary20/Route"+num+".csv", index=False, encoding='utf-8')   
@@ -235,7 +235,7 @@ class PGMarchMay20:
         segments['late %']=round(segments['late']/segments['total'],2)
         segments=segments.nlargest(len(segments), 'on_time %')
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "PGMarchMay20")
+            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "PGMarchMay20", "PG")
         for num in numlist:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGMarchMay20/Route"+num+".csv", index=False, encoding='utf-8')
@@ -280,7 +280,7 @@ class PGAugustJanuary20:
         segments['late %']=round(segments['late']/segments['total'],2)
         segments=segments.nlargest(len(segments), 'on_time %')
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allaugjan['early %'].iloc[num],allaugjan['on_time %'].iloc[num],allaugjan['late %'].iloc[num]], num, route, "PGAugustJanuary20")
+            makepies(('early','on_time','late'),[allaugjan['early %'].iloc[num],allaugjan['on_time %'].iloc[num],allaugjan['late %'].iloc[num]], num, route, "PGAugustJanuary20", "PG")
         for num in numlist:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGAugustJanuary20/Route"+num+".csv", index=False, encoding='utf-8')
@@ -323,7 +323,7 @@ class MOCOJanuaryFebuary19:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "MOCOJanuaryFebuary19")
+            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "MOCOJanuaryFebuary19", "MOCO")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
@@ -363,11 +363,11 @@ class MOCOMarchMay19:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "MOCOMarchMay19")
+            makepies(('early','on_time','late'),[allmarmay['early %'].iloc[num],allmarmay['on_time %'].iloc[num],allmarmay['late %'].iloc[num]], num, route, "MOCOMarchMay19", "MOCO")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
-            x.to_csv("Deliverables/MOCOMarchMay19/Route"+num+".csv", index=False, encoding='utf-8')
+            x.to_csv("Deliverables/MOCO/MOCOMarchMay19/Route"+num+".csv", index=False, encoding='utf-8')
 
 class MOCOSeptemberJanuary19:
     def __init__(self):
@@ -403,11 +403,11 @@ class MOCOSeptemberJanuary19:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[allsepjan['early %'].iloc[num],allsepjan['on_time %'].iloc[num],allsepjan['late %'].iloc[num]], num, route, "MOCOSeptJanuary19")
+            makepies(('early','on_time','late'),[allsepjan['early %'].iloc[num],allsepjan['on_time %'].iloc[num],allsepjan['late %'].iloc[num]], num, route, "MOCOSeptJanuary19", "MOCO")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
-            x.to_csv("Deliverables/MOCOSeptJanuary19/Route"+num+".csv", index=False, encoding='utf-8')
+            x.to_csv("Deliverables/MOCO/MOCOSeptJanuary19/Route"+num+".csv", index=False, encoding='utf-8')
 
 
 class MOCOJanuaryFebuary20:
@@ -444,13 +444,13 @@ class MOCOJanuaryFebuary20:
         segments=segments.nlargest(len(segments), 'on_time %')
         
         for num,route in zip(x,routelist):
-            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "MOCOJanuaryFebuary20")
+            makepies(('early','on_time','late'),[alljanfeb['early %'].iloc[num],alljanfeb['on_time %'].iloc[num],alljanfeb['late %'].iloc[num]], num, route, "MOCOJanuaryFebuary20", "MOCO")
         
         for num in numlist:
             x = segments[segments["route"]==int(num)]
             x.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary20/Route"+num+".csv", index=False, encoding='utf-8')
            
-def makepies(number,filling, count, name, folder):
+def makepies(number,filling, count, name, folder, county):
         labels = number
         sizes = filling
         explode = (0, 0, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
@@ -461,16 +461,16 @@ def makepies(number,filling, count, name, folder):
         ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
         plt.title(name)
         
-        x = plt.savefig("Deliverables/"+folder+"/"+name+".png")
+        x = plt.savefig("Deliverables/"+county+"/"+folder+"/"+name+".png")
         return x 
 
     
 def main():
     county = input("Welcome, please choose a county (Moco or PG):  ")
     if county.upper() == "MOCO":
-        folderExists = os.path.exists("Deliverables/MOCO")
+        folderExists = os.path.exists("Deliverables/MOCO/")
         if folderExists == False:
-            os.makedirs("Deliverables/MOCO")
+            os.makedirs("Deliverables/MOCO/")
         elif folderExists == True:
             pass
         year = int(input("What year would you like to take a look at? (2019 or 2020)\n"))
@@ -494,13 +494,13 @@ def main():
                             "(2)March to May \n"
                             "(3)August to January\n"))
             if timeframe == 1:
-                pg = PGJanuaryFebuary20()
+                pg = MOCOJanuaryFebuary20()
                 pg.route_analysis()
             elif timeframe==2:
-                pg = PGMarchMay20()
+                pg = MOCOMarchMay20()
                 pg.route_analysis()
             elif timeframe==3:
-                pg = PGAugustJanuary20()
+                pg = MOCOSeptemberJanuary20()
                 pg.route_analysis()
         
     elif county.upper() == "PG":
