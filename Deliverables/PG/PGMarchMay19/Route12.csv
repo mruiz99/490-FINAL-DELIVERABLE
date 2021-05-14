@@ -1,0 +1,9 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+12,Sargent Rd at Rollingcrest Commons,106,907,322,1335,0.08,0.68,0.24
+12,West Hyattsville Station,244,1840,613,2697,0.09,0.68,0.23
+12,28th Pl at Russell Ave,76,704,569,1349,0.06,0.52,0.42
+12,Cora B. Wood Senior Center,54,656,643,1353,0.04,0.48,0.48
+12,Gwendolyn Britt Center,148,623,656,1427,0.1,0.44,0.46
+12,Rhode Island Ave at Mt Rainier,94,582,682,1358,0.07,0.43,0.5
+12,38th St at Hamilton St,130,536,678,1344,0.1,0.4,0.5
+12,West Hyattsville Station (Arrival),140,515,677,1332,0.11,0.39,0.51

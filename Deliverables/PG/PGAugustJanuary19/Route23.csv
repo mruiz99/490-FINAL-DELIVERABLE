@@ -1,0 +1,11 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+23,Sheriff Rd at MLK Highway,207,2747,555,3509,0.06,0.78,0.16
+23,Sheriff Rd at Glen Willow Dr - South Side,325,2654,529,3508,0.09,0.76,0.15
+23,Willow Hill Dr at Hill Rd,20,1299,399,1718,0.01,0.76,0.23
+23,PG Sports Complex Front Ent.,366,2612,538,3516,0.1,0.74,0.15
+23,Nalley Rd at Capital View Dr,294,2559,649,3502,0.08,0.73,0.19
+23,Possum Ct at Walker Mill Dr,375,2482,642,3499,0.11,0.71,0.18
+23,Willow Hill Dr at Stevenson Ln,433,1213,138,1784,0.24,0.68,0.08
+23,Cheverly Station Bay D,344,2260,829,3433,0.1,0.66,0.24
+23,Addison Rd Metrorail - Arrival,440,920,375,1735,0.25,0.53,0.22
+23,Addison Rd Metrorail Station,1023,659,19,1701,0.6,0.39,0.01

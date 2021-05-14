@@ -1,0 +1,11 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+25,Capitol Heights Station,105,2129,151,2385,0.04,0.89,0.06
+25,East Capital Street at Old Central Ave,49,1031,137,1217,0.04,0.85,0.11
+25,Marlboro Pike at Nova Ave,73,969,151,1193,0.06,0.81,0.13
+25,Highview Pl at Sunbury Ct,480,1817,168,2465,0.19,0.74,0.07
+25,East Capitol St at Yost Pl,394,809,80,1283,0.31,0.63,0.06
+25,Southern Ave at C St,1050,1367,93,2510,0.42,0.54,0.04
+25,Benning Rd at Southern Ave,556,695,46,1297,0.43,0.54,0.04
+25,Benning Rd at Abel Ave,616,551,38,1205,0.51,0.46,0.03
+25,Capitol Heights - Arrival,798,905,742,2445,0.33,0.37,0.3
+25,Nova Ave at Marlboro Pike,1054,220,22,1296,0.81,0.17,0.02

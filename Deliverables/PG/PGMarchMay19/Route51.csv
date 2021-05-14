@@ -1,0 +1,5 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+51,Courthouse,2901,2257,1565,6723,0.43,0.34,0.23
+51,Equestrian Center Lot 1,1281,1093,811,3185,0.4,0.34,0.25
+51,County Administration Building,1611,1013,733,3357,0.48,0.3,0.22
+51,Equestrian Center Lot 1 (Arrival),1665,898,601,3164,0.53,0.28,0.19

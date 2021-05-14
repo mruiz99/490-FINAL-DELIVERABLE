@@ -1,0 +1,14 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+16,New Carrollton Station,10,944,235,1189,0.01,0.79,0.2
+16,Greenbelt Metro Station Bus Bay A,141,855,93,1089,0.13,0.79,0.09
+16,Cherrywood Ln at Greenbelt Rd (MD. RTE. 193),133,974,176,1283,0.1,0.76,0.14
+16,Hanover Pkwy at Greenway Center Dr,175,963,188,1326,0.13,0.73,0.14
+16,Lamont Dr at Donoghue Dr,255,832,101,1188,0.21,0.7,0.09
+16,Lamont Dr at Lamont Pl,180,891,267,1338,0.13,0.67,0.2
+16,Doctors Community Hospital,586,1714,287,2587,0.23,0.66,0.11
+16,57th Ave at Berwyn Rd,752,1511,287,2550,0.29,0.59,0.11
+16,Beltway Plaza Shopping Center,404,732,111,1247,0.32,0.59,0.09
+16,Greenbelt Metro Station (Arrival),404,712,138,1254,0.32,0.57,0.11
+16,Riverdale Rd at Carrollton Mall,915,1374,215,2504,0.37,0.55,0.09
+16,New Carrollton Station - Arrival,569,626,151,1346,0.42,0.47,0.11
+16,Hanover Pkwy at Ora Glen Dr,756,457,37,1250,0.6,0.37,0.03

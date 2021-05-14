@@ -1,0 +1,8 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+ 15 Express,New Carrollton Station Bay K,44,699,76,819,0.05,0.85,0.09
+ 15 Express,Goddard Space Flight Center Visitors Center (Southbound),290,551,16,857,0.34,0.64,0.02
+ 15 Express,Greenbelt Metro Station Bus Bay A,282,515,12,809,0.35,0.64,0.01
+ 15 Express,New Carrollton Station (Arrival),130,499,173,802,0.16,0.62,0.22
+ 15 Express,Goddard Space Flight Center Visitors Center (Northbound),241,513,91,845,0.29,0.61,0.11
+ 15 Express,Greenbelt Metro Station (Arrival),15,201,198,414,0.04,0.49,0.48
+ 15 Express,Greenbelt Station Parkway at S. Center Drive,539,304,8,851,0.63,0.36,0.01
