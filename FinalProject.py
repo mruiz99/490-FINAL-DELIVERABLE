@@ -229,6 +229,7 @@ class PGMarchMay20:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.marmay=pd.concat([self.mar,self.apr,self.may])
         self.marmay=pd.concat([self.mar,self.apr,self.may])
+        self.marmay3=pd.read_csv("2020marmay3.csv")
         folderExists = os.path.exists("Deliverables/PG/PGMarchMay20")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGMarchMay20")
@@ -264,6 +265,31 @@ class PGMarchMay20:
         for num in numlist:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGMarchMay20/Route"+num+".csv", index=False, encoding='utf-8')
+            
+    def third_del(self):
+        monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","OCT","NOV","DEC","JAN'21"]
+        routes=round(self.marmay3.groupby('route')[['boardings','alightings']].agg('sum').reset_index(),2)
+        routesordered=routes.nlargest(len(routes),'boardings').reset_index()
+        routesordered=routesordered.drop(labels='index',axis=1)
+        routesordered.to_csv("2020marmay_bestroutes.csv",encoding="utf-8")
+
+        bymonth=round(self.marmay3.groupby('month')[['boardings','alightings']].agg('sum').reset_index(),2)
+        bymonth.loc[0,'month']=monthlist[2]
+        bymonth.loc[1,'month']=monthlist[3]
+        bymonth.loc[2,'month']=monthlist[4]
+        bymonth.to_csv("2020marmay_boardings.csv",encoding="utf-8")
+
+        df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[2:5]})
+
+        fig, axes = plt.subplots(2, figsize=(20,15))
+        plt.subplots_adjust(hspace = 0.5)
+        sns.barplot(ax=axes[0],data=routesordered, x='route',y="boardings")
+        axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
+        axes[0].set_title("Best Performing Enhanced Routes 2020")
+        sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
+        axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
+        axes[1].set_title("Total Boardings for Enhanced Routes 2020")
+        plt.savefig("2020marmay_bestroutes.png")
          
 class PGAugustJanuary20:
     def __init__(self):
@@ -274,6 +300,7 @@ class PGAugustJanuary20:
         for title in [self.aug, self.sep, self.dec, self.jan20]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.augjan=pd.concat([self.aug,self.sep,self.dec,self.jan20])
+        self.augjan3=pd.read_csv("2020augjan3.csv")
         folderExists = os.path.exists("Deliverables/PG/PGAugustJanuary20")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGAugustJanuary20")
@@ -310,6 +337,33 @@ class PGAugustJanuary20:
             x = segments[segments["route"]==num]
             x.to_csv("Deliverables/PG/PGAugustJanuary20/Route"+num+".csv", index=False, encoding='utf-8')
 
+    def third_del(self):
+        monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","OCT","NOV","DEC","JAN'21"]
+        routes=round(self.augjan3.groupby('route')[['boardings','alightings']].agg('sum').reset_index(),2)
+        routesordered=routes.nlargest(len(routes),'boardings').reset_index()
+        routesordered=routesordered.drop(labels='index',axis=1)
+        routesordered.to_csv("2020augjan_bestroutes.csv",encoding="utf-8")
+
+        bymonth=round(self.augjan3.groupby('month')[['boardings','alightings']].agg('sum').reset_index(),2)
+        bymonth.loc[0,'month']=monthlist[5]
+        bymonth.loc[1,'month']=monthlist[6]
+        bymonth.loc[2,'month']=monthlist[7]
+        bymonth.loc[3,'month']=monthlist[8]
+        bymonth.loc[4,'month']=monthlist[9]
+        bymonth.loc[5,'month']=monthlist[10]
+        bymonth.to_csv("2020augjan_boardings.csv",encoding="utf-8")
+            
+        df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[5:]})
+
+        fig, axes = plt.subplots(2, figsize=(20,15))
+        plt.subplots_adjust(hspace = 0.5)
+        sns.barplot(ax=axes[0],data=routesordered, x='route',y="boardings")
+        axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
+        axes[0].set_title("Best Performing Enhanced Routes 2020")
+        sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
+        axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
+        axes[1].set_title("Total Boardings for Enhanced Routes 2020")
+        plt.savefig("2020augjan_bestroutes.png")
 
 
 
