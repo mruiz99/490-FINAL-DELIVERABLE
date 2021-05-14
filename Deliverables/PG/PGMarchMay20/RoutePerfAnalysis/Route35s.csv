@@ -1,0 +1,4 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+35s,Oxon Hill Rd OXON HILL FRINGE at Oxon Rd (arrival) (Arrival),2,4,1,7,0.29,0.57,0.14
+35s,STARS ENTRANCE GAYLORD HOTEL,2,0,0,2,1.0,0.0,0.0
+35s,Oxon Hill Fringe Lot,4,0,0,4,1.0,0.0,0.0
