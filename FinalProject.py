@@ -21,12 +21,80 @@ class PGJanuaryFebuary19:
         for title in [self.jan, self.feb]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.janfeb=pd.concat([self.jan,self.feb])
+        self.janfeb1=pd.read_csv("2019PGJANFEB.csv")
         folderExists = os.path.exists("Deliverables/PG/PGJanuaryFebuary19")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGJanuaryFebuary19")
         elif folderExists == True:
             pass
     
+    def first_del(self):
+        
+        # POPULAR ROUTES
+        
+        monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","OCT","NOV","DEC","JAN'20"]
+        routes=self.janfeb1.groupby('route')[['boardings','alightings']].agg('sum').reset_index()
+        routesordered=routes.nlargest(len(routes),'boardings').reset_index()
+        routesordered=routesordered.drop(labels='index',axis=1)
+        routesordered.to_csv("2019janbest_bestroutes.csv",encoding="utf-8")
+
+        bymonth=self.janfeb1.groupby('month')[['boardings','alightings']].agg('sum').reset_index()
+        bymonth.loc[0,'month']=monthlist[0]
+        bymonth.loc[1,'month']=monthlist[1]
+        bymonth.to_csv("2019janfeb_popular_routes.csv",encoding="utf-8")
+            
+        df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[0:2]})
+
+        fig, axes = plt.subplots(2, figsize=(20,15))
+        plt.subplots_adjust(hspace = 0.5)
+        sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
+        axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
+        axes[0].set_title("Most Popular Routes Jan-Feb 2019")
+        sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
+        axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
+        axes[1].set_title("Total Boardings for Jan-Feb 2019")
+        plt.savefig("2019janfeb_bestroutes.png")
+        
+        # POPULAR STOPS
+        
+        stops=self.janfeb1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index()
+        stops=stops.nlargest(len(stops),'boardings')
+
+        sns.barplot(data=stops[0:10],x="boardings",y="stop")
+        plt.savefig("2019janfeb_popularstops.png")
+        boardingsStops=stops.nlargest(len(stops),'boardings')
+        alightingsStops=stops.nlargest(len(stops),'alightings')
+        boardingsStops.to_csv("2019janfeb_topboardingsstops.csv",encoding="utf-8")
+        alightingsStops.to_csv("2019janfeb_topalightingsstops.csv",encoding="utf-8")
+        
+        # TIME OF DAY
+
+        todroutes=self.janfeb1.groupby(['hour','route'])[['boardings','alightings']].agg('sum').reset_index()
+        todroutes=todroutes.nlargest(len(todroutes),'boardings')
+
+        fig, axes = plt.subplots(2, figsize=(20,15))
+        plt.subplots_adjust(hspace = 0.5)
+        axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
+        axes[0].set_title("Boarding by the Hour Jan-Feb 2019")
+        axes[1]=sns.barplot(ax=axes[1],data=todroutes.iloc[0:20], x='route',y='boardings',ci=None)
+
+        boardingHours=todroutes.nlargest(len(todroutes),'boardings')
+        alightingHours=todroutes.nlargest(len(todroutes),'alightings')
+        boardingHours.to_csv("2019janfeb_topboardingshours.csv",encoding="utf-8")
+        alightingHours.to_csv("2019janfeb_topalightingshours.csv",encoding="utf-8")
+        
+        # BOARDING LOCATIONS
+
+        boardings=self.janfeb1.groupby('stop')['boardings'].agg('sum').reset_index()
+        boardingsordered=boardings.nlargest(len(boardings),'boardings')
+        boardingsordered.to_csv("2019janfeb_topboardinglocations.csv",encoding="utf-8")
+        
+        # ALIGHTING LOCATIONS
+
+        alightings=self.janfeb1.groupby('stop')['alightings'].agg('sum').reset_index()
+        alightingsordered=alightings.nlargest(len(alightings),'alightings')
+        alightingsordered.to_csv("2019janfeb_topalightinglocations.csv",encoding="utf-8")
+
     def route_analysis(self):
         alljanfeb=self.janfeb.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         alljanfeb['total']=alljanfeb['early']+alljanfeb['on_time']+alljanfeb['late']
@@ -66,12 +134,80 @@ class PGMarchMay19:
         for title in [self.mar, self.apr, self.may]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.marmay=pd.concat([self.mar,self.apr,self.may])
+        self.marmay1=pd.read_csv("2019PGMARMAY.csv")
         folderExists = os.path.exists("Deliverables/PG/PGMarchMay19")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGMarchMay19")
         elif folderExists == True:
             pass
         
+    def first_del(self):
+        
+        # POPULAR ROUTES
+        
+        monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","OCT","NOV","DEC","JAN'20"]
+        routes=self.marmay1.groupby('route')[['boardings','alightings']].agg('sum').reset_index()
+        routesordered=routes.nlargest(len(routes),'boardings').reset_index()
+        routesordered=routesordered.drop(labels='index',axis=1)
+        routesordered.to_csv("2019marmay_bestroutes.csv",encoding="utf-8")
+
+        bymonth=self.marmay1.groupby('month')[['boardings','alightings']].agg('sum').reset_index()
+        bymonth.loc[0,'month']=monthlist[2]
+        bymonth.loc[1,'month']=monthlist[3]
+        bymonth.loc[2,'month']=monthlist[4]
+        bymonth.to_csv("2019marmay_popular_routes.csv",encoding="utf-8")
+            
+        df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[2:5]})
+
+        fig, axes = plt.subplots(2, figsize=(20,15))
+        plt.subplots_adjust(hspace = 0.5)
+        sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
+        axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
+        axes[0].set_title("Most Popular Routes Mar-May 2019")
+        sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
+        axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
+        axes[1].set_title("Total Boardings for Mar-May 2019")
+        plt.savefig("2019marmay_bestroutes.png")
+        
+        # POPULAR STOPS
+        
+        stops=self.marmay1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index()
+        stops=stops.nlargest(len(stops),'boardings')
+
+        sns.barplot(data=stops[0:10],x="boardings",y="stop")
+        plt.savefig("2019marmay_popularstops.png")
+        boardingsStops=stops.nlargest(len(stops),'boardings')
+        alightingsStops=stops.nlargest(len(stops),'alightings')
+        boardingsStops.to_csv("2019marmay_topboardingstops.csv",encoding="utf-8")
+        alightingsStops.to_csv("2019marmay_topalightingstops.csv",encoding="utf-8")
+        
+        # TIME OF DAY
+
+        todroutes=self.marmay1.groupby(['hour','route'])[['boardings','alightings']].agg('sum').reset_index()
+        todroutes=todroutes.nlargest(len(todroutes),'boardings')
+
+        fig, axes = plt.subplots(2, figsize=(20,15))
+        plt.subplots_adjust(hspace = 0.5)
+        axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
+        axes[0].set_title("Boarding by the Hour Mar-May 2019")
+        axes[1]=sns.barplot(ax=axes[1],data=todroutes.iloc[0:20], x='route',y='boardings',ci=None)
+
+        boardingHours=todroutes.nlargest(len(todroutes),'boardings')
+        alightingHours=todroutes.nlargest(len(todroutes),'alightings')
+        boardingHours.to_csv("2019marmay_topboardingshours.csv",encoding="utf-8")
+        alightingHours.to_csv("2019marmay_topalightingshours.csv",encoding="utf-8")
+        
+        # BOARDING LOCATIONS
+
+        boardings=self.marmay1.groupby('stop')['boardings'].agg('sum').reset_index()
+        boardingsordered=boardings.nlargest(len(boardings),'boardings')
+        boardingsordered.to_csv("2019marmay_topboardinglocations.csv",encoding="utf-8")
+        
+        # ALIGHTING LOCATIONS
+
+        alightings=self.marmay1.groupby('stop')['alightings'].agg('sum').reset_index()
+        alightingsordered=alightings.nlargest(len(alightings),'alightings')
+        alightingsordered.to_csv("2019marmay_topalightinglocations.csv",encoding="utf-8")    
     
     def route_analysis(self):
         allmarmay=self.marmay.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
@@ -112,11 +248,84 @@ class PGAugustJanuary19:
         for title in [self.aug, self.sep, self.dec, self.jan20]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.augjan=pd.concat([self.aug,self.sep,self.dec,self.jan20])
+        self.augjan1=pd.read_csv("2019PGAUGJAN.csv")
         folderExists = os.path.exists("Deliverables/PG/PGAugustJanuary19")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGAugustJanuary19")
         elif folderExists == True:
             pass
+        
+    def first_del(self):
+        
+        # POPULAR ROUTES
+        
+        monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","DEC","JAN'21"]
+        routes=self.augjan1.groupby('route')[['boardings','alightings']].agg('sum').reset_index()
+        routesordered=routes.nlargest(len(routes),'boardings').reset_index()
+        routesordered=routesordered.drop(labels='index',axis=1)
+        routesordered.to_csv("2019augjan_bestroutes.csv",encoding="utf-8")
+
+        bymonth=self.augjan1.groupby('month')[['boardings','alightings']].agg('sum').reset_index()
+        bymonth.loc[1,'month']=monthlist[5]
+        bymonth.loc[2,'month']=monthlist[6]
+        bymonth.loc[3,'month']=monthlist[7]
+        bymonth.loc[0,'month']=monthlist[8]
+        bymonth.iloc[[1,2,3,0]]
+        bymonth.to_csv("2019augjan_popular_routes.csv",encoding="utf-8")
+            
+        df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[5:]})
+
+        fig, axes = plt.subplots(2, figsize=(20,15))
+        plt.subplots_adjust(hspace = 0.5)
+        sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
+        axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
+        axes[0].set_title("Most Popular Routes Aug'19-Jan'20")
+        sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
+        axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
+        axes[1].set_title("Total Boardings for Aug'19-Jan'20")
+        plt.savefig("2019augjan_bestroutes.png")
+        
+        # POPULAR STOPS
+        
+        stops=self.augjan1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index()
+        stops=stops.nlargest(len(stops),'boardings')
+
+        sns.barplot(data=stops[0:10],x="boardings",y="stop")
+        plt.savefig("2019augjan_best_stops.png")
+        boardingsStops=stops.nlargest(len(stops),'boardings')
+        alightingsStops=stops.nlargest(len(stops),'alightings')
+        boardingsStops.to_csv("2019augjan_topboardingstops.csv",encoding="utf-8")
+        alightingsStops.to_csv("2019augjan_topalightingstops.csv",encoding="utf-8")
+        
+        # TIME OF DAY
+
+        todroutes=self.augjan1.groupby(['hour','route'])[['boardings','alightings']].agg('sum').reset_index()
+        todroutes=todroutes.nlargest(len(todroutes),'boardings')
+
+        fig, axes = plt.subplots(2, figsize=(20,15))
+        plt.subplots_adjust(hspace = 0.5)
+        axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
+        axes[0].set_title("Boarding by the Hour Jan-Feb 2019")
+        axes[1]=sns.barplot(ax=axes[1],data=todroutes.iloc[0:20], x='route',y='boardings',ci=None)
+        plt.savefig("2019augjan_toproutes_byhours.png")
+
+        boardingHours=todroutes.nlargest(len(todroutes),'boardings')
+        alightingHours=todroutes.nlargest(len(todroutes),'alightings')
+        boardingHours.to_csv("2019augjan_topboardinghours.csv",encoding="utf-8")
+        alightingHours.to_csv("2019augjan_topalightinghours.csv",encoding="utf-8")
+        
+        # BOARDING LOCATIONS
+
+        boardings=self.augjan1.groupby('stop')['boardings'].agg('sum').reset_index()
+        boardingsordered=boardings.nlargest(len(boardings),'boardings')
+        boardingsordered.to_csv("2019augjan_topboardinglocations.csv",encoding="utf-8")
+        
+        # ALIGHTING LOCATIONS
+
+        alightings=self.augjan1.groupby('stop')['alightings'].agg('sum').reset_index()
+        alightingsordered=alightings.nlargest(len(alightings),'alightings')
+        alightingsordered.to_csv("2019augjan_topalightinglocations.csv",encoding="utf-8")
+
 
     
     def route_analysis(self):
@@ -197,25 +406,24 @@ class PGJanuaryFebuary20:
         stops=round(self.janfeb1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index(),2)
         stops=stops.nlargest(len(stops),'boardings')
         sns.barplot(data=stops[0:10],x="boardings",y="stop")
-        plt.show()
         plt.savefig("2020janfeb_popularstops.png")
         boardings=stops.nlargest(len(stops),'boardings')
         alightings=stops.nlargest(len(stops),'alightings')
-        boardings.to_csv("2020janfeb_topboardings.csv",encoding="utf-8")
-        alightings.to_csv("2020janfeb_topalightings.csv",encoding="utf8")
+        boardings.to_csv("2020janfeb_topboardingstops.csv",encoding="utf-8")
+        alightings.to_csv("2020janfeb_topalightingstops.csv",encoding="utf8")
         
         # TIME OF DAY
         
         todroutes=round(self.janfeb1.groupby(['hour','route'])[['boardings','alightings']].agg('sum').reset_index(),2)
         todroutes=todroutes.nlargest(len(todroutes),'boardings')
-        todroutes.to_csv("2020janfeb_tophours.csv",encoding="utf-8")
+        todroutes.to_csv("2020janfeb_topboardinghours.csv",encoding="utf-8")
 
         fig, axes = plt.subplots(2, figsize=(20,15))
         plt.subplots_adjust(hspace = 0.5)
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
         axes[0].set_title("Boarding by the Hour Jan-Feb 2020")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes[0:10], x='route',y='boardings',ci=None)
-        
+        plt.savefig("2020janfeb_topstops_byhour.ong")
         boardings2=todroutes.nlargest(len(todroutes),'boardings')
         alightings2=todroutes.nlargest(len(todroutes),'alightings')
         boardings2.to_csv("2020janfeb_topboardinghours.csv",encoding="utf-8")
@@ -442,33 +650,31 @@ class PGAugustJanuary20:
             pass
 
     def first_del(self):
-        # POPULAR ROUTES MAR-MAY
-
+        
+        # POPULAR ROUTES/SEGMENTS AUG-JAN
         monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","OCT","NOV","DEC","JAN'21"]
         routes=self.augjan1.groupby('route')[['boardings','alightings']].agg('sum').reset_index()
         routesordered=routes.nlargest(len(routes),'boardings').reset_index()
         routesordered=routesordered.drop(labels='index',axis=1)
-        routesordered.to_csv("2020augjan_bestroutes.csv",encoding="utf-8")
+        routesordered.to_csv("2020augjan_best_routes.csv",encoding="utf-8")
 
         bymonth=self.augjan1.groupby('month')[['boardings','alightings']].agg('sum').reset_index()
-        bymonth.loc[0,'month']=monthlist[5]
-        bymonth.loc[1,'month']=monthlist[6]
-        bymonth.loc[2,'month']=monthlist[7]
-        bymonth.loc[3,'month']=monthlist[8]
-        bymonth.loc[4,'month']=monthlist[9]
-        bymonth.loc[5,'month']=monthlist[10]
+        bymonth.loc[1,'month']=monthlist[5]
+        bymonth.loc[2,'month']=monthlist[6]
+        bymonth.loc[3,'month']=monthlist[7]
+        bymonth.loc[4,'month']=monthlist[8]
+        bymonth.loc[5,'month']=monthlist[9]
+        bymonth.loc[0,'month']=monthlist[10]
+        bymonth.iloc[[1,2,3,4,5,0]]
         bymonth.to_csv("2020augjan_popular_routes.csv",encoding="utf-8")
-            
+
         df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[5:]})
 
         fig, axes = plt.subplots(2, figsize=(20,15))
-        plt.subplots_adjust(hspace = 0.5)
-        sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
+        sns.barplot(ax=axes[0],data=routesordered, x='route',y="boardings")
         axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
-        axes[0].set_title("Most Popular Routes Aug'20-Jan'21")
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
-        axes[1].set_title("Total Boardings for Aug'20-Jan'21")
         plt.savefig("2020augjan_bestroutes.png")
         
         # POPULAR STOPS
@@ -493,6 +699,7 @@ class PGAugustJanuary20:
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
         axes[0].set_title("Boarding by the Hour Jan-Feb 2020")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes[0:10], x='route',y='boardings',ci=None)
+        plt.savefig("2020augjan_topstops_byhour.png")
         boardingHours=todroutes.nlargest(len(todroutes),'boardings')
         alightingHours=todroutes.nlargest(len(todroutes),'alightings')
         boardingHours.to_csv("2020augjan_topboardinghours.csv",encoding="utf-8")
@@ -509,6 +716,7 @@ class PGAugustJanuary20:
         alightings2=self.augjan1.groupby('stop')['alightings'].agg('sum').reset_index()
         alightingsordered=alightings2.nlargest(len(alightings2),'alightings')
         alightingsordered.to_csv("2020augjan_topalightinglocations.csv",encoding="utf-8")
+
 
     def route_analysis(self):
         allaugjan=self.augjan.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
@@ -587,16 +795,17 @@ class MOCOJanuaryFebuary19:
             os.makedirs("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends")
         elif folderExists == True:
             pass
-        # POPULAR ROUTES/SEGMENTS JAN-FEB
+        # POPULAR ROUTES
+        
         monthlist = ["JANUARY", "FEBRUARY"]
-        routes=round(self.janfeb1.groupby('route_id')[['boardings','alightings']].agg('sum').reset_index(),2)
+        routes=self.janfeb1.groupby('route_id')[['boardings','alightings']].agg('sum').reset_index()
         routesordered=routes.nlargest(len(routes),'boardings').reset_index()
         routesordered=routesordered.drop(labels='index',axis=1)
-        routesordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/AllRoutesBoarding.csv") # to_csv to make record
+        routesordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_popular_routes.csv") # to_csv to make record
         topfive = routesordered.iloc[0:]
 
-        bymonth=round(self.janfeb1.groupby('month')[['boardings','alightings']].agg('sum').reset_index(),2)
-        bymonth.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/BoardingbyMonth.csv") # to_csv to make record
+        bymonth=self.janfeb1.groupby('month')[['boardings','alightings']].agg('sum').reset_index()
+        bymonth.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_best_routes.csv")
 
         df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[0:2]})
 
@@ -605,43 +814,42 @@ class MOCOJanuaryFebuary19:
         axes[0].set_ylim(0,topfive['boardings'].max()+(topfive['boardings'].max()*0.35))
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
-        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/AllRoutesBoarding.png")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_best_routes.png")
         
-        #STATIONS
-        stops=round(self.janfeb1.groupby('stops')[['boardings','alightings']].agg('sum').reset_index(),2)
-        dataa = stops.nlargest(len(stops),'boardings')
+        # TOP STOPS
+        stops=self.janfeb1.groupby('stops')[['boardings','alightings']].agg('sum').reset_index()
+        stops = stops.nlargest(len(stops),'boardings')
         fig2, axes1 = plt.subplots(1, figsize=(20,10))
 
-        sns.barplot(data=dataa[0:10], x="boardings", y="stops")
-        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/TopStopsBoarding.png")
-        a=stops.nlargest(len(stops),'boardings') # to_csv to make record
-        b=stops.nlargest(len(stops),'alightings') # to_csv to make record
-        a.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/StopsBoarding.csv")
-        b.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/StopsAlighting.csv")
+        sns.barplot(data=stops[0:10], x="boardings", y="stops")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_best_routes.png")
+        a=stops.nlargest(len(stops),'boardings')
+        b=stops.nlargest(len(stops),'alightings')
+        a.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_topboardingstops.csv")
+        b.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_topalightingstops.csv")
         
         #TOD
-        todroutes=round(self.janfeb1.groupby(['hour','route_id'])[['boardings','alightings']].agg('sum').reset_index(),2)
+        todroutes=self.janfeb1.groupby(['hour','route_id'])[['boardings','alightings']].agg('sum').reset_index()
         todroutes=todroutes.nlargest(len(todroutes),'boardings')
-        todroutes # to_csv to make record
 
         fig3, axes2 = plt.subplots(2, figsize=(20,15))
         axes2[0]=sns.barplot(ax=axes2[0],data=todroutes, x='hour',y="boardings",ci=None)
         axes2[1]=sns.barplot(ax=axes2[1],data=todroutes, x='route_id',y='boardings',ci=None)
         plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/BoardingbyHour.png")
-        c=todroutes.nlargest(len(todroutes),'boardings') # to_csv to make record
-        d=todroutes.nlargest(len(todroutes),'alightings') # to_csv to make record
-        c.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/TODRoutesBoardings.csv")
-        d.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/TODRoutesAlighting.csv")
+        c=todroutes.nlargest(len(todroutes),'boardings')
+        d=todroutes.nlargest(len(todroutes),'alightings')
+        c.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_topboardingshours.csv")
+        d.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_topalightinghours.csv")
         
         # BOARDING LOCATIONS
-        boardings=round(self.janfeb1.groupby('stops')['boardings'].agg('sum').reset_index(),2)
+        boardings=self.janfeb1.groupby('stops')['boardings'].agg('sum').reset_index()
         boardingsordered=boardings.nlargest(len(boardings),'boardings')
-        boardingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/BoardingLocations.csv") # to_csv to make record
+        boardingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_topboardingslocations.csv")
         
         # ALIGHTING LOCATIONS
-        alightings=round(self.janfeb1.groupby('stops')['alightings'].agg('sum').reset_index(),2)
+        alightings=self.janfeb1.groupby('stops')['alightings'].agg('sum').reset_index()
         alightingsordered=alightings.nlargest(len(alightings),'alightings')
-        alightingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/AlightingLocations.csv") # to_csv to make record
+        alightingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_topalightinglocations.csv")
         
     def route_analysis(self):
         folderExists = os.path.exists("Deliverables/MOCO/MOCOJanuaryFebuary19/RoutePerfAnalysis")
@@ -680,6 +888,7 @@ class MOCOJanuaryFebuary19:
 class MOCOMarchMay19:
     def __init__(self):
         self.marmay = pd.read_csv("2019MARMAYSEG.csv")
+        self.marmay1=pd.read_csv("2019PGMARMAY.csv")
         for title in [self.marmay]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
         folderExists = os.path.exists("Deliverables/MOCO/MOCOMarchMay19")
@@ -687,7 +896,69 @@ class MOCOMarchMay19:
             os.makedirs("Deliverables/MOCO/MOCOMarchMay19")
         elif folderExists == True:
             pass
-    
+
+    def first_del(self):
+        
+        # POPULAR ROUTES
+        monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","OCT","NOV","DEC","JAN'20"]
+        routes=self.marmay1.groupby('route_id')[['boardings','alightings']].agg('sum').reset_index()
+        routesordered=routes.nlargest(len(routes),'boardings').reset_index()
+        routesordered=routesordered.drop(labels='index',axis=1)
+        routesordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_popular_routes.csv")
+        topfive = routesordered.iloc[0:]
+
+        bymonth=self.marmay1.groupby('month')[['boardings','alightings']].agg('sum').reset_index()
+        bymonth.loc[0,'month']=monthlist[2]
+        bymonth.loc[1,'month']=monthlist[3]
+        bymonth.loc[2,'month']=monthlist[4]
+        bymonth.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_best_routes.csv")
+
+        df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[2:5]})
+
+        fig1, axes = plt.subplots(2, figsize=(20,10))
+        sns.barplot(ax=axes[0],data=topfive, x='route_id',y="boardings")
+        axes[0].set_ylim(0,topfive['boardings'].max()+(topfive['boardings'].max()*0.35))
+        sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
+        axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_best_routes.png")
+
+        # TOP STOPS
+
+        stops=self.marmay1.groupby('stops')[['boardings','alightings']].agg('sum').reset_index()
+        stops = stops.nlargest(len(stops),'boardings')
+        fig2, axes1 = plt.subplots(1, figsize=(20,10))
+
+        sns.barplot(data=stops[0:10], x="boardings", y="stops")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_topstops.png")
+        a=stops.nlargest(len(stops),'boardings')
+        b=stops.nlargest(len(stops),'alightings')
+        a.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_topboardingstops.csv")
+        b.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_topalightingstops.csv")
+
+        # Time of Day
+        
+        todroutes=self.marmay1.groupby(['hour','route_id'])[['boardings','alightings']].agg('sum').reset_index()
+        todroutes=todroutes.nlargest(len(todroutes),'boardings')
+
+        fig3, axes2 = plt.subplots(2, figsize=(20,15))
+        axes2[0]=sns.barplot(ax=axes2[0],data=todroutes, x='hour',y="boardings",ci=None)
+        axes2[1]=sns.barplot(ax=axes2[1],data=todroutes, x='route_id',y='boardings',ci=None)
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/BoardingbyHour.png")
+        c=todroutes.nlargest(len(todroutes),'boardings')
+        d=todroutes.nlargest(len(todroutes),'alightings')
+        c.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_topboardingshours.csv")
+        d.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_topalightinghours.csv")
+
+        # BOARDING LOCATIONS
+        boardings=self.marmay1.groupby('stops')['boardings'].agg('sum').reset_index()
+        boardingsordered=boardings.nlargest(len(boardings),'boardings')
+        boardingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_topboardinglocations.csv")
+
+        # ALIGHTING LOCATIONS
+        alightings=self.marmay1.groupby('stops')['alightings'].agg('sum').reset_index()
+        alightingsordered=alightings.nlargest(len(alightings),'alightings')
+        alightingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019marmay_topalightinglocations.csv")
+
     def route_analysis(self):
         folderExists = os.path.exists("Deliverables/MOCO/MOCOMarchMay19/RoutePerfAnalysis")
         if folderExists == False:
@@ -725,6 +996,7 @@ class MOCOMarchMay19:
 class MOCOAugustJanuary19:
     def __init__(self):
         self.sepjan = pd.read_csv("2019SEPJANSEG.csv")
+        self.augjan1=pd.read_csv("2019PGAUGJAN.csv")
         for title in [self.sepjan]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
         folderExists = os.path.exists("Deliverables/MOCO/MOCOAugustJanuary19")
@@ -732,6 +1004,70 @@ class MOCOAugustJanuary19:
             os.makedirs("Deliverables/MOCO/MOCOAugustJanuary19")
         elif folderExists == True:
             pass
+        
+        def first_del(self):
+        
+            # POPULAR ROUTES
+            monthlist=["JAN","FEB","MAR","APR","MAY","AUG","SEP","OCT","NOV","DEC","JAN'20"]
+            routes=self.augjan1.groupby('route_id')[['boardings','alightings']].agg('sum').reset_index()
+            routesordered=routes.nlargest(len(routes),'boardings').reset_index()
+            routesordered=routesordered.drop(labels='index',axis=1)
+            routesordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_popular_routes.csv")
+            topfive = routesordered.iloc[0:]
+
+            bymonth=self.augjan1.groupby('month')[['boardings','alightings']].agg('sum').reset_index()
+            bymonth.loc[1,'month']=monthlist[5]
+            bymonth.loc[2,'month']=monthlist[6]
+            bymonth.loc[3,'month']=monthlist[7]
+            bymonth.loc[0,'month']=monthlist[8]
+            bymonth=bymonth.iloc[[1,2,3,0]]
+            bymonth.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_best_routes.csv")
+
+            df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[5:]})
+
+            fig1, axes = plt.subplots(2, figsize=(20,10))
+            sns.barplot(ax=axes[0],data=topfive, x='route_id',y="boardings")
+            axes[0].set_ylim(0,topfive['boardings'].max()+(topfive['boardings'].max()*0.35))
+            sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
+            axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
+            plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_best_routes.png")
+
+            # TOP STOPS
+
+            stops=self.augjan1.groupby('stops')[['boardings','alightings']].agg('sum').reset_index()
+            stops = stops.nlargest(len(stops),'boardings')
+            fig2, axes1 = plt.subplots(1, figsize=(20,10))
+
+            sns.barplot(data=stops[0:10], x="boardings", y="stops")
+            plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_topstops.png")
+            a=stops.nlargest(len(stops),'boardings')
+            b=stops.nlargest(len(stops),'alightings')
+            a.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_topboardingstops.csv")
+            b.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_topalightingstops.csv")
+
+            # Time of Day
+            
+            todroutes=self.augjan1.groupby(['hour','route_id'])[['boardings','alightings']].agg('sum').reset_index()
+            todroutes=todroutes.nlargest(len(todroutes),'boardings')
+
+            fig3, axes2 = plt.subplots(2, figsize=(20,15))
+            axes2[0]=sns.barplot(ax=axes2[0],data=todroutes, x='hour',y="boardings",ci=None)
+            axes2[1]=sns.barplot(ax=axes2[1],data=todroutes, x='route_id',y='boardings',ci=None)
+            plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/BoardingbyHour.png")
+            c=todroutes.nlargest(len(todroutes),'boardings')
+            d=todroutes.nlargest(len(todroutes),'alightings')
+            c.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_topboardingshours.csv")
+            d.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_topalightinghours.csv")
+
+            # BOARDING LOCATIONS
+            boardings=self.augjan1.groupby('stops')['boardings'].agg('sum').reset_index()
+            boardingsordered=boardings.nlargest(len(boardings),'boardings')
+            boardingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_topboardinglocations.csv")
+
+            # ALIGHTING LOCATIONS
+            alightings=self.augjan1.groupby('stops')['alightings'].agg('sum').reset_index()
+            alightingsordered=alightings.nlargest(len(alightings),'alightings')
+            alightingsordered.to_csv("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019augjan_topalightinglocations.csv")
     
     def route_analysis(self):
         folderExists = os.path.exists("Deliverables/MOCO/MOCOAugustJanuary19/RoutePerfAnalysis")
