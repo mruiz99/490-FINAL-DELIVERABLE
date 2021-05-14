@@ -24,7 +24,7 @@ class PGJanuaryFebuary19:
         self.janfeb=pd.concat([self.jan,self.feb])
         os.mkdir("Deliverables/PGJanuaryFebuary19")
     
-    def second_deliv(self):
+    def route_analysis(self):
         alljanfeb=self.janfeb.groupby('route')[['early','on_time','late']].agg('sum').reset_index()
         alljanfeb['total']=alljanfeb['early']+alljanfeb['on_time']+alljanfeb['late']
         alljanfeb['early %']=round(alljanfeb['early']/alljanfeb['total'],2)
