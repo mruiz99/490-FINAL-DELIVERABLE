@@ -49,7 +49,7 @@ class PGJanuaryFebruary19:
         df=pd.DataFrame({"bymonth":bymonth['boardings'],"month":monthlist[0:2]})
 
         fig, axes = plt.subplots(2, figsize=(20,15))
-        plt.subplots_adjust(hspace = 0.5)
+        plt.subplots_adjust(hspace = 0.3)
         sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
         axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
         axes[0].set_title("Most Popular Routes Jan-Feb 2019")
@@ -75,11 +75,13 @@ class PGJanuaryFebruary19:
         todroutes=self.janfeb1.groupby(['hour','route'])[['boardings','alightings']].agg('sum').reset_index()
         todroutes=todroutes.nlargest(len(todroutes),'boardings')
 
-        fig, axes = plt.subplots(2, figsize=(20,15))
+        fig1, axes = plt.subplots(2, figsize=(20,15))
         plt.subplots_adjust(hspace = 0.5)
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
         axes[0].set_title("Boarding by the Hour Jan-Feb 2019")
+        
         axes[1]=sns.barplot(ax=axes[1],data=todroutes.iloc[0:20], x='route',y='boardings',ci=None)
+        axes[1].set_title("Top Routes by Boarding Jan-Feb 2019")
         plt.savefig("Deliverables/PG/PGJanuaryFebruary19/BoardingAlightingTrends/2019janfeb_topstops_byhour.png")
 
         boardingHours=todroutes.nlargest(len(todroutes),'boardings')
