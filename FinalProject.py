@@ -52,10 +52,10 @@ class PGJanuaryFebruary19:
         plt.subplots_adjust(hspace = 0.3)
         sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
         axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
-        axes[0].set_title("Most Popular Routes Jan-Feb 2019")
+        axes[0].set_title("Most Popular Routes")
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
-        axes[1].set_title("Total Boardings for Jan-Feb 2019")
+        axes[1].set_title("Total Boardings")
         plt.savefig("Deliverables/PG/PGJanuaryFebruary19/BoardingAlightingTrends/2019janfeb_bestroutes.png")
         
         # POPULAR STOPS
@@ -178,10 +178,10 @@ class PGMarchMay19:
         plt.subplots_adjust(hspace = 0.5)
         sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
         axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
-        axes[0].set_title("Most Popular Routes Mar-May 2019")
+        axes[0].set_title("Most Popular Routes")
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
-        axes[1].set_title("Total Boardings for Mar-May 2019")
+        axes[1].set_title("Total Boardings")
         plt.savefig("Deliverables/PG/PGMarchMay19/BoardingAlightingTrends/2019marmay_bestroutes.png")
         
         # POPULAR STOPS
@@ -204,7 +204,7 @@ class PGMarchMay19:
         fig, axes = plt.subplots(2, figsize=(20,15))
         plt.subplots_adjust(hspace = 0.5)
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
-        axes[0].set_title("Boarding by the Hour Mar-May 2019")
+        axes[0].set_title("Boarding by the Hour")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes.iloc[0:20], x='route',y='boardings',ci=None)
         axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGMarchMay19/BoardingAlightingTrends/2019marmay_topstops_byhour.png")
@@ -304,10 +304,10 @@ class PGAugustJanuary19:
         plt.subplots_adjust(hspace = 0.5)
         sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
         axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
-        axes[0].set_title("Most Popular Routes Aug'19-Jan'20")
+        axes[0].set_title("Most Popular Routes")
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
-        axes[1].set_title("Total Boardings for Aug'19-Jan'20")
+        axes[1].set_title("Total Boardings")
         plt.savefig("Deliverables/PG/PGAugustJanuary19/BoardingAlightingTrends/2019augjan_bestroutes.png")
         
         # POPULAR STOPS
@@ -427,10 +427,10 @@ class PGJanuaryFebruary20:
         plt.subplots_adjust(hspace = 0.5)
         sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
         axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
-        axes[0].set_title("Most Popular Routes Jan-Feb 2020")
+        axes[0].set_title("Most Popular Routes")
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
-        axes[1].set_title("Total Boardings for Jan-Feb 2020")
+        axes[1].set_title("Total Boardings")
         plt.savefig("Deliverables/PG/PGJanuaryFebruary20/BoardingAlightingTrends/2020janfeb_bestroutes.png")
         
         # POPULAR STOPS
@@ -453,7 +453,7 @@ class PGJanuaryFebruary20:
         fig, axes = plt.subplots(2, figsize=(20,15))
         plt.subplots_adjust(hspace = 0.5)
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
-        axes[0].set_title("Boarding by the Hour Jan-Feb 2020")
+        axes[0].set_title("Boarding by the Hour")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes[0:10], x='route',y='boardings',ci=None)
         plt.savefig("Deliverables/PG/PGJanuaryFebruary20/BoardingAlightingTrends/2020janfeb_topstops_byhour.png")
         boardings2=todroutes.nlargest(len(todroutes),'boardings')
@@ -580,10 +580,10 @@ class PGMarchMay20:
         plt.subplots_adjust(hspace = 0.5)
         sns.barplot(ax=axes[0],data=routesordered[0:5], x='route',y="boardings")
         axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
-        axes[0].set_title("Most Popular Routes Mar-May 2020")
+        axes[0].set_title("Most Popular Routes")
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
-        axes[1].set_title("Total Boardings for Mar-May 2020")
+        axes[1].set_title("Total Boardings")
         plt.savefig("Deliverables/PG/PGMarchMay20/BoardingAlightingTrends/2020marmay_bestroutes.png")
         
         # POPULAR STOPS
@@ -606,7 +606,7 @@ class PGMarchMay20:
         fig, axes = plt.subplots(2, figsize=(20,15))
         plt.subplots_adjust(hspace = 0.5)
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
-        axes[0].set_title("Boarding by the Hour Jan-Feb 2020")
+        axes[0].set_title("Boarding by the Hour")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes[0:10], x='route',y='boardings',ci=None)
         axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGMarchMay20/BoardingAlightingTrends/2020marmay_topstops_byhour.png")
@@ -738,7 +738,7 @@ class PGAugustJanuary20:
         axes[0].set_ylim(0,routesordered['boardings'].max()+(routesordered['boardings'].max()*0.35))
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
-        axes[1].set_title("Total Boardings for Aug'20-Jan'21")
+        axes[1].set_title("Total Boardings")
         plt.savefig("Deliverables/PG/PGAugustJanuary20/BoardingAlightingTrends/2020augjan_bestroutes.png")
         
         # POPULAR STOPS
@@ -761,7 +761,7 @@ class PGAugustJanuary20:
         fig, axes = plt.subplots(2, figsize=(20,15))
         plt.subplots_adjust(hspace = 0.5)
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
-        axes[0].set_title("Boarding by the Hour Jan-Feb 2020")
+        axes[0].set_title("Boarding by the Hour")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes, x='route',y='boardings',ci=None)
         axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGAugustJanuary20/BoardingAlightingTrends/2020augjan_topstops_byhour.png")
