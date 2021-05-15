@@ -60,3 +60,17 @@ When the United States declared COVID-19 a pandemic and then followed with a sta
 
 Our task was to conduct an analysis on the performances of the bus routes and their trends in ridership levels ranging from 2019 to the beginning of 2021. The year 2019 would be used as a baseline to compare to the rest of the data. We would then analyze the performance of the bus routes after service enhancements.  Our client is the Washington Suburban Transit Commission.  Our initial point of contact for this project is the director of the Washington Area Transit Office, Pat Pscherer.  Our initial point of contact for Prince George’s County is Chief of Transit Planning for PG County DPW&T Anthony Foster and his Planner Erick Maravilla.  Erick gave us directions and access to the Nextbus database with all the data for Prince George’s County. Terry Herron, manager for Transit Service IT for MCDOT was our point of contact for Montgomery County who gathered and deciphered how to properly analyze the data.
 
+
+## Deliverables
+
+1. Analysis of Boarding and Alighting Trends   
+    1. Visuals in the forms of bar graphs
+    2. Raw Data as CSV files. The files contain every listed segment for every route
+
+2. Analysis of All Routes Performance
+    1. Visuals in the forms of pie charts showcasing the results of our route performance analysis 
+    2. Raw Data as CSV files. The files contain every listed segment for every route
+
+3. Analysis of Routes That Responded Well to Service Enhancements
+    1. Visuals in the forms of bar graphs
+    2. Raw Data as CSV files. The files contain every listed segment for every route
