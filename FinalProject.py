@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from fpdf import FPDF
 import os
+from pptx import Presentation
 
 
 folderExists = os.path.exists("Deliverables")
@@ -797,7 +798,7 @@ class PGAugustJanuary20:
              "Route36", "Route37", "Route51", " Route51A", " Route51B", "Route51X"]
         numlist = ["13", "16", "17 (Route 1 Ride)", "18",
                    "20", "21", "24", "26", "28",
-                   "30", "32", "33", "34", "35", "36", "37", "51", "51 Loop A", "51 Loop B", "51 Loop X"]
+                   "30", "32", "33", "34", "35", "36", "37", "51", "51A", "51B", "51X"]
         
         segments=self.augjan.groupby(['route', "stops"])[['early','on_time','late']].agg('sum').reset_index()
         segments['total']=segments['early']+segments['on_time']+segments['late']
@@ -1510,6 +1511,7 @@ def makepies(number,filling, count, name, folder, county, deliverable):
         x = plt.savefig("Deliverables/"+county+"/"+folder+"/"+deliverable+"/"+name+".png")
         return x 
 
+
 def main():
     county = int(input("Welcome, please choose a county: \n"
                    "(1)Prince George's County \n"
@@ -1600,7 +1602,6 @@ def main():
                 moco = MOCOAugustJanuary20()
                 moco.first_del()
                 moco.route_analysis()
-        
     
 
 
