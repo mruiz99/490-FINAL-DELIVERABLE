@@ -17,12 +17,12 @@ elif folderExists == True:
 #PG COUNTY 2019
 class PGJanuaryFebuary19:
     def __init__(self):
-        self.jan = pd.read_csv("2019NEWJAN_scheduled-ad.csv")
-        self.feb=pd.read_csv("2019NEWFEB_scheduled-ad.csv")
+        self.jan = pd.read_csv("Data/2019NEWJAN_scheduled-ad.csv")
+        self.feb=pd.read_csv("Data/2019NEWFEB_scheduled-ad.csv")
         for title in [self.jan, self.feb]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.janfeb=pd.concat([self.jan,self.feb])
-        self.janfeb1=pd.read_csv("2019PGJANFEB.csv")
+        self.janfeb1=pd.read_csv("Data/2019PGJANFEB.csv")
         folderExists = os.path.exists("Deliverables/PG/PGJanuaryFebuary19")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGJanuaryFebuary19")
@@ -139,13 +139,13 @@ class PGJanuaryFebuary19:
               
 class PGMarchMay19:
     def __init__(self):
-        self.mar=pd.read_csv("2019NEWMAY_scheduled-ad.csv")
-        self.apr=pd.read_csv("2019NEWAPR_scheduled-ad.csv")
-        self.may=pd.read_csv("2019NEWMAY_scheduled-ad.csv")
+        self.mar=pd.read_csv("Data/2019NEWMAY_scheduled-ad.csv")
+        self.apr=pd.read_csv("Data/2019NEWAPR_scheduled-ad.csv")
+        self.may=pd.read_csv("Data/2019NEWMAY_scheduled-ad.csv")
         for title in [self.mar, self.apr, self.may]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.marmay=pd.concat([self.mar,self.apr,self.may])
-        self.marmay1=pd.read_csv("2019PGMARMAY.csv")
+        self.marmay1=pd.read_csv("Data/2019PGMARMAY.csv")
         folderExists = os.path.exists("Deliverables/PG/PGMarchMay19")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGMarchMay19")
@@ -261,14 +261,14 @@ class PGMarchMay19:
     
 class PGAugustJanuary19:
     def __init__(self):
-        self.aug=pd.read_csv("2019NEWAUG_scheduled-ad.csv")
-        self.sep=pd.read_csv("2019NEWSEP_scheduled-ad.csv")
-        self.dec=pd.read_csv("2019NEWDEC_scheduled-ad.csv")
-        self.jan20=pd.read_csv("2020NEWJAN_scheduled-ad.csv")
+        self.aug=pd.read_csv("Data/2019NEWAUG_scheduled-ad.csv")
+        self.sep=pd.read_csv("Data/2019NEWSEP_scheduled-ad.csv")
+        self.dec=pd.read_csv("Data/2019NEWDEC_scheduled-ad.csv")
+        self.jan20=pd.read_csv("Data/2020NEWJAN_scheduled-ad.csv")
         for title in [self.aug, self.sep, self.dec, self.jan20]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.augjan=pd.concat([self.aug,self.sep,self.dec,self.jan20])
-        self.augjan1=pd.read_csv("2019PGAUGJAN.csv")
+        self.augjan1=pd.read_csv("Data/2019PGAUGJAN.csv")
         folderExists = os.path.exists("Deliverables/PG/PGAugustJanuary19")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGAugustJanuary19")
@@ -388,13 +388,13 @@ class PGAugustJanuary19:
 #PG COUNTY 2020   
 class PGJanuaryFebuary20:
     def __init__(self):
-        self.jan = pd.read_csv("2020NEWJAN_scheduled-ad.csv")
-        self.feb=pd.read_csv("2020NEWFEB_scheduled-ad.csv")
+        self.jan = pd.read_csv("Data/2020NEWJAN_scheduled-ad.csv")
+        self.feb=pd.read_csv("Data/2020NEWFEB_scheduled-ad.csv")
         for title in [self.jan, self.feb]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.janfeb=pd.concat([self.jan,self.feb])
-        self.janfeb3 = pd.read_csv("2020janfeb3.csv")
-        self.janfeb1=pd.read_csv("2020PGJANFEB.csv")
+        self.janfeb3 = pd.read_csv("Data/2020janfeb3.csv")
+        self.janfeb1=pd.read_csv("Data/2020PGJANFEB.csv")
         folderExists = os.path.exists("Deliverables/PG/PGJanuaryFebuary20")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGJanuaryFebuary20")
@@ -537,15 +537,15 @@ class PGJanuaryFebuary20:
     
 class PGMarchMay20:
     def __init__(self):
-        self.mar=pd.read_csv("2020NEWMAY_scheduled-ad.csv")
-        self.apr=pd.read_csv("2020NEWAPR_scheduled-ad.csv")
-        self.may=pd.read_csv("2020NEWMAY_scheduled-ad.csv")
+        self.mar=pd.read_csv("Data/2020NEWMAY_scheduled-ad.csv")
+        self.apr=pd.read_csv("Data/2020NEWAPR_scheduled-ad.csv")
+        self.may=pd.read_csv("Data/2020NEWMAY_scheduled-ad.csv")
         for title in [self.mar, self.apr, self.may]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.marmay=pd.concat([self.mar,self.apr,self.may])
         self.marmay=pd.concat([self.mar,self.apr,self.may])
-        self.marmay3=pd.read_csv("2020marmay3.csv")
-        self.marmay1=pd.read_csv("2020PGMARMAY.csv")
+        self.marmay3=pd.read_csv("Data/2020marmay3.csv")
+        self.marmay1=pd.read_csv("Data/2020PGMARMAY.csv")
         folderExists = os.path.exists("Deliverables/PG/PGMarchMay20")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGMarchMay20")
@@ -691,15 +691,15 @@ class PGMarchMay20:
          
 class PGAugustJanuary20:
     def __init__(self):
-        self.aug=pd.read_csv("2020NEWAUG_scheduled-ad.csv")
-        self.sep=pd.read_csv("2020NEWSEP_scheduled-ad.csv")
-        self.dec=pd.read_csv("2020NEWDEC_scheduled-ad.csv")
+        self.aug=pd.read_csv("Data/2020NEWAUG_scheduled-ad.csv")
+        self.sep=pd.read_csv("Data/2020NEWSEP_scheduled-ad.csv")
+        self.dec=pd.read_csv("Data/2020NEWDEC_scheduled-ad.csv")
         self.jan20=pd.read_csv("2021NEWJAN_scheduled-ad.csv")
         for title in [self.aug, self.sep, self.dec, self.jan20]:
             title.columns=["route","stops","direction","early","on_time","late"]
         self.augjan=pd.concat([self.aug,self.sep,self.dec,self.jan20])
-        self.augjan3=pd.read_csv("2020augjan3.csv")
-        self.augjan1=pd.read_csv("2020PGAUGJAN.csv")
+        self.augjan3=pd.read_csv("Data/2020augjan3.csv")
+        self.augjan1=pd.read_csv("Data/2020PGAUGJAN.csv")
         folderExists = os.path.exists("Deliverables/PG/PGAugustJanuary20")
         if folderExists == False:
             os.makedirs("Deliverables/PG/PGAugustJanuary20")
@@ -849,8 +849,8 @@ class PGAugustJanuary20:
 #MOCO COUNTY 2019
 class MOCOJanuaryFebuary19:
     def __init__(self):
-        self.janfeb1=pd.read_csv("2019MOCOJANFEB.csv")
-        self.janfeb2 = pd.read_csv("2019JANFEBSEG.csv")
+        self.janfeb1=pd.read_csv("Data/2019MOCOJANFEB.csv")
+        self.janfeb2 = pd.read_csv("Data/2019JANFEBSEG.csv")
         for title in [self.janfeb2]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
         folderExists = os.path.exists("Deliverables/MOCO/MOCOJanuaryFebuary19")
@@ -957,8 +957,8 @@ class MOCOJanuaryFebuary19:
 
 class MOCOMarchMay19:
     def __init__(self):
-        self.marmay1 = pd.read_csv("2019MOCOMARMAY.csv")
-        self.marmay2 = pd.read_csv("2019MARMAYSEG.csv")
+        self.marmay1 = pd.read_csv("Data/2019MOCOMARMAY.csv")
+        self.marmay2 = pd.read_csv("Data/2019MARMAYSEG.csv")
         for title in [self.marmay2]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
         folderExists = os.path.exists("Deliverables/MOCO/MOCOMarchMay19")
@@ -1065,8 +1065,8 @@ class MOCOMarchMay19:
 
 class MOCOAugustJanuary19:
     def __init__(self):
-        self.augjan1 = pd.read_csv("2019MOCOAUGJAN.csv")
-        self.sepjan = pd.read_csv("2019SEPJANSEG.csv")
+        self.augjan1 = pd.read_csv("Data/2019MOCOAUGJAN.csv")
+        self.sepjan = pd.read_csv("Data/2019SEPJANSEG.csv")
         for title in [self.sepjan]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
         folderExists = os.path.exists("Deliverables/MOCO/MOCOAugustJanuary19")
@@ -1174,8 +1174,8 @@ class MOCOAugustJanuary19:
 #MOCO COUNTY 2020
 class MOCOJanuaryFebuary20:
     def __init__(self):
-        self.janfeb1 = pd.read_csv("2020MOCOJANFEB.csv")
-        self.janfeb2 = pd.read_csv("2020JANFEBSEG.csv")
+        self.janfeb1 = pd.read_csv("Data/2020MOCOJANFEB.csv")
+        self.janfeb2 = pd.read_csv("Data/2020JANFEBSEG.csv")
         for title in [self.janfeb2]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
         folderExists = os.path.exists("Deliverables/MOCO/MOCOJanuaryFebuary20")
@@ -1282,8 +1282,8 @@ class MOCOJanuaryFebuary20:
 
 class MOCOMarchMay20:
     def __init__(self):
-        self.marmay1 = pd.read_csv("2020MOCOMARMAY.csv")
-        self.marmay2 = pd.read_csv("2020MARMAYSEG.csv")
+        self.marmay1 = pd.read_csv("Data/2020MOCOMARMAY.csv")
+        self.marmay2 = pd.read_csv("Data/2020MARMAYSEG.csv")
         for title in [self.marmay2]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
         folderExists = os.path.exists("Deliverables/MOCO/MOCOMarchMay20")
@@ -1390,8 +1390,8 @@ class MOCOMarchMay20:
 
 class MOCOAugustJanuary20:
     def __init__(self):
-        self.augjan1 = pd.read_csv("2020MOCOAUGJAN.csv")
-        self.sepjan = pd.read_csv("2020OCTJANSEG.csv")
+        self.augjan1 = pd.read_csv("Data/2020MOCOAUGJAN.csv")
+        self.sepjan = pd.read_csv("Data/2020OCTJANSEG.csv")
         for title in [self.sepjan]:
             title.columns=["indices", "stops", "route", "early", "on_time", "late"]
         folderExists = os.path.exists("Deliverables/MOCO/MOCOAugustJanuary20")
