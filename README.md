@@ -27,25 +27,26 @@ Terminal Output:
 `(2)Montgomery County`
 
 Terminal Input:  
-`1`
-Terminal Output:  
-`What year would you like to take a look at? (2019 or 2020)`
-
-Terminal Input:
-`2019`
-Terminal Output:  
+`1`  
+Terminal Output:    
+`What year would you like to take a look at? (2019 or 2020)`  
+  
+Terminal Input:  
+`2019`  
+Terminal Output:    
 `Great. What timeframe are you interested in?` 
 `(1)January to Febuary`  
 `(2)March to May`  
 `(3)August to January`  
-
-Terminal Input:
-`1` 
-Output: 
-The final output will create a folder titled _Deliverables_. Within it, depending on how many times you ran the program and what data you grabbed, you will find a folder for Prince George's County that contains within it a folder named after the timeframe.  
+  
+Terminal Input:  
+`1`  
+Output:  
+The final output will create a folder titled _Deliverables_.   
+Within it, depending on how many times you ran the program and what data you grabbed, you will find a folder for Prince George's County that contains within it a folder named after the timeframe.  
 In this example you would see something like:  
-`Deliverables/PG/PGJanuaryFebruary19` 
-Inside `PGJanuaryFebruary19` you will find varying analyzations such as Boarding and Alighting Trends or Route Performance Analysis
+`Deliverables/PG/PGJanuaryFebruary19`  
+Inside `PGJanuaryFebruary19` you will find varying analyzations such as Boarding and Alighting Trends or Route Performance Analysis  
 
 
 **In order to analyze more than one timeframe, year, or county, you must run the program again.**
