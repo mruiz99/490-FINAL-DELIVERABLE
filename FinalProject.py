@@ -3,9 +3,7 @@ import numpy as np
 import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
-from fpdf import FPDF
 import os
-from pptx import Presentation
 
 
 folderExists = os.path.exists("Deliverables")
