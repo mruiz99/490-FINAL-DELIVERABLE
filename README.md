@@ -22,9 +22,9 @@ _Example_
 Terminal Input:  
 `python3 FinalProject.py`  
 Terminal Output:  
-`Welcome, please choose a county:` 
-`(1)Prince George's County` 
-`(2)Montgomery County`
+`Welcome, please choose a county:`  
+`(1)Prince George's County`  
+`(2)Montgomery County`   
 
 Terminal Input:  
 `1`  
