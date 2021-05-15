@@ -78,10 +78,10 @@ class PGJanuaryFebruary19:
         fig1, axes = plt.subplots(2, figsize=(20,15))
         plt.subplots_adjust(hspace = 0.5)
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
-        axes[0].set_title("Boarding by the Hour Jan-Feb 2019")
+        axes[0].set_title("Boarding by the Hour")
         
         axes[1]=sns.barplot(ax=axes[1],data=todroutes.iloc[0:20], x='route',y='boardings',ci=None)
-        axes[1].set_title("Top Routes by Boarding Jan-Feb 2019")
+        axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGJanuaryFebruary19/BoardingAlightingTrends/2019janfeb_topstops_byhour.png")
 
         boardingHours=todroutes.nlargest(len(todroutes),'boardings')
@@ -206,6 +206,7 @@ class PGMarchMay19:
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
         axes[0].set_title("Boarding by the Hour Mar-May 2019")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes.iloc[0:20], x='route',y='boardings',ci=None)
+        axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGMarchMay19/BoardingAlightingTrends/2019marmay_topstops_byhour.png")
         boardingHours=todroutes.nlargest(len(todroutes),'boardings')
         alightingHours=todroutes.nlargest(len(todroutes),'alightings')
@@ -331,6 +332,7 @@ class PGAugustJanuary19:
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
         axes[0].set_title("Boarding by the Hour Jan-Feb 2019")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes.iloc[0:20], x='route',y='boardings',ci=None)
+        axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGAugustJanuary19/BoardingAlightingTrends/2019augjan_toproutes_byhours.png")
 
         boardingHours=todroutes.nlargest(len(todroutes),'boardings')
@@ -606,6 +608,7 @@ class PGMarchMay20:
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
         axes[0].set_title("Boarding by the Hour Jan-Feb 2020")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes[0:10], x='route',y='boardings',ci=None)
+        axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGMarchMay20/BoardingAlightingTrends/2020marmay_topstops_byhour.png")
 
         boardingHours=todroutes.nlargest(len(todroutes),'boardings')
@@ -760,6 +763,7 @@ class PGAugustJanuary20:
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
         axes[0].set_title("Boarding by the Hour Jan-Feb 2020")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes, x='route',y='boardings',ci=None)
+        axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGAugustJanuary20/BoardingAlightingTrends/2020augjan_topstops_byhour.png")
         boardingHours=todroutes.nlargest(len(todroutes),'boardings')
         alightingHours=todroutes.nlargest(len(todroutes),'alightings')
