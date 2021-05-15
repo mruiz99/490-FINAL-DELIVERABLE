@@ -62,8 +62,9 @@ class PGJanuaryFebruary19:
         
         stops=self.janfeb1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index()
         stops=stops.nlargest(len(stops),'boardings')
-
+        fig2, axes1 = plt.subplots(1, figsize=(20,10))
         sns.barplot(data=stops[0:10],x="boardings",y="stop")
+        plt.title("Top Boardings Per Stop")
         plt.savefig("Deliverables/PG/PGJanuaryFebruary19/BoardingAlightingTrends/2019janfeb_popularstops.png")
         boardingsStops=stops.nlargest(len(stops),'boardings')
         alightingsStops=stops.nlargest(len(stops),'alightings')
@@ -188,8 +189,9 @@ class PGMarchMay19:
         
         stops=self.marmay1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index()
         stops=stops.nlargest(len(stops),'boardings')
-
+        fig2, axes1 = plt.subplots(1, figsize=(20,10))
         sns.barplot(data=stops[0:10],x="boardings",y="stop")
+        plt.title("Top Boardings Per Stop")
         plt.savefig("Deliverables/PG/PGMarchMay19/BoardingAlightingTrends/2019marmay_popularstops.png")
         boardingsStops=stops.nlargest(len(stops),'boardings')
         alightingsStops=stops.nlargest(len(stops),'alightings')
@@ -314,8 +316,9 @@ class PGAugustJanuary19:
         
         stops=self.augjan1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index()
         stops=stops.nlargest(len(stops),'boardings')
-
+        fig2, axes1 = plt.subplots(1, figsize=(20,10))
         sns.barplot(data=stops[0:10],x="boardings",y="stop")
+        plt.title("Top Boardings Per Stop")
         plt.savefig("Deliverables/PG/PGAugustJanuary19/BoardingAlightingTrends/2019augjan_best_stops.png")
         boardingsStops=stops.nlargest(len(stops),'boardings')
         alightingsStops=stops.nlargest(len(stops),'alightings')
@@ -330,7 +333,7 @@ class PGAugustJanuary19:
         fig, axes = plt.subplots(2, figsize=(20,15))
         plt.subplots_adjust(hspace = 0.5)
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
-        axes[0].set_title("Boarding by the Hour Jan-Feb 2019")
+        axes[0].set_title("Boarding by the Hour")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes.iloc[0:20], x='route',y='boardings',ci=None)
         axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGAugustJanuary19/BoardingAlightingTrends/2019augjan_toproutes_byhours.png")
@@ -437,7 +440,9 @@ class PGJanuaryFebruary20:
         
         stops=round(self.janfeb1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index(),2)
         stops=stops.nlargest(len(stops),'boardings')
+        fig2, axes1 = plt.subplots(1, figsize=(20,10))
         sns.barplot(data=stops[0:10],x="boardings",y="stop")
+        plt.title("Top Boardings Per Stop")
         plt.savefig("Deliverables/PG/PGJanuaryFebruary20/BoardingAlightingTrends/2020janfeb_popularstops.png")
         boardings=stops.nlargest(len(stops),'boardings')
         alightings=stops.nlargest(len(stops),'alightings')
@@ -455,6 +460,7 @@ class PGJanuaryFebruary20:
         axes[0]=sns.barplot(ax=axes[0],data=todroutes, x='hour',y="boardings",ci=None)
         axes[0].set_title("Boarding by the Hour")
         axes[1]=sns.barplot(ax=axes[1],data=todroutes[0:10], x='route',y='boardings',ci=None)
+        axes[1].set_title("Top Routes by Boarding")
         plt.savefig("Deliverables/PG/PGJanuaryFebruary20/BoardingAlightingTrends/2020janfeb_topstops_byhour.png")
         boardings2=todroutes.nlargest(len(todroutes),'boardings')
         alightings2=todroutes.nlargest(len(todroutes),'alightings')
@@ -590,7 +596,9 @@ class PGMarchMay20:
         
         stops=self.marmay1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index()
         stops=stops.nlargest(len(stops),'boardings')
+        fig2, axes1 = plt.subplots(1, figsize=(20,10))
         sns.barplot(data=stops[0:10],x="boardings",y="stop")
+        plt.title("Top Boardings Per Stop")
         plt.savefig("Deliverables/PG/PGMarchMay20/BoardingAlightingTrends/2020marmay_popularstops.png")
         boardings=stops.nlargest(len(stops),'boardings')
         alightings=stops.nlargest(len(stops),'alightings')
@@ -745,7 +753,9 @@ class PGAugustJanuary20:
         
         stops=self.augjan1.groupby('stop')[['boardings','alightings']].agg('sum').reset_index()
         stops=stops.nlargest(len(stops),'boardings')
+        fig2, axes1 = plt.subplots(1, figsize=(20,10))
         sns.barplot(data=stops[0:10],x="boardings",y="stop")
+        plt.title("Top Boardings Per Stop")
         plt.savefig("Deliverables/PG/PGAugustJanuary20/BoardingAlightingTrends/2020augjan_popularstops.png")
         boardings=stops.nlargest(len(stops),'boardings')
         alightings=stops.nlargest(len(stops),'alightings')
@@ -891,7 +901,7 @@ class MOCOJanuaryFebruary19:
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
         axes[1].set_title("Total Boardings Per Month")
-        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_best_routes.png")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebruary19/BoardingAlightingTrends/2019janfeb_best_routes.png")
         
         # TOP STOPS
         stops=self.janfeb1.groupby('stops')[['boardings','alightings']].agg('sum').reset_index()
@@ -899,7 +909,7 @@ class MOCOJanuaryFebruary19:
         fig2, axes1 = plt.subplots(1, figsize=(20,10))
         sns.barplot(ax=axes1,data=stops[0:5], x="boardings", y="stops")
         axes1.set_title("Top Boardings Per Stop")
-        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/2019janfeb_best_stops.png")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebruary19/BoardingAlightingTrends/2019janfeb_best_stops.png")
         
         a=stops.nlargest(len(stops),'boardings')
         b=stops.nlargest(len(stops),'alightings')
@@ -916,7 +926,7 @@ class MOCOJanuaryFebruary19:
         axes2[0].set_title("Top Boardings Per Hour")
         axes2[1]=sns.barplot(ax=axes2[1],data=todroutes, x='route_id',y='boardings',ci=None)
         axes2[1].set_title("Top Boardings Per Route")
-        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary19/BoardingAlightingTrends/BoardingbyHour.png")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebruary19/BoardingAlightingTrends/BoardingbyHour.png")
         c=todroutes.nlargest(len(todroutes),'boardings')
         d=todroutes.nlargest(len(todroutes),'alightings')
         c.to_csv("Deliverables/MOCO/MOCOJanuaryFebruary19/BoardingAlightingTrends/2019janfeb_topboardingshours.csv")
@@ -1236,7 +1246,7 @@ class MOCOJanuaryFebruary20:
         sns.barplot(ax=axes[1],data=df,x='month',y='bymonth')
         axes[1].set_ylim(0,bymonth['boardings'].max()+(bymonth['boardings'].max()*0.35))
         axes[1].set_title("Total Boardings Per Month")
-        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary20/BoardingAlightingTrends/AllRoutesBoarding.png")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebruary20/BoardingAlightingTrends/AllRoutesBoarding.png")
         
         #STATIONS
         stops=self.janfeb1.groupby('stops')[['boardings','alightings']].agg('sum').reset_index()
@@ -1245,7 +1255,7 @@ class MOCOJanuaryFebruary20:
         plt.figure(figsize=(25,10))
         sns.barplot(data=dataa[0:10], x="boardings", y="stops")
         plt.title("Top Boardings Per Stop")
-        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary20/BoardingAlightingTrends/TopStopsBoarding.png")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebruary20/BoardingAlightingTrends/TopStopsBoarding.png")
         a=stops.nlargest(len(stops),'boardings') # to_csv to make record
         b=stops.nlargest(len(stops),'alightings') # to_csv to make record
         a.to_csv("Deliverables/MOCO/MOCOJanuaryFebruary20/BoardingAlightingTrends/StopsBoarding.csv")
@@ -1262,7 +1272,7 @@ class MOCOJanuaryFebruary20:
         axes2[0].set_title("Top Boardings By Hour")
         axes2[1]=sns.barplot(ax=axes2[1],data=todroutes, x='route_id',y='boardings',ci=None)
         axes2[1].set_title("Top Boardings By Route")
-        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebuary20/BoardingAlightingTrends/BoardingbyHour.png")
+        plt.savefig("Deliverables/MOCO/MOCOJanuaryFebruary20/BoardingAlightingTrends/BoardingbyHour.png")
         c=todroutes.nlargest(len(todroutes),'boardings') # to_csv to make record
         d=todroutes.nlargest(len(todroutes),'alightings') # to_csv to make record
         c.to_csv("Deliverables/MOCO/MOCOJanuaryFebruary20/BoardingAlightingTrends/TODRoutesBoardings.csv")
@@ -1359,7 +1369,7 @@ class MOCOMarchMay20:
         fig2, axes1 = plt.subplots(1, figsize=(20,10))
 
         sns.barplot(data=dataa[0:10], x="boardings", y="stops")
-        plt.title("TOP STOPS BY BOARDING")
+        plt.title("Top Stops by Boarding")
         plt.savefig("Deliverables/MOCO/MOCOMarchMay20/BoardingAlightingTrends/TopStopsBoarding.png")
         a=stops.nlargest(len(stops),'boardings') # to_csv to make record
         b=stops.nlargest(len(stops),'alightings') # to_csv to make record
