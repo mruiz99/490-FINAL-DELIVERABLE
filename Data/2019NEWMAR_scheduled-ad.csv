@@ -1,0 +1,341 @@
+Timepoints 3,Timepoints,Timepoints 2,Early,On Time,Late
+11,Mandan Rd at Hanover Pkwy,To Greenbelt Metro Station,213,393,10
+11,Crescent Rd at Gardenway,To Greenbelt Metro Station,182,415,21
+11,Cherrywood Ln at Greenbelt Federal Courthouse,To Greenbelt Metro Station,119,449,45
+11,Greenbelt Metro Station (Arrival),To Greenbelt Metro Station,212,692,127
+11,Greenbelt Metro Station Bus Bay A,Mandan Ct,298,239,3
+11,Cherrywood Ln at Greenbelt Federal Courthouse,Mandan Ct,66,537,11
+11,Crescent Rd at Gardenway,Mandan Ct,137,467,10
+11,Hanover Pkwy at Greenway Center Dr,Mandan Ct,89,510,18
+12,West Hyattsville Station,Mt Rainier Loop,69,277,76
+12,28th Pl at Russell Ave,Mt Rainier Loop,70,256,93
+12,Cora B. Wood Senior Center,Mt Rainier Loop,66,238,113
+12,Rhode Island Ave at Mt Rainier,Mt Rainier Loop,85,206,130
+12,Gwendolyn Britt Center,Mt Rainier Loop,97,196,124
+12,38th St at Hamilton St,Mt Rainier Loop,94,180,131
+12,West Hyattsville Station (Arrival),Mt Rainier Loop,96,166,141
+12,West Hyattsville Station,Chillum Loop,59,334,18
+12,Sargent Rd at Rollingcrest Commons,Chillum Loop,61,301,56
+13,West Hyattsville Station,pgplaza,74,267,54
+13,Hamilton St at 38th Ave,pgplaza,67,261,66
+13,County Service Building,pgplaza,148,176,68
+13,42nd Ave at Oglethorpe St,pgplaza,192,137,63
+13,West Hyattsville Station,pgplaza,76,292,29
+13,Ager Rd at Nicholson,pgplaza,93,270,38
+13,Belcrest Rd at PG Plaza Sta Entrance,To West Hyattsville Station,47,244,111
+13,PG Plaza Station,To West Hyattsville Station,130,166,101
+13,Ager Rd at Nicholson St,To West Hyattsville Station,138,164,94
+13,West Hyattsville Station - Arrival,To West Hyattsville Station,202,114,85
+13,PG Plaza Station,To West Hyattsville Station,193,174,35
+13,Belcrest Rd at 6505 Belcrest Rd,To West Hyattsville Station,149,206,54
+13,42nd Ave at Oglethorpe St,To West Hyattsville Station,17,275,110
+13,County Service Building,To West Hyattsville Station,21,266,116
+13,Hamilton St at 38th Ave,To West Hyattsville Station,41,260,102
+13,West Hyattsville Station - Arrival,To West Hyattsville Station,97,234,77
+14,PG Plaza Station Bus Bay H,To College Park Station,138,120,64
+14,Lafayette Ave at Queensbury Rd,To College Park Station,52,130,212
+14,Riverdale Rd at 57th Ave,To College Park Station,83,121,190
+14,Auburn Ave at Riverdale Rd,To College Park Station,72,136,186
+14,River Rd at Rivertech Ct,To College Park Station,108,115,179
+14,College Park Station - Arrival,To College Park Station,115,112,173
+14,College Park Station,pgplaza,18,263,99
+14,River Rd at Rivertech Ct,pgplaza,65,227,97
+14,Auburn Ave at Riverdale Rd,pgplaza,48,270,72
+14,Riverdale Rd at 57th Ave,pgplaza,60,236,100
+14,Lafayette Ave at Queensbury Rd,pgplaza,162,163,73
+14,Belcrest Rd at PG Plaza Entrance,pgplaza,70,170,164
+14,Prince George's Plaza - Arrival,pgplaza,23,78,162
+ 15 Express,New Carrollton Station Bay K,Northbound,16,170,60
+ 15 Express,Goddard Space Flight Center Visitors Center (Northbound),Northbound,86,114,66
+ 15 Express,Greenbelt Station Parkway at S. Center Drive,Northbound,72,72,4
+ 15 Express,Greenbelt Metro Station (Arrival),Northbound,1,37,85
+ 15 Express,Greenbelt Metro Station Bus Bay A,Southbound,36,182,29
+ 15 Express,Greenbelt Station Parkway at S. Center Drive,Southbound,69,33,15
+ 15 Express,Goddard Space Flight Center Visitors Center (Southbound),Southbound,65,162,40
+ 15 Express,New Carrollton Station (Arrival),Southbound,29,120,111
+16,New Carrollton Station,Northbound,3,312,54
+16,Riverdale Rd at Carrollton Mall,Northbound,165,213,7
+16,Lamont Dr at Donoghue Dr,Northbound,73,288,20
+16,Doctors Community Hospital,Northbound,107,271,16
+16,Hanover Pkwy at Ora Glen Dr,Northbound,241,144,9
+16,57th Ave at Berwyn Rd,Northbound,181,198,15
+16,Beltway Plaza Shopping Center,Northbound,110,264,23
+16,Greenbelt Metro Station (Arrival),Northbound,112,253,26
+16,Greenbelt Metro Station Bus Bay A,Southbound,69,240,28
+16,Cherrywood Ln at Greenbelt Rd (MD. RTE. 193),Southbound,38,326,44
+16,57th Ave at Berwyn Rd,Southbound,36,325,47
+16,Hanover Pkwy at Greenway Center Dr,Southbound,42,325,48
+16,Doctors Community Hospital,Southbound,47,327,41
+16,Lamont Dr at Lamont Pl,Southbound,37,319,62
+16,Riverdale Rd at Carrollton Mall,Southbound,119,263,26
+16,New Carrollton Station - Arrival,Southbound,170,229,18
+ 17 (Route 1 Ride),Rhode Island (US RTE 1) at Mount Rainer Terminal,Northbound,4,490,61
+ 17 (Route 1 Ride),Rhode Island Ave at County Service Building - NB,Northbound,89,417,57
+ 17 (Route 1 Ride),Baltimore Ave at East-West Hwy,Northbound,165,348,50
+ 17 (Route 1 Ride),Paint branch Parkway at Baltimore Ave,Northbound,78,409,78
+ 17 (Route 1 Ride),College Park Metro Station at Bus Bay B,Northbound,169,342,60
+ 17 (Route 1 Ride),Ikea - Arrival,Northbound,1,5,464
+ 17 (Route 1 Ride),Ikea at Bus Bay 3,Southbound,1,489,85
+ 17 (Route 1 Ride),College Park Metro Station at Bus Bay B,Southbound,0,214,362
+ 17 (Route 1 Ride),Baltimore Ave at Campus Dr,Southbound,30,400,148
+ 17 (Route 1 Ride),Baltimore Ave at East-West Hwy,Southbound,17,289,271
+ 17 (Route 1 Ride),Rhode Island Ave at County Service Building - SB,Southbound,55,338,184
+ 17 (Route 1 Ride),Mt Rainier Terminal - Arrival,Southbound,28,166,349
+18,Addison Rd Metrorail Station,Northbound,88,159,6
+18,Columbia Park Rd at Marshall Pl,Northbound,3,238,54
+18,Cheverly Metrorail Station Bay D,Northbound,8,217,72
+18,Bladensburg Rd at 38th St,Northbound,20,202,83
+18,Hamilton St at 38th St,Northbound,28,188,90
+18,PG Plaza,Northbound,50,180,78
+18,23rd Ave at Lewisdale Dr,Northbound,29,157,127
+18,Takoma Langley Park Transit Center Bus Bay B (hidden arrival),Northbound,37,153,126
+18,Takoma Langley Park Transit Center Bus Bay B,Southbound,6,262,20
+18,23rd Ave at Lewisdale Dr,Southbound,34,229,43
+18,PG Plaza,Southbound,56,206,49
+18,Hamilton St at 38th St,Southbound,71,197,45
+18,Bladensburg Rd at 38th St,Southbound,73,185,57
+18,Cheverly Metrorail Station Bay D,Southbound,67,184,67
+18,Columbia Park Rd at Marshall Pl,Southbound,64,178,78
+18,Addison Rd Metrorail - Arrival,Southbound,93,214,127
+20,Addison Rd Metrorail Station,Eastbound,147,259,29
+20,Donnell Drive at Target Store,Eastbound,191,243,49
+20,Melwood Training Center,Eastbound,70,205,81
+20,Marlboro Pike at Melwood Mall,Eastbound,135,243,112
+20,Old Marlboro Pike at Roblee Dr,Eastbound,143,237,107
+20,Old Marlboro Pike at John Rogers Blvd,Eastbound,102,258,127
+20,Courthouse,Eastbound,43,227,151
+20,CAB - Arrival,Eastbound,83,201,123
+20,County Administration Building,Westbound,14,346,54
+20,Courthouse,Westbound,17,373,66
+20,Old Marlboro Pike at John Rogers Blvd,Westbound,13,355,76
+20,Old Marlboro Pike at Roblee Dr,Westbound,6,357,90
+20,Marlboro Pike at Melwood Mall,Westbound,18,363,86
+20,Melwood Training Center,Westbound,49,216,67
+20,Donnell Dr at Marlboro Pike,Westbound,58,309,108
+20,Addison Rd Metrorail - Arrival,Westbound,270,216,53
+21,New Carrollton Station,County Courthouse,130,288,27
+21,Brightseat Rd at Maple Ridge Apts,County Courthouse,127,278,33
+21,9400 Peppercorn Pl,County Courthouse,117,285,44
+21,Largo Town Center Station,County Courthouse,105,302,46
+21,Campus Way South at College Station Dr (PGCC),County Courthouse,149,255,47
+21,Largo Rd at Hancock Dr,County Courthouse,127,260,66
+21,County Courthouse,County Courthouse,126,185,112
+21,Equestrian Center Lot 1,To Equestrian Center,2,3,1
+21,County Courthouse,To New Carrollton Station,63,291,54
+21,Elm St at Gov Oden Bowie Dr,To New Carrollton Station,233,183,39
+21,Largo Rd at Black Swan Dr,To New Carrollton Station,90,253,49
+21,Campus Way South at College Station Dr (PGCC),To New Carrollton Station,24,272,103
+21,Largo Town Center Station,To New Carrollton Station,36,248,122
+21,9400 Peppercorn Pl,To New Carrollton Station,80,236,86
+21,Brightseat Rd at Maple Ridge Apts,To New Carrollton Station,74,232,96
+21,New Carrollton Station - Arrival,To New Carrollton Station,187,171,53
+ 21 Express,Motor Vehicle Administration,Northbound,40,330,33
+ 21 Express,Campus Way South at College Station Dr (PGCC),Northbound,14,328,132
+ 21 Express,Landover Mall,Northbound,87,322,42
+ 21 Express,New Carrollton Station - Arrival,Northbound,131,311,44
+ 21 Express,New Carrollton Station Bay F,Southbound,43,468,44
+ 21 Express,Landover Mall,Southbound,239,229,48
+ 21 Express,Campus Way South at College Station Dr (PGCC),Southbound,195,242,42
+ 21 Express,Motor Vehicle Administration - Arrival,Southbound,165,255,71
+22,Morgan Blvd Metro Station,To Landover Mall,25,254,0
+22,Valley Trail Ln at Catesby Ct,To Landover Mall,49,418,2
+22,Chatsfield Way at Reading Ter,To Landover Mall,112,357,1
+22,Fieldstone Way,To Landover Mall,2,407,9
+22,Centre Pointe Office Park,To Landover Mall,4,377,36
+22,Lansdowne Village Apts,To Landover Mall,16,363,40
+22,PG Sports Complex,To Landover Mall,23,355,41
+22,Brightseat Rd at Maple Ridge Apts,To Landover Mall,133,253,20
+22,Brightseat Rd at Evarts St,To Morgan Blvd Metro Center,2,385,8
+22,PG Sports Complex,To Morgan Blvd Metro Center,78,334,7
+22,Lansdowne Village Apts,To Morgan Blvd Metro Center,245,168,6
+22,Centre Pointe Office Park,To Morgan Blvd Metro Center,193,220,6
+22,Fieldstone Way,To Morgan Blvd Metro Center,143,269,7
+22,Valley Trail Ln at Catesby Ct,To Morgan Blvd Metro Center,93,316,10
+22,Chatsfield Way at Reading Ter,To Morgan Blvd Metro Center,157,254,8
+22,Morgan Blvd Metro Station,To Morgan Blvd Metro Center,36,92,114
+23,Cheverly Station Bay D,To Addison Road Station,29,362,45
+23,Sheriff Rd at Glen Willow Dr - South Side,To Addison Road Station,33,389,49
+23,Sheriff Rd at MLK Highway,To Addison Road Station,37,387,50
+23,PG Sports Complex,To Addison Road Station,53,366,62
+23,Nalley Rd at Capital View Dr,To Addison Road Station,67,340,71
+23,Willow Hill Dr at Stevenson Ln,To Addison Road Station,98,308,75
+23,Possum Ct at Walker Mill Dr,To Addison Road Station,97,301,88
+23,Addison Rd Metrorail - Arrival,To Addison Road Station,129,224,126
+23,Addison Rd Metrorail Station,To Cheverly Metro Station,213,226,27
+23,Possum Ct at Walker Mill Dr,To Cheverly Metro Station,0,305,151
+23,Willow Hill Dr at Hill Rd,To Cheverly Metro Station,4,308,144
+23,Nalley Rd at Capital View Dr,To Cheverly Metro Station,3,284,172
+23,PG Sports Complex,To Cheverly Metro Station,11,293,158
+23,Sheriff Rd at MLK Highway,To Cheverly Metro Station,17,280,164
+23,Sheriff Rd at Glen Willow Dr - South Side,To Cheverly Metro Station,50,249,159
+23,Cheverly Station Bay D,To Cheverly Metro Station,52,204,213
+24,Morgan Blvd Metro Station,To Capitol Heights Metro,59,398,16
+24,Old Forestville Rd at Forestville Rd,To Capitol Heights Metro,47,422,64
+24,District Heights Municipal Bldg,To Capitol Heights Metro,177,262,30
+24,Council Dr at Kipling Pkwy,To Capitol Heights Metro,87,401,43
+24,Silver Hill Rd at Pennsylvania Ave,To Capitol Heights Metro,110,376,45
+24,Brooks Dr at Marlboro Pike,To Capitol Heights Metro,199,295,37
+24,Denise Dr at Dutton Way,To Capitol Heights Metro,161,323,36
+24,Capitol Heights - Arrival,To Capitol Heights Metro,304,203,32
+24,Capitol Heights Station Bay B,To Morgan Blvd Metro Center,30,438,53
+24,Denise Dr at Dutton Way,To Morgan Blvd Metro Center,30,398,47
+24,Walker Mill Road at Marlboro Pike,To Morgan Blvd Metro Center,214,252,27
+24,Silver Hill Rd at Penn Station,To Morgan Blvd Metro Center,75,378,48
+24,Kipling Pkwy at Council Dr,To Morgan Blvd Metro Center,141,316,41
+24,District Heights Municipal Bldg,To Morgan Blvd Metro Center,70,336,58
+24,Old Forestville Rd at Forestville Rd,To Morgan Blvd Metro Center,210,270,34
+24,Morgan Blvd Metro Station,To Morgan Blvd Metro Center,204,199,60
+25,Capitol Heights Station,Eastbound Loop,8,272,29
+25,East Capital Street at Old Central Ave,Eastbound Loop,12,286,33
+25,Highview Pl at Sunbury Ct,Eastbound Loop,33,271,27
+25,Marlboro Pike at Nova Ave,Eastbound Loop,19,270,42
+25,Benning Rd at Abel Ave,Eastbound Loop,139,175,16
+25,Southern Ave at C St,Eastbound Loop,128,184,19
+25,Capitol Heights - Arrival,Eastbound Loop,183,89,59
+25,Capitol Heights Station,Westbound Loop,7,322,17
+25,Southern Ave at C St,Westbound Loop,111,232,9
+25,Benning Rd at Southern Ave,Westbound Loop,117,226,11
+25,Nova Ave at Marlboro Pike,Westbound Loop,264,80,9
+25,Highview Pl at Sunbury Ct,Westbound Loop,99,239,19
+25,East Capitol St at Yost Pl,Westbound Loop,110,210,26
+25,Capitol Heights - Arrival,Westbound Loop,113,193,38
+26,Morgan Blvd Metro Station,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,32,305,27
+26,Hampton Park Boulevard at Steeplechase,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,155,199,22
+26,Campus Way South at College Station Dr (PGCC),To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,151,200,28
+26,Motor Vehicle Administration,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,163,147,13
+26,Largo Town Center Station,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,108,140,157
+26,Largo Town Center Station,To Morgan Blvd Metro Center,59,261,33
+26,Motor Vehicle Administration,To Morgan Blvd Metro Center,24,250,41
+26,Campus Way South at College Station Dr (PGCC),To Morgan Blvd Metro Center,39,254,80
+26,Hampton Park Boulevard at Steeplechase,To Morgan Blvd Metro Center,48,248,85
+26,Morgan Blvd Metro Station,To Morgan Blvd Metro Center,33,144,195
+27,Landover Metrorail Station,Northbound,202,188,0
+27,Pennsy Dr at 75th Ave,Northbound,20,340,2
+27,Dodge Park Rd at Landover Rd,Northbound,45,313,7
+27,Hubbard Rd at Martin Luther King,Northbound,32,327,6
+27,Landover Metrorail Station - Arrival,Northbound,242,28,26
+27,Landover Metrorail Station,Southbound,201,364,20
+27,Hubbard Rd at Martin Luther King,Southbound,164,239,25
+27,Dodge Park Rd at Landover Rd,Southbound,130,284,14
+27,Pennsy Dr at 75th Ave,Southbound,215,206,12
+27,Landover Metrorail Station - Arrival,Southbound,183,146,89
+28,Largo Town Center Station at Bus Bay E,To Campus Way at Grey Gables - Loop A,8,268,23
+28,Arena Dr at Shoppers Way (Northbound),To Campus Way at Grey Gables - Loop A,6,318,29
+28,Jericho Residences,To Campus Way at Grey Gables - Loop A,3,289,59
+28,MERCANTILE LN AT 1400 MERCANTILE LANE,To Campus Way at Grey Gables - Loop A,21,298,35
+28,9400 Peppercorn Pl,To Campus Way at Grey Gables - Loop A,17,282,36
+28,RUBY LOCKHART BLVD AT CAMPUS WAY NORTH,To Campus Way at Grey Gables - Loop A,87,241,26
+28,Campus Way North at Grey Gables Ct,To Campus Way at Grey Gables - Loop A,184,155,20
+28,Largo Town Center Station at Bus Bay E,To Campus Way at Grey Gables - Loop A,85,87,187
+28,Largo Town Center Station at Bus Bay E,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,1,314,11
+28,Campus Way North at Grey Gables Ct,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,3,342,19
+28,RUBY LOCKHART BLVD AT CAMPUS WAY NORTH,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,16,324,26
+28,9400 Peppercorn Pl,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,41,269,18
+28,MERCANTILE LN AT 1400 MERCANTILE LANE,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,171,182,16
+28,Jericho Residences (Southbound),To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,47,281,37
+28,Arena Dr at Shoppers Way (Largo),To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,266,88,14
+28,Largo Town Center Station at Bus Bay E,To Largo Metro Station via Campus Way N/Woodmore Towne Center - Loop B,139,201,16
+30,Southern Maryland Hospital,To Branch Ave Station,42,267,11
+30,Clinton Fringe Lot,To Branch Ave Station,46,259,14
+30,Piscataway Rd at Old Branch Ave,To Branch Ave Station,59,238,23
+30,Temple Hill Rd at Piscataway Rd,To Branch Ave Station,86,215,22
+30,Padgett's Corner,To Branch Ave Station,84,211,31
+30,Old Branch Ave at Allentown Way,To Branch Ave Station,100,189,37
+30,Maxwell Dr at Morris Ave,To Branch Ave Station,94,188,43
+30,Branch Ave Station - Arrival,To Branch Ave Station,171,134,23
+30,Branch Ave Station Bus Bay J,Southern Maryland Hospital,40,280,4
+30,Morris Ave at Maxwell Dr,Southern Maryland Hospital,116,203,7
+30,Old Branch Ave at Allentown Way,Southern Maryland Hospital,125,179,13
+30,Padgett's Corner,Southern Maryland Hospital,121,187,11
+30,Temple Hill Rd at Piscataway Rd,Southern Maryland Hospital,131,178,11
+30,Piscataway Rd at Brandywine Rd,Southern Maryland Hospital,165,142,15
+30,Clinton Fringe Lot,Southern Maryland Hospital,207,106,15
+30,Southern Maryland Hospital (Hidden Arrival),Southern Maryland Hospital,59,87,162
+32,Naylor Rd Station Bay H,To Clinton Fringe Lot,4,488,82
+32,Iverson Mall,To Clinton Fringe Lot,220,347,10
+32,Temple Hill Rd at St Barnabas Rd,To Clinton Fringe Lot,129,440,13
+32,Manor at Victoria Park,To Clinton Fringe Lot,170,407,11
+32,Brinkley Rd at Temple Hill Rd,To Clinton Fringe Lot,129,438,19
+32,Old Branch Ave at Allentown Way,To Clinton Fringe Lot,137,404,45
+32,Old Branch Ave at Coventry Way,To Clinton Fringe Lot,99,419,69
+32,Branchwood Towers,To Clinton Fringe Lot,373,194,24
+32,Clinton Fringe Lot,To Clinton Fringe Lot,114,148,161
+32,Clinton Fringe Lot,To Naylor Road Station,3,363,66
+32,Branchwood Towers,To Naylor Road Station,4,424,136
+32,Old Branch Ave at Coventry Way,To Naylor Road Station,66,443,66
+32,Old Branch Ave at Allentown Way,To Naylor Road Station,71,426,76
+32,Brinkley Rd at Temple Hill Rd,To Naylor Road Station,89,426,58
+32,Manor at Victoria Park,To Naylor Road Station,92,429,59
+32,Temple Hill Rd at St Barnabas Rd,To Naylor Road Station,133,398,44
+32,Iverson Mall,To Naylor Road Station,73,412,91
+32,Naylor Rd Station Bay H - Hidden Arrival,To Naylor Road Station,377,184,28
+33,Southern Ave Station Bay E,To Old Branch and Allentown,136,200,50
+33,Owens Rd at Southern Ave,To Old Branch and Allentown,26,313,80
+33,Owens Rd at Wheeler Rd,To Old Branch and Allentown,150,218,60
+33,Temple Hill Rd at St Barnabas Rd,To Old Branch and Allentown,149,216,68
+33,Fisher Rd at Clow Ct,To Old Branch and Allentown,139,221,75
+33,Padgett's Corner,To Old Branch and Allentown,91,240,108
+33,Old Branch Ave at Allentown Way - Arrival,To Old Branch and Allentown,88,198,133
+33,Old Branch Ave at Allentown Way,To Southern Ave Station,30,288,100
+33,Padgett's Corner,To Southern Ave Station,48,266,77
+33,Fisher Rd at Clow Ct,To Southern Ave Station,16,266,112
+33,Temple Hill Rd at St Barnabas Rd,To Southern Ave Station,4,240,154
+33,Owens Rd at Wheeler Rd,To Southern Ave Station,8,238,153
+33,Owens Rd at Southern Ave,To Southern Ave Station,28,257,114
+33,Southern Ave Station Bay E - Arrival,To Southern Ave Station,94,222,97
+34,Suitland Metrorail Station Bay D,to Capital Crossing Apartments,165,876,45
+34,Capitol Crossing Apts,To Suitland Metrorail Station,265,711,135
+34,4258 Whitehall Square Apts,To Suitland Metrorail Station,150,333,15
+34,4258 Whitehall Square Apts,To Suitland Metrorail Station,25,453,139
+34,Suitland Metro - Arrival,To Suitland Metrorail Station,185,651,211
+35,Southern Ave Metro Rail Station at Bus Bay F,Loop,15,241,19
+35,Oxon Hill Fringe Parking Lot Bus Bay B,Loop,64,214,68
+35,Stars Entrance Gaylord Hotel at National Harbor Blvd,Loop,146,149,42
+35,Oxon Hill Rd at 6192 Oxon Hill Rd,Loop,102,129,98
+35,Padgett's Corner,Loop,77,164,91
+35,Oxon Hill Rd at Rivertown Commons(6135),Loop,127,122,90
+35,Oxon Hill Rd at Oxon Hill Fringe Parking Lot,Loop,148,147,60
+35,Southern Ave Metro Rail Station at Bus Bay F,Loop,45,71,105
+ 35s,OXON HILL FRINGE PARK AND RIDE LOT AT BUS BAY F (Arrival),Northbound,23,62,25
+ 35s,OXON HILL FRINGE PARK AND RIDE LOT AT BUS BAY F,Southbound,0,111,1
+ 35s,STARS ENTRANCE GAYLORD HOTEL,Southbound,79,37,1
+ 35s,INDIAN HEAD HWY AT FORT WASHINGTON MANOR SENIOR RESIDENCES,Southbound,44,68,7
+ 35s,LIVINGSTON ROAD AT FORT WASHINGTON MEDICAL CENTER,Southbound,23,87,9
+36,Mattowoman Beantown Rd at MTA Park and Ride Lot,Northbound,8,281,40
+36,Mattawoman Beantown Rd at Pinefield Center,Northbound,7,285,59
+36,Matapeake Business Dr at Target Store (opposite),Northbound,88,242,37
+36,Gwynn Park High School,Northbound,141,192,34
+36,Brandywine Road @ Groveton Drive,Northbound,84,218,43
+36,Brandywine Road @ Surrats Road,Northbound,142,168,38
+36,Clinton Fringe Parking Lot,Northbound,201,103,41
+36,Clinton Fringe Parking Lot,Southbound,45,262,31
+36,Brandywine Road at Surrats Road,Southbound,95,233,18
+36,Brandywine Road at Groveton Drive,Southbound,108,209,20
+36,Gwynn Park High School,Southbound,108,233,24
+36,Matapeake Business Dr at Target Store,Southbound,93,205,73
+36,Mattawoman Beantown Rd at Pinefield Center,Southbound,96,165,108
+36,Mattowoman Beantown Rd at MTA Park and Ride Lot (Arrival),Southbound,111,143,66
+37,OLD BRANCH AVENUE & ALLENTOWN WAY,North,3,111,2
+37,ALLENTOWN ROAD & TEMPLE HILL ROAD AM NS,North,9,112,3
+37,TUCKER ROAD & ARUNDEL ROAD,North,8,102,7
+37,WILSON BRIDGE DRIVE,North,0,85,33
+37,INDIAN HEAD HIGHWAY & SOUTHERN AVENUE,North,34,76,18
+37,SOUTHERN AVENUE METRO STATION & BUS BAY K,North,51,58,14
+37,SOUTHERN AVENUE METRO STATION & BUS BAY K,South,23,59,1
+37,INDIAN HEAD HIGHWAY & SOUTHERN AVENUE,South,9,70,10
+37,WILSON BRIDGE DRIVE,South,5,66,23
+37,TUCKER RD & ALLENTOWN RD,South,4,45,48
+37,ALLENTOWN ROAD & TEMPLE HILL ROAD PM NS,South,5,59,34
+37,ALLENTOWN ROAD & OLD BRANCH AVENUE,South,9,42,31
+51,Equestrian Center Lot 1,To County Admin Bldg,234,220,255
+51,Courthouse,To County Admin Bldg,273,241,244
+51,County Administration Building,To Equestrian Center,334,191,240
+51,Courthouse,To Equestrian Center,310,194,248
+51,Equestrian Center Lot 1 (Arrival),To Equestrian Center,341,183,209
+53,County Administration Building,To Clairfield Lane,34,148,83
+53,Clairfield Lane - Arrival,To Clairfield Lane,22,67,87
+53,Village Dr West at Clairfield Ln,To DWI Facility,33,127,25
+53,Old Crain Hwy at Villiage Drive West,To DWI Facility,7,209,42
+53,Courthouse,To DWI Facility,9,181,60
+53,Old Marlboro Pike at John Rogers Blvd,To DWI Facility,26,179,54
+53,DWI Facility,To DWI Facility,28,175,57

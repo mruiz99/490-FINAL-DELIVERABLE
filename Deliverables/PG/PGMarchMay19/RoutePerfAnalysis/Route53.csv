@@ -1,0 +1,8 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+53,Village Dr West at Clairfield Ln,43,475,30,548,0.08,0.87,0.05
+53,Old Crain Hwy at Villiage Drive West,66,666,63,795,0.08,0.84,0.08
+53,Courthouse,82,603,137,822,0.1,0.73,0.17
+53,Old Marlboro Pike at John Rogers Blvd,146,567,123,836,0.17,0.68,0.15
+53,DWI Facility,146,576,132,854,0.17,0.67,0.15
+53,County Administration Building,159,537,172,868,0.18,0.62,0.2
+53,Clairfield Lane - Arrival,64,195,162,421,0.15,0.46,0.38

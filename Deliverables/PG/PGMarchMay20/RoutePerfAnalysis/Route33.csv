@@ -1,0 +1,10 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+33,Old Branch Ave at PGCC Skilled Trade Center,32,323,97,452,0.07,0.71,0.21
+33,Owens Rd at Irvington St,330,572,142,1044,0.32,0.55,0.14
+33,Southern Ave Station Bay E,175,266,54,495,0.35,0.54,0.11
+33,Owens Rd at Wheeler Rd,371,536,154,1061,0.35,0.51,0.15
+33,Padgett's Corner,404,497,163,1064,0.38,0.47,0.15
+33,Temple Hill Rd at St Barnabas Rd,404,513,164,1081,0.37,0.47,0.15
+33,Fisher Rd at Clow Ct,403,504,158,1065,0.38,0.47,0.15
+33,Southern Ave Station Bay E - Arrival,305,224,155,684,0.45,0.33,0.23
+33,Old Branch Ave at Allentown Way - Arrival,145,61,333,539,0.27,0.11,0.62

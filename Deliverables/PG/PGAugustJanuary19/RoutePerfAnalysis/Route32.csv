@@ -1,0 +1,10 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+32,Old Branch Ave at Coventry Way,964,2459,667,4090,0.24,0.6,0.16
+32,Naylor Rd Station Bay H,1121,2378,468,3967,0.28,0.6,0.12
+32,Old Branch Ave at Allentown Way,979,2451,623,4053,0.24,0.6,0.15
+32,Brinkley Rd at Temple Hill Rd,1253,2350,453,4056,0.31,0.58,0.11
+32,Manor at Victoria Park,1344,2308,419,4071,0.33,0.57,0.1
+32,Temple Hill Rd at St Barnabas Rd,1404,2291,378,4073,0.34,0.56,0.09
+32,Clinton Fringe Lot,469,1436,835,2740,0.17,0.52,0.3
+32,Iverson Mall,1577,2050,422,4049,0.39,0.51,0.1
+32,Branchwood Towers,1289,2035,692,4016,0.32,0.51,0.17

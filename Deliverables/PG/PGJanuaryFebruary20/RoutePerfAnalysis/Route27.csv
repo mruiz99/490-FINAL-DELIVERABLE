@@ -1,0 +1,7 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+27,Landover Metrorail Station,743,763,11,1517,0.49,0.5,0.01
+27,Hubbard Rd at Martin Luther King,802,744,49,1595,0.5,0.47,0.03
+27,Dodge Park Rd at Landover Rd,819,724,52,1595,0.51,0.45,0.03
+27,Pennsy Dr at 75th Ave,901,664,46,1611,0.56,0.41,0.03
+27,Landover Metro Station - Arrival,158,245,397,800,0.2,0.31,0.5
+27,Landover Metrorail Station - Arrival,253,42,13,308,0.82,0.14,0.04

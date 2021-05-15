@@ -1,0 +1,8 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+35,Southern Ave Metro Rail Station at Bus Bay F,25,40,56,121,0.21,0.33,0.46
+35,Oxon Hill Rd at Oxon Hill Fringe Parking Lot,246,115,101,462,0.53,0.25,0.22
+35,Padgett's Corner,54,42,84,180,0.3,0.23,0.47
+35,Oxon Hill Fringe Parking Lot Bus Bay B,32,83,302,417,0.08,0.2,0.72
+35,Stars Entrance Gaylord Hotel at National Harbor Blvd,68,29,88,185,0.37,0.16,0.48
+35,Oxon Hill Rd at 6192 Oxon Hill Rd,40,29,128,197,0.2,0.15,0.65
+35,Oxon Hill Rd at Rivertown Commons(6135),79,20,104,203,0.39,0.1,0.51

@@ -1,0 +1,11 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+13,Ager Rd at Nicholson,271,946,81,1298,0.21,0.73,0.06
+13,Belcrest Rd at PG Plaza Sta Entrance,119,889,271,1279,0.09,0.7,0.21
+13,West Hyattsville Station,609,1786,139,2534,0.24,0.7,0.05
+13,Hamilton St at 38th Ave,360,1782,425,2567,0.14,0.69,0.17
+13,County Service Building,587,1546,438,2571,0.23,0.6,0.17
+13,Belcrest Rd at 6505 Belcrest Rd,448,741,108,1297,0.35,0.57,0.08
+13,42nd Ave at Oglethorpe St,753,1416,405,2574,0.29,0.55,0.16
+13,West Hyattsville Station - Arrival,963,1214,378,2555,0.38,0.48,0.15
+13,PG Plaza Station,1130,1206,239,2575,0.44,0.47,0.09
+13,Ager Rd at Nicholson St,493,583,205,1281,0.38,0.46,0.16

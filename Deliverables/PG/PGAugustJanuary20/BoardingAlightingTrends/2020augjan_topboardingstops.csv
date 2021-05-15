@@ -1,0 +1,987 @@
+,stop,boardings,alightings
+661,New Carrollton Station,10842,644
+133,Addison Rd Metrorail Station,10422,3143
+655,Morgan Blvd Metro Station,9349,7791
+593,Largo Town Center Station,6986,6876
+659,Naylor Rd Station Bay H,6946,6065
+272,Branch Ave Station Bus Bay J,5642,351
+925,Takoma Langley Park Transit Center Bus Bay B,5608,1643
+863,Southern Ave Station Bay E,4568,538
+862,Southern Ave Metro Rail Station at Bus Bay F,4495,4199
+974,West Hyattsville Station,4051,178
+386,Clinton Fringe Lot,3764,1360
+781,Rhode Island (US RTE 1) at Mount Rainer Terminal,3749,89
+478,Greenbelt Metro Station Bus Bay A,3735,193
+364,Capitol Heights Station Bay B,3498,847
+594,Largo Town Center Station at Bus Bay E,2548,2398
+977,Woody Terrace at Woodyard Rd,2143,4547
+520,Ikea at Bus Bay 2,2041,2941
+754,Padgett's Corner,1961,2075
+384,Cheverly Metrorail Station Bay D,1810,1381
+447,Elm St at Gov Oden Bowie Dr,1762,285
+452,Equestrian Center Lot 3,1745,1783
+909,Suitland Metrorail Station Bay D,1732,1305
+363,Capitol Heights - Arrival,1699,4845
+959,University Blvd at Riggs Rd,1665,773
+372,Cherrywood Ln at Greenbelt Rd (MD. RTE. 193),1639,941
+389,College Park Metro Station - Bus Bay T8,1636,1663
+637,Matapeake Business Dr at Target Store,1609,163
+387,Clinton Fringe Parking Lot,1590,1408
+415,Courthouse,1574,1785
+676,Old Branch Ave at Allentown Way,1492,1332
+870,Southern Ave at Chesapeake St SE,1473,665
+682,Old Branch Ave at PGCC Skilled Trade Center,1446,1522
+482,Greenway Center,1441,1148
+530,Iverson Mall,1387,939
+684,Old Forestville Rd at Forestville Rd,1360,1831
+982,Woodyard Rd at Opp. Pine View Ln,1336,234
+189,Annapolis Rd at Edmonston Rd,1259,1030
+132,Addison Rd Metrorail - Arrival,1258,8472
+162,Allentown Rd at Brinkley Rd,1248,983
+409,County Courthouse,1206,2413
+679,Old Branch Ave at Coventry Way,1166,1236
+254,Belcrest at PG Plaza Metrorail,1146,843
+146,Addison Rd at Walker Mill Rd,1146,826
+408,County Administration Building,1135,147
+521,Ikea at Bus Bay 3,1111,818
+628,Marlboro Pike at County Rd,1042,658
+431,Donnell Dr at Marlboro Pike,1028,238
+880,Southern Maryland Hospital,1024,337
+926,Takoma Langley Park Transit Center Bus Bay B (hidden arrival),1019,3639
+164,Allentown Rd at Camp Springs Ave,1014,464
+956,University Blvd at 23rd Ave,988,447
+220,Baltimore Ave at Berwyn House Rd,970,702
+143,Addison Rd at Ronald Rd,931,514
+432,Donnell Dr at Pennsylvania Ave,925,763
+340,Brooks Dr at Pennsylvania Ave,908,719
+304,Brightseat Rd at Maple Ridge Apts #2,879,370
+823,Riverdale Rd at Carrollton Mall,849,633
+858,Silver Hill Rd at Pennsylvania Ave,833,598
+361,Campus Way South at Joyceton Dr,831,462
+654,Mike Shapiro Dr at Sheila Ln,815,676
+255,Beltway Plaza Shopping Center,798,985
+225,Baltimore Ave at East-West Hwy,794,278
+256,Bladensburg Rd at 38th St,787,949
+429,Doctors Community Hospital,778,899
+230,Baltimore Ave at Hartwick Rd,777,674
+806,Ritchie Rd at Forest Park Dr,770,900
+708,Old Silver Hill Rd at Library,766,1112
+134,Addison Rd at Adak St,759,982
+948,Temple Hill Rd at St Barnabas Rd,750,501
+752,PG Plaza Station,721,1009
+477,Greenbelt Metro Station (Arrival),718,5072
+20,23rd Ave at Lewisdale Dr,713,1022
+657,Motor Vehicle Administration,700,758
+617,MLK Jr Hwy at Columbia Park Rd,694,852
+847,SOUTHERN AVENUE METRO STATION & BUS BAY K,691,1546
+174,Allentown Rd at Temple Hill Rd,683,822
+35,38th St at Bunker Hill Rd,681,1091
+453,Equestrian Center Lot 4,680,382
+13,15th Ave at University Blvd,667,810
+527,Indian Head Highway at Oxon Farm Rd,662,7
+318,Brinkley Rd at Henson Creek Apts,656,47
+253,Belcrest Rd at Queens Chapel Rd,654,463
+240,Baltimore Ave at Queensbury Rd,653,850
+820,Ritchie Station Court Bus Stop #2,651,103
+642,McCormick Dr at Basil Ct,649,814
+710,Old Silver Hill Rd at Parkland Dr,645,620
+98,9206 Springhill Lane,643,162
+649,Mercantile Ln at Technology Way,638,801
+484,Hamilton St at 31st Ave,624,352
+190,Annapolis Rd at Riverdale Rd,616,243
+900,St Clair Dr at 28th Ave,613,840
+742,Oxon Hill Rd at Riverside Plaza Apts,611,247
+690,Old Marlboro Pike at John Rogers Blvd,594,439
+499,Hanover Pkwy at Hanover Dr,585,534
+15,23rd Ave at Amherst Rd,583,461
+329,Brinkley Rd at Opp. Rosecroft Shopping Center,579,180
+885,Springhill Dr at Springhill Ln,569,535
+865,Southern Ave at 13th St SE,569,216
+568,Landover Rd at Annapolis Rd,560,550
+984,Woodyard Rd at Pineview Ln,559,462
+531,Iverson St at 28th Ave,549,888
+78,5846 ALLENTOWN WAY,545,619
+224,Baltimore Ave at Cherry Hill Road,543,771
+879,Southern Ave at Wheeler Rd,530,530
+494,Hampton Park Boulevard at Hampton Mall Dr,527,587
+388,Clinton Manor,522,481
+18,23rd Ave at Drexel St,512,408
+663,OLD BRANCH AVENUE & ALLENTOWN WAY,506,106
+972,Walker Mill Road at Marlboro Pike,505,639
+563,Landover Rd at 55th Ave,503,253
+358,Campus Way South at Central Ave,503,832
+491,Hampton Park Boulevard at Alaking Ct,499,845
+769,Queens Chapel Rd at Hamilton St,490,711
+542,Judge's Dr at Pratt St,487,1120
+639,Maxwell Dr at Allentown Rd,485,487
+550,Kipling Pkwy at Marlboro Pike,477,612
+968,Walker Mill Rd at Rochell Ave,477,293
+47,3930 Capitol Crossing Apts,474,355
+867,Southern Ave at 9th St SE,466,383
+342,Brooks Drive at Marlboro Pike,465,227
+21,23rd Ave at Sheridan St,461,491
+412,County Rd at Foster St,458,748
+417,Denise Dr at Dutton Way,454,222
+64,42nd Ave at Nicholson St,452,314
+273,Branchwood Towers,450,457
+223,Baltimore Ave at Cherokee St,448,298
+908,Suitland Metro - Arrival,435,1084
+497,Hanover Pkwy at Greenbrook Dr,421,293
+397,Columbia Park Rd at Marshall Pl,416,530
+884,Springhill Dr at Cherrywood Ln,414,314
+783,Rhode Island Ave at 38th St,410,123
+555,Lamont Dr at Carrollton Pkwy,408,321
+887,Springhill Ln at Breezewood Dr,407,465
+14,23rd Ave at  Beechwood Rd,406,131
+252,Belcrest Rd at PG Plaza,404,603
+951,Timothy Branch Dr at Safeway Ent,402,545
+975,West Hyattsville Station - Arrival,402,4296
+65,42nd Ave at Oglethorpe St,399,160
+524,Indian Head Highway (MD. RTE. 210) at Southern Ave,399,434
+507,Harry S Truman Dr at Birdie Ln,393,386
+886,Springhill Ln at Breezewood Ct,392,299
+626,Manor at Victoria Park,391,335
+901,St George Blvd at Waterfront St,389,575
+889,Springhill Ln at Springhill Dr,386,447
+544,Kanawha St at 15th Ave,386,256
+573,Largo Rd at Black Swan Dr,385,80
+674,Old Alexandria Ferry Rd at Woodyard Rd,385,428
+824,Riverdale Rd at Fountainbleau Dr,385,194
+359,Campus Way South at College Station Dr (PGCC),384,230
+498,Hanover Pkwy at Greenway Center Dr,382,265
+777,RUBY LOCKHART BLVD AT CAMPUS WAY NORTH,379,698
+634,Marlboro Pike at Upland Ave,375,329
+341,Brooks Dr at Ridley St,374,276
+37,38th St at Hamilton St,374,338
+291,Breezewood Dr at Cherrywood Ter,374,332
+486,Hamilton St at 36th Ave,373,280
+308,Brightseat Rd at Opp. Maple Ridge Apts #2,368,368
+907,Stuart Ln at Woodyard Rd,361,1185
+618,MLK Jr Hwy at Glen Willow Dr,357,227
+474,Gov. Oden Bowie Dr at Rear C.A.B.,356,239
+472,Good Luck Rd at Dawnwood Dr,353,276
+738,Oxon Hill Rd at John Hanson Ln,353,138
+161,Allentown Rd at Allentown Way,344,878
+25,28th Ave at Keith St,341,376
+419,Denise Dr at Rollins Ave,339,250
+814,Ritchie Rd at Roslyn Ave,338,246
+95,85th Avenue and Carrollon Manor,332,391
+632,Marlboro Pike at Melwood Mall,331,297
+85,7600 Riverdale Rd,330,118
+780,Raleigh Rd at St Barnabas Rd,330,555
+319,Brinkley Rd at Huncrest Ent,330,114
+320,Brinkley Rd at Huntley Square Dr,329,521
+245,Baltimore Ave at Tecumseh St,328,451
+770,Queens Chapel Rd at Lancer Dr,328,483
+244,Baltimore Ave at Sheridan St,327,121
+914,Suitland Rd at Shadyside Ave,326,364
+736,Oxon Hill Rd at 6400 Clipper Way,324,9
+730,Oxon Hill Fringe Parking Lot Bus Bay B,322,574
+640,Maxwell Dr at Morris Ave,320,189
+46,38th St at Windom Rd,320,247
+383,Cheverly Ave at Montrose Rd,317,345
+606,Lottsford Rd at Zachery St,317,426
+636,Marlboro Pike at Whitney Pl,316,38
+735,Oxon Hill Rd at 6246 Oxon Hill Rd,315,252
+930,Temple Hill Rd at Farmer Dr,313,322
+566,Landover Rd at 58th Ave,312,141
+40,38th St at Perry St,312,444
+16,23rd Ave at Banning Pl,310,328
+778,Raleigh Rd at Culver St,304,222
+312,Brinkley Rd at Brinkley Manor W Ent,304,89
+635,Marlboro Pike at Walters Ln,303,323
+609,MLK Jr Hwy at 65th Ave,303,237
+833,Rollins Ave at Rollins Ln,302,211
+290,Breezewood Dr at Cherrywood Ln,301,384
+751,PG Plaza,298,369
+428,District Heights Pkwy at Rochelle Ave,297,167
+816,Ritchie Rd at Truck Way,295,116
+467,Forestville Rd at Parston Dr,287,230
+182,Annapolis Rd at 48th St,287,405
+812,Ritchie Rd at Ritchie Rd Spur,285,193
+699,Old Marlboro Pike at Roblee Dr,284,231
+423,District Heights Pkwy at Addison Rd S,283,189
+630,Marlboro Pike at Kipling Pkwy,283,292
+706,Old Pike Way at Dower House Rd,282,540
+260,Bladensburg Rd at 42nd Ave,281,278
+221,Baltimore Ave at Berwyn Rd,281,154
+251,Belcrest Rd at 6505 Belcrest Rd,279,130
+978,Woody Terrace at Woodyard Road,277,203
+623,MLK Jr Hwy at Sheriff Rd,276,333
+443,East-West Hwy at Toledo Ter,273,640
+753,PGCC Perimeter Rd at Largo Rd,272,455
+41,38th St at Shepherd St,270,296
+485,Hamilton St at 35th Ave,268,301
+854,Saint Barnabas Rd at John Hanson Ln,267,154
+211,Auth Rd at Carswell Ave,267,197
+897,St Barnabas Rd at Raleigh Rd,264,139
+51,4106 Whitehall Square Apts,263,164
+496,Hanover Pkwy at Green Manor Ct,262,125
+436,Dunmore Pl at Edgeworth Dr,258,456
+826,Riverdale Rd at Mahoney Dr,256,165
+403,Columbia Park Rd at Virginia Ave,255,60
+22,23rd Ave at Woodberry St,254,224
+741,Oxon Hill Rd at Oxon Hill Plaza(6201),253,191
+927,Temple Hill Rd at Allentown Rd,252,320
+553,Kipling Pkwy at Wintergreen Ave,252,167
+365,Central Ave at Brightseat Rd,251,159
+270,Bock Rd at Wolf St,247,120
+465,Fisher Rd at St. Moritz Dr,246,182
+237,Baltimore Ave at Metzerott Rd,246,95
+790,Rhode Island Ave at County Service Building - NB,245,175
+817,Ritchie Rd at Vineyard Dr,245,205
+651,Merrimac St at 14th Ave,245,90
+660,Naylor Rd Station Ent Drop Off Only,244,356
+413,County Rd at Valley Brook Apts,243,217
+976,Whitehall Square Apts at Community Hall,242,53
+192,Apollo Dr at Lottsford Rd,240,246
+610,MLK Jr Hwy at 69th Pl,238,268
+183,Annapolis Rd at 53rd Pl,238,83
+743,Oxon Hill Rd at Rivertown Commons(6135),237,271
+693,Old Marlboro Pike at Melwood Park Ave,233,161
+488,Hamilton St at 38th Ave,232,305
+782,Rhode Island Ave at 37th St,230,95
+528,Indian Head Highway at Southern Ave,228,285
+185,Annapolis Rd at 54th Pl,228,85
+794,Rhode Island Ave at Volta Ave,227,114
+526,Indian Head Highway at Audrey Ln,227,435
+446,Edgeworth Dr at Ritchie Rd,224,197
+786,Rhode Island Ave at 42nd Pl,223,219
+416,Coventry Way at Old Alexandria Ferry Rd,222,285
+560,Lamont Dr at Powhatan St,221,359
+259,Bladensburg Rd at 41st Ave,220,118
+960,Village Dr West at Bishopmill Dr,218,95
+652,Merrimac St at New Hampshire Ave Service Rd,218,86
+556,Lamont Dr at Donoghue Dr,217,171
+73,5295 85th Ave,216,142
+611,MLK Jr Hwy at Addison Rd,215,118
+800,Ritchie Rd at Ashville Rd,215,175
+414,County Service Building,214,147
+493,Hampton Park Boulevard at Edgeworth Dr,214,387
+58,4258 Whitehall Square Apts,212,138
+509,Harry S Truman Dr at Mt Lubentia Way,212,94
+188,Annapolis Rd at Bladensburg Elem. School,211,191
+558,Lamont Dr at Lamont Pl,209,180
+876,Southern Ave at Robert Yedell Towers,207,219
+400,Columbia Park Rd at South Club Dr,206,262
+589,Largo Rd at Water Fowl Way,206,7
+226,Baltimore Ave at Erie St,205,178
+625,MONUMENT AVE @ MGM CASINO,205,868
+799,Ritchie Rd at Alberta Dr,204,247
+34,38th St at Allison St,204,153
+662,New Carrollton Station - Arrival,202,10640
+815,Ritchie Rd at Shepherd St,202,134
+749,PALMER ROAD & OLD PALMER ROAD,201,42
+274,Brandywine Rd & Gwynn Park High School,201,174
+471,Good Luck Rd at Cathedral Ave,200,228
+620,MLK Jr Hwy at Hill Rd,200,48
+476,Greenbelt Metro Dr at Cherrywood Ln,200,79
+357,Campus Way S at Treetop Condo,199,96
+719,Opposite of Rose Croft Shopping Center,199,74
+4,1100 Owens Rd,198,151
+43,38th St at Upshur St,197,24
+487,Hamilton St at 37th Ave,195,114
+330,Brinkley Rd at Roberts Dr,195,62
+937,Temple Hill Rd at Megan Dr,195,160
+396,Columbia Park Rd at Columbia Pl,194,172
+238,Baltimore Ave at Oglethorpe St,194,206
+438,East Capitol St at Old Central Ave,194,213
+439,East Capitol St at Yost Pl,193,288
+480,Greenbelt Rd at Lakecrest Dr,192,182
+371,Central Ave at Yeoman Pl,191,61
+231,Baltimore Ave at Hollywood Rd,189,139
+946,Temple Hill Rd at Southeast Mobile Estates,188,76
+966,WILSON BRIDGE DRIVE,187,126
+938,Temple Hill Rd at Old Temple Hill Rd,187,78
+241,Baltimore Ave at Regents Dr,186,122
+779,Raleigh Rd at Olson St,185,215
+200,Ardwick-Ardmore Rd at UPS Customer Center,184,36
+504,Hanover Pkwy at Ora Glen Dr,182,382
+678,Old Branch Ave at Arbutus Ln,181,172
+169,Allentown Rd at Old Branch Ave,180,571
+584,Largo Rd at Largo Landing,180,103
+160,Allentown Rd at 5711 AFCU Allentown Rd,179,167
+337,Brinkley Rd at Temple Hill Rd,179,188
+549,Kipling Pkwy at Marbury Dr,178,87
+656,Morris Ave at Maxwell Dr,178,206
+489,Hamilton St at 38th St,178,214
+144,Addison Rd at Seat Pleasant Dr,178,127
+621,MLK Jr Hwy at Roosevelt Ave,177,170
+360,Campus Way South at Harry S Truman Dr,177,55
+575,Largo Rd at Buck Ln,176,127
+564,Landover Rd at 56th Ave,175,329
+757,Pennsylvania Ave at Penn Crossing Dr,175,303
+733,Oxon Hill Rd at 6192 Oxon Hill Rd,175,298
+633,Marlboro Pike at Tucker's Restaurant,175,222
+243,Baltimore Ave at Rossborough Ln,175,264
+811,Ritchie Rd at Ritchie Dr,175,193
+903,Stuart Lane at Surratts Road,175,22
+947,Temple Hill Rd at Spring Ter,174,93
+426,District Heights Pkwy at Marbury Ct (W),174,98
+551,Kipling Pkwy at Opp. 7805 Ritchie Rd,172,121
+859,Silver Hill Rd at Randall Rd,172,75
+142,Addison Rd at James Farmer Way,171,144
+856,Silver Hill Rd at Parkway Terrace Dr,170,117
+28,28th Pkwy at Afton St,170,138
+873,Southern Ave at Opp. Robert Yedell Towers,169,68
+950,Temple Hill Rd at Weldon Dr,169,91
+424,District Heights Pkwy at Breton Dr,168,109
+631,Marlboro Pike at Marwood Blvd N,166,96
+737,Oxon Hill Rd at Harborview Rd,163,89
+222,Baltimore Ave at Campus Dr,163,34
+27,28th Pkwy at 27th Ave,163,181
+235,Baltimore Ave at Lakeland Rd,162,310
+433,Donnell Drive at Marlboro Pike,162,1369
+442,East-West Hwy at Prince George's Mall Ent.,161,1559
+177,Allentown Rd at Westchester Ct,161,174
+277,Brandywine Rd at Cork Tree Way,160,20
+944,Temple Hill Rd at Rickey Ave,160,198
+819,Ritchie Station Court Bus Stop #1,160,877
+755,Pennsylvania Ave at Forestville Rd,160,293
+352,Campus Way North at Grey Gables Ct,159,131
+694,Old Marlboro Pike at Melwood Rd,158,123
+334,Brinkley Rd at Shopton Pl,157,242
+445,East-West Hwy at Toledo Terrace,157,132
+332,Brinkley Rd at Rosecroft Shopping Center,157,638
+791,Rhode Island Ave at County Service Building - SB,157,143
+285,Brandywine Road @ Northgate Parkway,156,10
+481,Greenbelt Rd at Walker Dr,156,77
+506,Hanover Pkwy at Village Park Dr,155,133
+802,Ritchie Rd at D'arcy Rd,155,340
+250,Baltimore Avenue at Fox Street,155,15
+810,Ritchie Rd at Putnam Ln,154,148
+562,Lamont Dr at Westbrook Dr,154,263
+872,Southern Ave at Forest Hills Apts,154,115
+723,Owens Rd at Kennebec St,154,189
+582,Largo Rd at Kettering Dr,154,14
+246,Baltimore Ave at Tuckerman St,153,118
+74,5401 85th Ave,152,91
+533,Jericho Residences (Southbound),151,135
+321,Brinkley Rd at John Hanson Ln,151,169
+148,Addison Rd at Wilburn St,151,30
+336,Brinkley Rd at Summerhill Rd,150,139
+466,Fisher Rd at Temple Blvd,149,67
+434,Donnell Drive at Target Store,147,267
+532,Jericho Residences,147,91
+490,Hamilton St at 3900,147,138
+313,Brinkley Rd at Bushey Dr,146,39
+871,Southern Ave at Forest Hills Apartment,146,158
+24,28th Ave at Keating St,146,285
+601,Lottsford Rd at Harry S. Truman,145,249
+934,Temple Hill Rd at Kirbywood St,145,160
+205,Ashwood Dr at Dunmore Pl,143,187
+797,Rhode Island Avenue at Opp 37th Pl,143,274
+11,14th Ave at Langley Way,143,276
+201,Ardwick-Ardmore Rd at West St,142,66
+840,SOUTHERN AVENUE & CHESAPEAKE STREET SE,142,19
+732,Oxon Hill Rd at 6130 Oxon Hill Rd,142,270
+5,1301 McCormick Dr,142,92
+302,Brightseat Rd at Hamlin St,141,113
+561,Lamont Dr at Quentin St,139,114
+257,Bladensburg Rd at 40th Ave,139,73
+369,Central Ave at Ritchie Rd,139,63
+80,60th Ave at Greenbelt Rd,138,223
+377,Cheverly Ave at Columbia Park Rd,138,200
+932,Temple Hill Rd at Hagan Rd,137,122
+71,5150 Annapolis Rd,137,109
+687,Old Marlboro Pike at Brooklee Dr,136,88
+138,Addison Rd at Drylog St,136,172
+983,Woodyard Rd at Pine View Ln,136,1715
+734,Oxon Hill Rd at 6201 Oxon Hill Plaza,134,233
+166,Allentown Rd at Dodge Ln,134,128
+10,14th Ave at Kanawha St,134,41
+265,Bock Rd at National Christian Academy (6700),134,47
+851,Saint Barnabas Rd at Barrowfield Rd,134,160
+672,Old Alexandria Ferry Rd at Opp. Alexandria Bussiness Park,131,16
+311,Brinkley Rd at Brinkley House W Ent,131,329
+181,Annapolis Rd at 46th St,131,98
+788,Rhode Island Ave at Bunker Hill Rd,130,22
+455,Fairlawn St at Colebrooke Dr,130,562
+286,Brandywine Road @ Surrats Road,129,97
+418,Denise Dr at Epworth Way,129,218
+500,Hanover Pkwy at Hunting Ridge Club Apts,129,64
+970,Walker Mill Rd at Tanow Pl,129,85
+882,Southern Rd at Wheeler Rd,129,114
+448,Equestrian Center Lot 1,127,10
+167,Allentown Rd at Karen Anne Dr,125,146
+577,Largo Rd at Drumsheugh Ln,125,28
+228,Baltimore Ave at Hamilton St,125,75
+39,38th St at Parkwood St,124,117
+293,Brightseat Rd at Ardwick-Ardmore Rd,123,122
+30,28th Pkwy at Duggan St,123,118
+808,Ritchie Rd at Napier Dr,122,179
+459,Fisher Rd at Clow Ct,122,67
+187,Annapolis Rd at 85th Ave,121,1066
+196,Ardwick-Ardmore Rd at MLK Jr Hwy,121,207
+283,Brandywine Rd at Woodyard Rd,121,105
+715,Opp. 4174 Whitehall Square Apts,121,13
+915,Suitland Rd at Suitland Federal Center Gate 1,121,70
+821,Ritchie-Marlboro Rd & Sansbury Rd,120,120
+866,Southern Ave at 6th St SE,120,162
+492,Hampton Park Boulevard at East Hampton Dr,119,316
+768,Quebec St at 58th Ave,119,61
+114,ALLENTOWN ROAD & PADGETTS CORNER,119,59
+145,Addison Rd at St Margaret's School,119,209
+172,Allentown Rd at Perrie Ln,118,110
+545,Kipling Pkwy at Brewton St,118,188
+165,Allentown Rd at Coolridge Rd,116,152
+771,Queens Chapel Rd at Nicholson St,116,232
+236,Baltimore Ave at Longfellow St,115,151
+667,Old Alexandria Ferry Rd at Heflin Dr,115,93
+658,Mt Rainier Terminal - Arrival,114,3403
+928,Temple Hill Rd at Cardwell Dr,114,75
+801,Ritchie Rd at Central Ave,114,370
+454,Fairlawn St at 28th Pkwy,113,38
+943,Temple Hill Rd at Portal Ave,113,210
+955,Truman Manor,112,18
+194,Ardwick-Ardmore Rd at Ardwick Pl,112,133
+748,PALMER ROAD & INDIAN HEAD HIGHWAY,111,34
+373,Cherrywood Ln at Springhill Drive,111,25
+796,Rhode Island Ave at Webster St,111,73
+669,Old Alexandria Ferry Rd at Malcolm Rd,110,57
+967,Walker Mill Rd at Brooksquare Dr,110,106
+565,Landover Rd at 57th Ave,110,97
+314,Brinkley Rd at Cherryfield Rd,109,160
+31,28th Pkwy at Fairlawn St,108,138
+247,Baltimore Ave at Underwood St,108,100
+385,Chrysler Dr at US RT 301,108,0
+917,Suitland Rd at Towne Square Blvd,108,162
+888,Springhill Ln at Market Ln,108,73
+402,Columbia Park Rd at Stanford Pl,107,32
+271,Branch Ave Station - Arrival,107,4450
+151,Ager Rd at 29th Ave,107,19
+441,East-West Hwy at Metro Center Dr,106,179
+619,MLK Jr Hwy at Greig St,106,139
+945,Temple Hill Rd at Santeetlah Dr,106,138
+548,Kipling Pkwy at Harwood Rd,106,152
+827,Riverdale Rd at Opp. Heritage Square Apts,105,44
+529,Indian Head Highway at Tecumseh Dr,105,74
+739,Oxon Hill Rd at Opposite Clipper Way (6383),105,56
+53,4138 Whitehall Square Apts - in,105,118
+184,Annapolis Rd at 53rd St,104,107
+212,Auth Rd at Clacton Ave,104,41
+242,Baltimore Ave at Riverdale Rd,103,502
+410,County Rd at Belwood St,103,77
+430,Donnell Dr at 2900 Donnell Dr,103,92
+333,Brinkley Rd at Saint Ignatius Dr,103,65
+980,Woodyard Rd at Canberra Dr,103,62
+512,Harry S. Truman Dr at Lottsford,103,24
+2,10147 Campus Way South,103,68
+502,Hanover Pkwy at Megan Ln,103,60
+82,60th Ave at Seminole St,102,73
+714,Opp. 4138 Whitehall Square Apts,102,15
+248,Baltimore Ave at University Blvd,101,68
+348,CAMPUS WAY NORTH AT LADY GROVE ROAD,100,92
+99,9240 Springhill Ln,100,105
+155,Ager Rd at Nicholson St,99,78
+394,Columbia Park Rd at Cabin Branch Dr,99,136
+860,Silver Hill Rd at Suitland Rd,99,121
+338,Brinkley Rd at Trude St,99,74
+462,Fisher Rd at Heather Hill,99,71
+289,Brandywine Road at Surrats Road,98,173
+877,Southern Ave at UNITED MEDICAL CENTER,98,37
+63,42nd Ave at Madison St,98,176
+613,MLK Jr Hwy at Cabin Branch Dr,97,53
+981,Woodyard Rd at Marlboro Pike,96,58
+875,Southern Ave at Robert Yedell Tower,96,52
+29,28th Pkwy at Curtis Dr,96,82
+878,Southern Ave at United Medical Center,95,10
+0,10053 Campus Way South,95,16
+175,Allentown Rd at Waldran Ave,95,63
+36,38th St at Gaines Pl,95,90
+264,Bock Rd at Belfast Drive,95,12
+83,6625 Bock Rd,95,10
+278,Brandywine Rd at Groveton Dr,95,55
+822,Riverdale Rd and 7600 Riverdale Road,94,183
+328,Brinkley Rd at Morton Place,94,27
+96,85th Avenue and Hiltop Apartments,94,138
+191,Apollo Dr at Arena Dr,94,158
+728,Owens Rd at Wheeler Rd,94,83
+227,Baltimore Ave at Guilford Rd,94,338
+671,Old Alexandria Ferry Rd at Mike Shapiro Dr,93,130
+508,Harry S Truman Dr at Campus Way S,93,93
+249,Baltimore Ave at Van Buren St,92,235
+546,Kipling Pkwy at Council Dr,92,37
+892,St Barnabas Rd at Frazier Ter,92,77
+300,Brightseat Rd at Glenarden Library,92,94
+395,Columbia Park Rd at Clarkson Way,91,134
+354,Campus Way North at Tulip Tree Dr,91,104
+460,Fisher Rd at Damian Dr,90,41
+54,4174 Whitehall Square Apts,90,138
+935,Temple Hill Rd at Lakeview Dr,89,58
+305,Brightseat Rd at McCLain Ave,89,115
+890,St Barnabas Rd at Deer Park Dr,89,34
+813,Ritchie Rd at Ritchie-Marlboro Rd,88,98
+902,Stars Entrance Gaylord Hotel at National Harbor Blvd,88,162
+495,Hampton Park Boulevard at Steeplechase,87,165
+603,Lottsford Rd at Lottsford Rd,87,34
+362,Campus Way South at Prince Place,87,13
+905,Stuart Ln at Topaz Court,86,10
+77,5827 Allentown Way at Old Branch Ave,86,330
+267,Bock Rd at Saint Barnabas Rd,85,116
+379,Cheverly Ave at Forest Rd,85,103
+936,Temple Hill Rd at Lambert Dr,85,37
+370,Central Ave at Rollins Ave,84,170
+234,Baltimore Ave at Knox Rd,83,237
+615,MLK Jr Hwy at Carrington Dr,83,69
+407,Council Dr at Kipling Pkwy,83,55
+76,5805 Queens Chapel Rd,83,26
+62,42nd Ave at Jefferson St,82,79
+973,Water St & Main St,82,90
+45,38th St at Volta Ave,81,61
+868,Southern Ave at Barnaby Road,81,58
+874,Southern Ave at Owens Rd,80,44
+599,Lottsford Rd at 8951 Lottsford Rd,80,6
+896,St Barnabas Rd at Opp. Gateway Square Apts,80,44
+729,Owens Rd at Woodland Blvd,79,91
+140,Addison Rd at Ernie Banks St,79,63
+709,Old Silver Hill Rd at Parkland Ct (E),79,60
+614,MLK Jr Hwy at Carrington Ave,78,87
+322,Brinkley Rd at Kildare Ct,78,106
+156,Ager Rd at Oglethorpe St,77,63
+75,57th Ave at Berwyn Rd,75,52
+331,Brinkley Rd at Rose Croft Shopping Center,75,220
+746,PALMER ROAD & DEVON HILLS DRIVE,75,64
+939,Temple Hill Rd at Opp. Southeast Mobile Estates,75,186
+681,Old Branch Ave at Opp. 6811 Old Branch Ave,75,67
+299,Brightseat Rd at Girard St,75,28
+517,INDIAN HEAD HIGHWAY & SOUTHERN AVENUE,74,68
+170,Allentown Rd at Opp. 5711 AFCU Allentown Rd,74,57
+367,Central Ave at Hampton Park Blvd,74,70
+929,Temple Hill Rd at Cedell Pl,74,130
+834,Rollins Ave at Upcot Ct,74,49
+744,Oxon Run Dr at Oxon Run Ct,73,49
+307,Brightseat Rd at Opp. Maple Ridge Apts #1,73,78
+776,Queensbury Rd at 41st Ave,72,26
+137,Addison Rd at Crown St,72,70
+809,Ritchie Rd at Overton Dr,72,71
+147,Addison Rd at Wilburn Dr,72,79
+425,District Heights Pkwy at Marbury Ct (E),71,53
+831,Rollins Ave at District Ave,71,68
+479,Greenbelt Rd at Greenbelt Park Entrance,70,113
+933,Temple Hill Rd at Henderson Rd,70,75
+721,Owens Rd at Irvington St,70,204
+233,Baltimore Ave at Jefferson St,70,56
+807,Ritchie Rd at Mane Ln,70,142
+473,Good Luck Rd at Terra Alta Dr,70,93
+503,Hanover Pkwy at Opp. Hunting Ridge Club Apts,70,71
+602,Lottsford Rd at Harry S. Truman Dr,69,96
+675,Old Branch Ave at 6811 Old Branch Ave,69,187
+93,8343 Ardwick-Ardmore Rd,69,48
+666,Old Alexandria Ferry Rd at Bellefonte Ln,69,11
+845,SOUTHERN AVENUE & WHEELER ROAD AM NS,69,52
+511,Harry S Truman Dr at Woodlawn Blvd,68,33
+153,Ager Rd at Lancer Dr,68,54
+44,38th St at Utah Ave,68,226
+567,Landover Rd at 58th Pl,68,213
+825,Riverdale Rd at Heritage Square Apts,68,110
+317,Brinkley Rd at Glen Oak Dr,68,74
+208,Auth Rd at #6208-6220,68,70
+55,4192 Whitehall Square Apts,67,146
+585,Largo Rd at Mount Lubentia Way,67,123
+179,Allentown Way at Allentown Rd,67,151
+215,Auth Rd at Henderson Way,67,24
+942,Temple Hill Rd at Plata St,66,116
+79,58th Ave at Berwyn Rd,66,70
+19,23rd Ave at Fordham St,66,73
+180,Allentown Way at Allentown Rd (Aldi's),66,66
+219,Baltimore Ave at Amherst Rd,66,26
+391,Columbia Park Rd at 64th Ave,66,84
+310,Brinkley Rd at Anderson Dr,65,75
+627,Marlboro Pike & Crain Hwy,65,47
+216,Auth Rd at Magruder Ave,64,33
+123,ALLENTOWN ROAD & VERNON DRIVE,64,67
+193,Apollo Dr at Mercantile Ln,64,81
+70,442 Harry S Truman Dr,64,38
+979,Woodyard Rd at Autumn Way,64,121
+42,38th St at Taylor St,64,49
+141,Addison Rd at Health Center Ent.,64,57
+50,40th Pl at Gallatin St,63,54
+427,District Heights Pkwy at Marbury Dr (E),63,21
+343,Brown Station Rd at Dille Dr,63,0
+345,CAMPUS WAY AT NORTH AT ST. JOSEPHS DRIVE,62,48
+523,Indian Head Highway (MD. RTE. 210) at Livingston Road,62,54
+90,8300 Corporate Dr,62,45
+588,Largo Rd at Town Farm Rd,62,15
+750,PALMER ROAD & POTOMAC HEIGHTS DRIVE,61,44
+411,County Rd at Elmhurst St,61,83
+957,University Blvd at Guilford Rd,61,170
+893,St Barnabas Rd at Hagan Rd,61,45
+125,ALLENTOWN ROAD & WEBSTER LANE,61,49
+186,Annapolis Rd at 54th St,60,134
+382,Cheverly Ave at Lombard St,59,47
+323,Brinkley Rd at Larwin Dr,59,24
+154,Ager Rd at Nicholson,59,77
+17,23rd Ave at Chapman Rd,59,69
+269,Bock Rd at Technology Recreation Complex,59,83
+624,MLK Jr Hwy at Southland Dr,59,104
+711,Olson St at Norcross St,59,93
+895,St Barnabas Rd at Lime St,59,36
+792,Rhode Island Ave at Gallatin St,58,97
+622,MLK Jr Hwy at Ryderwood Court,58,46
+38,38th St at Jackson Ave,57,88
+463,Fisher Rd at Heather Hill Ent.,57,94
+731,Oxon Hill Fringe Parking Lot at Bus Bay F,57,355
+368,Central Ave at Norair Ave,57,42
+435,Dower House Rd at Old Marlboro Pike,56,89
+848,SOUTHERN AVENUE at OPP ROBERT YELDELL TOWER,56,11
+298,Brightseat Rd at Evarts St,56,107
+279,Brandywine Rd at Horshoe Rd,56,109
+136,Addison Rd at Baltic St,55,50
+239,Baltimore Ave at Queens Chapel Rd,54,70
+949,Temple Hill Rd at Temple Hill Community Center,54,8
+135,Addison Rd at Adel St,54,42
+150,Ager Rd at 23rd Ave,54,113
+168,Allentown Rd at Kingston Dr,54,115
+81,60th Ave at Quebec St,54,29
+692,Old Marlboro Pike at Marlborough Dr,54,50
+198,Ardwick-Ardmore Rd at UPS Building #8325,53,36
+52,4112 Whitehall Square Apts,53,115
+444,East-West Hwy at Toledo Terr,53,114
+366,Central Ave at Garrett A Morgan Blvd,53,129
+985,Woodyard Rd at Tanglewood Center,52,53
+653,Metro Dr at Gate 7 Security Booth,52,149
+787,Rhode Island Ave at 43rd Ave,52,105
+853,Saint Barnabas Rd at Caryhurst Dr,52,36
+803,Ritchie Rd at Dennis Ct,51,30
+284,Brandywine Road @ Killarney Street,51,5
+828,Rochelle Ave at Elmhurst St,51,33
+176,Allentown Rd at Waldran Dr,51,44
+861,Silver Hill Rd at Swann Rd,50,78
+552,Kipling Pkwy at Ritchie Rd,50,108
+513,INDIAN HEAD HIGHWAY & AUDREY LANE,50,107
+3,10233 Campus Way South,50,25
+351,Campus Way North at Collington Campus,50,40
+157,Ager Rd at Peabody St,50,34
+261,Bladensburg Rd at 43rd Ave,50,57
+115,ALLENTOWN ROAD & PATS LANE,49,7
+953,Toledo Rd at Adelphi Rd,49,47
+149,Ager Rd and Oglethorpe St,48,98
+316,Brinkley Rd at George Washington Dr,48,77
+764,Pontiac St at 60th Ave,48,61
+282,Brandywine Rd at Old Marbury Rd,48,46
+112,ALLENTOWN ROAD & LANHAM LANE,48,11
+650,Merchantile Ln at Technology Way,48,17
+559,Lamont Dr at Larchwood St,47,67
+449,Equestrian Center Lot 1 (Arrival),47,153
+881,Southern Maryland Hospital (Hidden Arrival),47,755
+48,40plgall_nb,47,17
+59,42nd At Jefferson St,47,97
+458,Fisher Rd at Brinkley Station Dr,47,37
+869,Southern Ave at Bonini Rd,47,39
+698,Old Marlboro Pike at Ritchie-Marlboro Rd,47,44
+910,Suitland Rd at 4410 Suitland Rd,47,136
+339,Brooks Dr at Marlboro Pike,46,37
+842,SOUTHERN AVENUE & FOREST HILLS APARTMENTS,46,65
+798,Rhode Island at Wallace Rd Prem #4511,46,51
+954,Toledo Rd at Belcrest Rd,46,28
+629,Marlboro Pike at Forest Run Dr,45,219
+178,Allentown Rd at Westchester Dr,45,86
+793,Rhode Island Ave at Shepherd St,45,167
+789,Rhode Island Ave at Charles Armentrout Way,45,33
+139,Addison Rd at Eads St,45,22
+258,Bladensburg Rd at 40th Pl,45,118
+92,8301 Professional Pl,45,32
+294,Brightseat Rd at Arena Dr (Campus Way),45,21
+805,Ritchie Rd at Farrs Ln,45,77
+355,Campus Way S at PGCC Entrance,44,51
+772,Queens Chapel Rd at Oliver St,44,92
+765,Pontiac St at 63rd Ave,44,80
+962,Village Dr West at Eyre Dr South,44,12
+120,ALLENTOWN ROAD & TEMPLE HILL ROAD AM NS,44,2
+832,Rollins Ave at Hanlon Street,44,55
+638,Matapeake Business Dr at Target Store (Hidden Arrival),44,1195
+707,Old Silver Hill Rd at Addison Ave,43,22
+399,Columbia Park Rd at Oregon Ave,43,179
+69,4412 Suitland Rd (Opposite),43,36
+405,Council Dr at Foster St,43,33
+326,Brinkley Rd at Middlefield Rd,43,85
+268,Bock Rd at Sourwood Ln,43,82
+835,SOUTHERN AVENUE & 13TH STREET SE,42,11
+207,Ashwood Dr at Ritchie Rd,42,206
+66,42nd Ave at Oliver St,42,24
+590,Largo Rd at Watkins Park Dr,42,153
+762,Piscataway Rd at Old Branch Ave,42,160
+645,McCormick Dr at Opp. UMUC Building,41,8
+325,Brinkley Rd at Mark Dr,41,51
+510,Harry S Truman Dr at New Orchard Dr,41,22
+604,Lottsford Rd at McCormick Dr,40,212
+578,Largo Rd at Eton Dr,40,24
+911,Suitland Rd at Homer Ave,40,9
+700,Old Marlboro Pike at SHA Facility,40,21
+213,Auth Rd at Dublin Dr,40,23
+440,East Capitol Street at Maryland Park Drive,39,122
+712,Opp Truman Manor Entrance,39,113
+830,Rollins Ave at 1506 Rollins Ave,39,37
+720,Owens Rd at Barnaby Run Dr,39,41
+380,Cheverly Ave at Inwood St,39,43
+818,Ritchie Rd at Walker Mill Rd,39,99
+958,University Blvd at Phelps Rd,39,65
+49,40th Pl at Crittenden,39,45
+767,Pontiac St at Edmonston Rd,38,75
+401,Columbia Park Rd at Stanford Court,38,48
+648,Melwood Training Center,38,49
+324,Brinkley Rd at Lujean Ln,37,16
+745,PALMER ROAD & DELLA LANE,37,56
+713,Opp. 1300 McCormick Dr,37,142
+421,Dille Dr at Correctional Center,36,98
+724,Owens Rd at Martin Dr,36,33
+7,1400 Merchantile Ln,35,109
+688,Old Marlboro Pike at Charles Mill Blvd,35,43
+864,Southern Ave Station Bay E - Arrival,35,5049
+287,Brandywine Road at Brooke Jane Drive,35,89
+579,Largo Rd at Hancock Dr,34,247
+381,Cheverly Ave at Kilmer St,34,64
+315,Brinkley Rd at Farmer Dr,34,23
+335,Brinkley Rd at Summer Hill Rd,34,26
+378,Cheverly Ave at Euclid St,33,39
+919,TUCKER ROAD & ARUNDEL ROAD,33,4
+84,6801 Woodside Village Apts,33,76
+232,Baltimore Ave at Indian Ln,32,116
+262,Bock Rd at 6801 Woodside Village Apts,32,37
+852,Saint Barnabas Rd at Bock Rd,32,13
+547,Kipling Pkwy at Glendora Dr,32,40
+94,8401 Corporate Dr,32,26
+344,CAB - Arrival,32,924
+353,Campus Way North at St Joseph's Dr,32,30
+276,Brandywine Rd at Clinton Way,31,183
+829,Rollins Av at Modupeola Way,31,38
+12,1515 Rollins Ave,31,26
+9,1441 McCormick Dr,31,26
+202,Arena Dr at Captial Center Blvd,31,8
+116,ALLENTOWN ROAD & PAYNE DRIVE,30,8
+393,Columbia Park Rd at Beaver Rd,30,113
+437,East Capitol St at Maryland Park Dr,30,67
+677,Old Branch Ave at Allentown Way - Arrival,30,168
+296,Brightseat Rd at Bishop Peebles Dr (Campus Way),29,41
+483,Halloway South at Village Dr West,29,4
+952,Toldeo Rd at Belcrest Rd,29,127
+104,ALLENTOWN ROAD & BRINKLEY ROAD,28,2
+726,Owens Rd at Owens Rd Elementary Ent,28,1
+912,Suitland Rd at Opp. Suitland Federal Center Gate 3,28,37
+327,Brinkley Rd at Morton Pl,28,15
+581,Largo Rd at Kent Dr,28,30
+464,Fisher Rd at Holton Ln,28,16
+514,INDIAN HEAD HIGHWAY & LIVINGSTON ROAD,28,40
+931,Temple Hill Rd at Fisher Rd,28,33
+522,Indian Head Highway (MD RTE. 210) at Livingston Rd,27,110
+347,CAMPUS WAY NORTH AT HILLANDALE WAY,27,68
+217,Auth Rd at Oakland Way,27,35
+376,Cheverly Ave at Cheverly Cir,27,21
+850,Saint Barnabas Rd at Barrowfield Ct,27,40
+297,Brightseat Rd at Bishop Peebles Dr (Largo),27,25
+456,Farragut St and 42nd Pl,27,8
+210,Auth Rd at Braymer Ave,27,46
+592,Largo Rd at White House Rd,27,17
+171,Allentown Rd at Opp. Leon St,27,10
+841,SOUTHERN AVENUE & E. MEADOW COURT,26,4
+263,Bock Rd at Belfast Dr,26,43
+209,Auth Rd at 5812 Dublin Dr,26,20
+717,Opp. 8100 Professional Pl,26,13
+26,28th Ave at Kenton Pl,26,54
+836,SOUTHERN AVENUE & 6TH STREET SE,25,22
+680,Old Branch Ave at Kirby Ln,25,317
+716,Opp. 5805 Queens Chapel Rd,25,101
+197,Ardwick-Ardmore Rd at Preston St,25,162
+569,Landover Rd at Arena Dr,25,107
+904,Stuart Ln at Surrats Rd,25,131
+784,Rhode Island Ave at 41st Pl,25,33
+855,Silver Hill Rd at Metro Dr,25,180
+525,Indian Head Highway (MD. RTE. 210) at Talbert Drive,25,23
+691,Old Marlboro Pike at Mapleshade Ln,24,5
+795,Rhode Island Ave at Wallace Rd,24,28
+785,Rhode Island Ave at 41st Place,24,33
+804,Ritchie Rd at Edgeworth Dr,24,29
+775,Queensbury Rd at 39th Pl,24,38
+766,Pontiac St at Cunningham Dr,24,12
+346,CAMPUS WAY NORTH AT BYWARD BLVD,23,31
+295,Brightseat Rd at Arena Dr (Largo),23,7
+392,Columbia Park Rd at ABC Supply Co.,23,11
+703,Old Marlboro Pike at Weldon Manor Ln,23,9
+641,McConnell Dr at Village Dr West,23,14
+110,ALLENTOWN ROAD & KAREN ANNE DRIVE,22,2
+406,Council Dr at Gateway Blvd,22,24
+843,SOUTHERN AVENUE & OWENS ROAD,22,15
+505,Hanover Pkwy at Spring Manor Dr,21,16
+470,Gallatin St at Church Pl,21,28
+701,Old Marlboro Pike at Spring Dr,21,33
+67,42nd Ave at Queensbury Rd,21,44
+570,Landover Rd at Lake Arbor Way,21,60
+612,MLK Jr Hwy at Booker Dr,21,87
+450,Equestrian Center Lot 1 (Hidden Arrival,20,18
+374,Cheverly Ave at Arbor St,20,14
+587,Largo Rd at Riverdale Bapt School,20,6
+837,SOUTHERN AVENUE & 9TH STREET SE,20,12
+87,800 Ritchie Rd,20,20
+275,Brandywine Rd at Clinton Manor Dr,19,9
+206,Ashwood Dr at Ritche Rd,19,51
+468,Gallatin St at 42rd Ave,19,10
+516,INDIAN HEAD HIGHWAY & SENECA DRIVE,19,18
+647,McCormick Dr at UMUC,19,51
+356,Campus Way S at Prince Place (W),19,10
+644,McCormick Dr at Lottsford Rd,19,18
+543,Kanawha St at 14th Ave,19,113
+774,Queensbury Rd and 39th Pl,18,18
+303,Brightseat Rd at Maple Ridge Apts #1,18,48
+1,10100 Campus Way S,18,66
+705,Old Pike Way at 5620 Old Pike Way,18,25
+469,Gallatin St at 43rd Ave,18,50
+591,Largo Rd at West Kettering Dr,18,165
+595,Lords Landing Rd at Brown Station Rd,18,5
+306,Brightseat Rd at McLain Avenue,18,44
+920,TUCKER ROAD & BOCK ROAD,18,7
+57,4211 Suitland Rd (Opposite),18,111
+557,Lamont Dr at Fairbanks St,17,19
+898,St Barnabas Rd at Temple Hill Rd,17,163
+727,Owens Rd at Weaver Ter,17,47
+102,9654 Lottsford Road,17,5
+600,Lottsford Rd at Grand Blvd,17,17
+571,Largo Dr at Kirkham Ln,16,2
+152,Ager Rd at Kirkwood Place,16,94
+696,Old Marlboro Pike at Old Mill Rd,16,32
+461,Fisher Rd at Fisher Dr,16,6
+292,Brightseat Rd at Amador Dr,15,17
+756,Pennsylvania Ave at Old Marlboro Pl,15,437
+586,Largo Rd at Opp. Town Farm Rd,15,70
+574,Largo Rd at Brock Rd,15,9
+773,Queens Chapel Road at Queensbury Rd,15,27
+899,St Barnabas Rd at Wheeler Rd,15,87
+616,MLK Jr Hwy at Columbia Ave,14,6
+538,John Rogers Blvd at Farnsworth Ln,14,15
+668,Old Alexandria Ferry Rd at Highland Meadows Dr,14,165
+607,Lottsford at McCormick Dr,14,14
+88,8100 Professional Pl,14,12
+722,Owens Rd at Iverson St,14,31
+105,ALLENTOWN ROAD & BURGESS LANE,13,5
+173,Allentown Rd at Robin Ln,13,38
+60,42nd Ave and Oliver St,13,21
+702,Old Marlboro Pike at Starting Gate Dr,13,10
+580,Largo Rd at Homestead Dr,13,3
+288,Brandywine Road at Dennison Drive,13,81
+718,Opp. 8951 Lottsford Rd,13,14
+131,Access rd at West Court Dr,13,12
+894,St Barnabas Rd at Kernal Ln,13,23
+846,SOUTHERN AVENUE & WHEELER ROAD PM FS,13,9
+969,Walker Mill Rd at Rollins Ave,12,10
+961,Village Dr West at Clairfield Ln,12,126
+163,Allentown Rd at Brinkley Rd (Family Services),12,119
+124,ALLENTOWN ROAD & WALDRAN DRIVE,12,3
+759,Piscataway Rd at Absher Ln,12,12
+214,Auth Rd at Gloria Dr,12,59
+281,Brandywine Rd at Lytton Ave.,12,7
+229,Baltimore Ave at Harrison Ave,12,31
+515,INDIAN HEAD HIGHWAY & OXON FARM RD,12,2
+420,Dille Dr at Brown Station Rd,12,20
+390,College Park Metro Station at Bus Bay B,11,12
+457,Farragut St at Rhode Island Ave,11,15
+61,42nd Ave and Queensbury Rd,11,14
+203,Arena Dr at Shoppers Way (Campus Way),10,8
+501,Hanover Pkwy at Lake Park Dr,10,9
+159,Ager Road at Roanoke St,10,17
+119,ALLENTOWN ROAD & TEMPLE HILL ROAD AM FS,10,0
+922,TUCKER ROAD & PALMER ROAD,10,5
+572,Largo Rd  at Water Foul Way,10,205
+971,Walker Mill Rd at Weber Dr,10,20
+906,Stuart Ln at Topaz Ct,10,71
+646,McCormick Dr at Peppercorn Pl,10,12
+404,Council Dr at Elmhurst St,10,4
+130,ALLENTOWN WAY & ALLENTOWN ROAD,9,9
+689,Old Marlboro Pike at Derby Manor Ln,9,7
+670,Old Alexandria Ferry Rd at Malcom Rd,9,34
+965,Village Dr West at McConnell Dr,9,34
+309,Brightseat Rd at Sterling St,9,13
+218,Auth Rd at Procopio Dr,9,12
+108,ALLENTOWN ROAD & DODGE LANE,8,1
+838,SOUTHERN AVENUE & BARNABY ROAD,8,11
+107,ALLENTOWN ROAD & COOLRIDGE ROAD,8,1
+664,OLD BRANCH AVENUE at ALLENTOWN WAY,8,12
+923,TUCKER ROAD & RIDGEVALE AVENUE,8,0
+280,Brandywine Rd at Lytton Ave,8,13
+519,INDIAN HEAD HIGHWAY & TECUMSEH DR,8,8
+8,1405 Rollins Ave,8,4
+121,ALLENTOWN ROAD & TEMPLE HILL ROAD PM FS,7,39
+32,3807 Old Crain Hwy,7,1
+916,Suitland Rd at Towne Park Rd,7,11
+673,Old Alexandria Ferry Rd at Poplar Hill Ln,7,2
+301,Brightseat Rd at Glenarden Pkwy,7,11
+596,Lords Landing Rd at John Rogers Blvd,7,4
+695,Old Marlboro Pike at Mount Airy Ln,7,7
+554,LOTTSFORD RD AT MCCORMICK DRIVE,7,23
+106,ALLENTOWN ROAD & COMET DRIVE,7,17
+117,ALLENTOWN ROAD & PLEASANT HILL DRIVE,7,3
+964,Village Dr West at Halloway South,6,21
+375,Cheverly Ave at Belleview Ave,6,8
+68,4410 Suitland Rd,6,8
+891,St Barnabas Rd at Frazier Dr,6,16
+475,Governor Oden Bowie Dr at Elm St,6,95
+849,SOUTHERN AVENUE at UNITED MEDICAL CENTER,6,3
+86,7711 Old Alexandria Ferry Rd,6,155
+697,Old Marlboro Pike at Peerless Ave,6,2
+97,8951 Lottsford Rd,6,43
+760,Piscataway Rd at Brandywine Rd,5,50
+583,Largo Rd at Kirkland Ln,5,38
+126,ALLENTOWN ROAD & WESTCHESTER COURT,5,2
+451,Equestrian Center Lot 1 (Hidden Arrival),5,21
+91,8300 Professional Pl,5,8
+113,ALLENTOWN ROAD & OLD BRANCH AVENUE,5,3
+100,9400 Peppercorn Pl,5,4
+89,8201 Corporate Dr,5,8
+128,ALLENTOWN ROAD at BRINKLEY ROAD,5,13
+605,Lottsford Rd at Tulip Tree Dr,4,7
+266,Bock Rd at Opp. Belfast Drive,4,9
+725,Owens Rd at Norlinda Ave,4,10
+535,John Rogers Blvd at Captain Duval Dr,4,5
+643,McCormick Dr at Caraway Ct,4,18
+747,PALMER ROAD & FRAN DEL DRIVE,4,4
+118,ALLENTOWN ROAD & PRINCE GEORGES DRIVE,4,13
+763,Piscataway Rd at Pella Place,4,11
+422,District Heights Municipal Bldg,4,6
+541,John Rogers Blvd at Old Marlboro Pike,4,8
+686,Old Marlboro Pike at Atherstone Terrace,4,4
+111,ALLENTOWN ROAD & KINGSTON DRIVE,4,3
+204,Arena Dr at Shoppers Way (Largo),3,3
+398,Columbia Park Rd at Opp. ABC Supply Co,3,19
+685,Old Marlboro Pike  at Peerless Ave,3,5
+534,John Rogers Blvd at Ascott Dr,3,1
+109,ALLENTOWN ROAD & JOCELLE COURT,3,3
+844,SOUTHERN AVENUE & ROBERT YELDELL TOWER,3,10
+857,Silver Hill Rd at Penn Station,3,9
+6,1400 McCormick Dr,3,75
+758,Pennsylvania Ave at Suitland Pkwy,3,21
+199,Ardwick-Ardmore Rd at UPS Building #8440,3,1
+195,Ardwick-Ardmore Rd at Extra Space Storage,3,2
+608,MERCANTILE LN AT TECHNOLOGY WAY,3,17
+665,Old Alexandria Ferry Rd at Alexandria Ferry Business Park,2,15
+350,Campus Drive (WB) at Baltimore Ave,2,1
+941,Temple Hill Rd at Piscataway Rd,2,2
+518,INDIAN HEAD HIGHWAY & TALBERT STREET,2,0
+103,ALLENTOWN ROAD & ALLENTOWN WAY,2,25
+101,9617 Lottsford Road,2,2
+597,Lords Landing Rd at Lord Fairfax Pl,2,1
+839,SOUTHERN AVENUE & BONINI ROAD,2,1
+704,Old Marlboro at Mount Airy Ln,2,5
+761,Piscataway Rd at Gwynndale Dr,2,0
+683,Old Crain Hwy at Villiage Drive West,2,3
+537,John Rogers Blvd at Courtland Ln,2,0
+72,5210 St Barnabas Rd,2,3
+883,Springhill Dr at 6027 Springhill Dr,2,1
+918,TUCKER RD & ALLENTOWN RD,2,14
+940,Temple Hill Rd at Opp. Temple Hill Community Center,1,23
+576,Largo Rd at Chirstian Academy,1,4
+122,ALLENTOWN ROAD & TEMPLE HILL ROAD PM NS,1,6
+598,Lords Landing Rd at Lord Sterling Pl,1,0
+536,John Rogers Blvd at Colonel's Choice,1,1
+56,4211 Suitland Rd,1,1
+158,Ager Rd at Powhattan Rd,1,4
+540,John Rogers Blvd at Lord's Landing Rd,1,4
+23,2810 TUCKER ROAD,1,0
+127,ALLENTOWN ROAD & WESTCHESTER DRIVE,1,5
+349,Campus Drive (EB) at Baltimore Ave,1,1
+539,John Rogers Blvd at Governor's Grove,0,1
+913,Suitland Rd at Opposite Prem. #4211,0,22
+129,ALLENTOWN WAY & 5846 ALLENTOWN WAY,0,84
+33,3807 Old Crain Hwy - opposite,0,2
+921,TUCKER ROAD & MARIE DRIVE,0,2
+924,TUCKER ROAD & RIDGEVALE ROAD,0,1
+963,Village Dr West at Halloway North,0,19
+740,Oxon Hill Rd at Oxon Hill Fringe Parking Lot,0,819

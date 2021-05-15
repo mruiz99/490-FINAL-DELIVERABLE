@@ -1,0 +1,11 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+18,Takoma Langley Park Transit Center Bus Bay B,41,750,84,875,0.05,0.86,0.1
+18,Columbia Park Rd at Marshall Pl,163,1129,511,1803,0.09,0.63,0.28
+18,Cheverly Metrorail Station Bay D,185,1102,546,1833,0.1,0.6,0.3
+18,Bladensburg Rd at 38th St,211,1093,536,1840,0.11,0.59,0.29
+18,PG Plaza,253,1089,498,1840,0.14,0.59,0.27
+18,Addison Rd Metrorail Station,308,453,14,775,0.4,0.58,0.02
+18,Hamilton St at 38th St,260,1033,538,1831,0.14,0.56,0.29
+18,23rd Ave at Lewisdale Dr,147,1013,677,1837,0.08,0.55,0.37
+18,Addison Rd Metrorail - Arrival,187,642,392,1221,0.15,0.53,0.32
+18,Takoma Langley Park Transit Center Bus Bay B (hidden arrival),83,370,468,921,0.09,0.4,0.51

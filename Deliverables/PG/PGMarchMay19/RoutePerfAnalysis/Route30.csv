@@ -1,0 +1,13 @@
+route,stops,early,on_time,late,total,early %,on_time %,late %
+30,Southern Maryland Hospital,47,836,87,970,0.05,0.86,0.09
+30,Branch Ave Station Bus Bay J,107,894,48,1049,0.1,0.85,0.05
+30,Piscataway Rd at Old Branch Ave,96,710,198,1004,0.1,0.71,0.2
+30,Temple Hill Rd at Piscataway Rd,395,1317,298,2010,0.2,0.66,0.15
+30,Morris Ave at Maxwell Dr,285,663,65,1013,0.28,0.65,0.06
+30,Padgett's Corner,400,1287,316,2003,0.2,0.64,0.16
+30,Old Branch Ave at Allentown Way,447,1221,327,1995,0.22,0.61,0.16
+30,Clinton Fringe Lot,570,1183,243,1996,0.29,0.59,0.12
+30,Maxwell Dr at Morris Ave,144,582,281,1007,0.14,0.58,0.28
+30,Piscataway Rd at Brandywine Rd,310,571,125,1006,0.31,0.57,0.12
+30,Branch Ave Station - Arrival,346,466,184,996,0.35,0.47,0.18
+30,Southern Maryland Hospital (Hidden Arrival),92,184,656,932,0.1,0.2,0.7
