@@ -2,7 +2,7 @@
 
 ## How To Use
 
-**Required Packages**
+**Required Packages**  
 Upon cloning of the repo these will be your **requirements** to run the program:
 
 `import pandas as pd`  
@@ -14,7 +14,7 @@ Upon cloning of the repo these will be your **requirements** to run the program:
 
 For this to run you must make sure you have the module `seaborn` installed through `pip install seaborn.`
 
-**Running the Program**
+**Running the Program**   
 In the terminal type `python3 FinalProject.py`
 This will prompt you to enter the specifc county, year, and timeframe you are interested in analyzing. 
 
