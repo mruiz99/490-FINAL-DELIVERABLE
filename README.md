@@ -34,7 +34,7 @@ Terminal Output:
 Terminal Input:  
 `2019`  
 Terminal Output:    
-`Great. What timeframe are you interested in?` 
+`Great. What timeframe are you interested in?`   
 `(1)January to Febuary`  
 `(2)March to May`  
 `(3)August to January`  
