@@ -44,9 +44,10 @@ Terminal Input:
 Output:  
 The final output will create a folder titled _Deliverables_.   
 Within it, depending on how many times you ran the program and what data you grabbed, you will find a folder for Prince George's County that contains within it a folder named after the timeframe.  
+
 In this example you would see something like:  
 `Deliverables/PG/PGJanuaryFebruary19`  
-Inside `PGJanuaryFebruary19` you will find varying analyzations such as Boarding and Alighting Trends or Route Performance Analysis  
+Inside `PGJanuaryFebruary19` you will find varying the deliverables from our analysis such as Boarding and Alighting Trends or Route Performance analysis 
 
 
 **In order to analyze more than one timeframe, year, or county, you must run the program again.**
